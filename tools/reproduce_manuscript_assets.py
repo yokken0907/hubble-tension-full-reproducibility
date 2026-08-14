@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import csv, json, argparse, shutil
+import csv, json, argparse, shutil, tempfile
 from decimal import Decimal
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -17,9 +17,17 @@ def load_json(rel):
 
 def main():
     ap=argparse.ArgumentParser()
-    ap.add_argument("--output",type=Path,default=ROOT/"_reproduced/manuscript_assets")
+    ap.add_argument(
+        "--output",
+        type=Path,
+        default=None,
+        help="Output directory (default: a new temporary directory outside the repository)",
+    )
     a=ap.parse_args()
-    out=a.output; out.mkdir(parents=True,exist_ok=True)
+    out = a.output if a.output is not None else Path(
+        tempfile.mkdtemp(prefix="hubble-tension-manuscript-assets-")
+    )
+    out.mkdir(parents=True,exist_ok=True)
 
     # Main Table 1: exact scientific row content, each row keyed to its evidence claim.
     t1=[
