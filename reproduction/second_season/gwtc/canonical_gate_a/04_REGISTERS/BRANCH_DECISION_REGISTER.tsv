@@ -1,0 +1,8 @@
+decision_id	status	evidence	scope_note
+SOURCE_FREEZE	PASS	Official files fixed in source-freeze packages; CORR1 preserves source bytes.	Output-product source freeze only.
+SOURCE_FREEZE_CORR1	DOCUMENTATION_CORRECTION_ONLY	SOURCES and INTERNAL_PRIOR byte identity PASS across 26 files.	V1 historical artifact retained.
+GATE_A	PASS	Two posterior identities PASS; custom-vs-NumPy 6/6; rounded headline components 6/6.	Headline posterior output-level quantile reproduction.
+GATE_B_CODE_PATH	PASS	Official GWTC-5 notebook arithmetic path identified.	Does not prove old-side input identity.
+GATE_B_ARITHMETIC	PASS	The notebook summary values generate displayed 25.7%.	Arithmetic trace only.
+GATE_B_POSTERIOR_PAIR_PROVENANCE	HOLD_NOT_UNIQUE	Exact old-side posterior bytes and referenced registry are absent.	No inference or reconstruction permitted.
+BRANCH	COMPLETE_WITH_SCOPE	Gate A complete; Gate B correctly bounded by public evidence.	No automatic expansion.

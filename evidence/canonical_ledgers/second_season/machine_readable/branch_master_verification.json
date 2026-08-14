@@ -1,0 +1,77 @@
+{
+  "branch_masters": [
+    {
+      "branch_id": "B01",
+      "branch_name": "GWTC45_STANDARD_SIREN_POSTERIOR_TRACEABILITY",
+      "bytes": 19387952,
+      "filename": "GWTC45_STANDARD_SIREN_POSTERIOR_TRACEABILITY_MASTER_V1_0.zip",
+      "internal_sha256s": "44/44 PASS",
+      "master_verifier": "not_present; checksum validation PASS",
+      "sha256": "ee4dcf48e69a3fb678fca8cf8b9793de668c312b2875cad75ea2b80b0fbe1826",
+      "sidecar_status": "PASS",
+      "status": "COMPLETE_WITH_SCOPE"
+    },
+    {
+      "branch_id": "B02",
+      "branch_name": "PANTHEON_PLUS_BBC_TRUTH_CLOSURE_SOURCE_READINESS",
+      "bytes": 248284,
+      "filename": "PANTHEON_PLUS_BBC_SOURCE_READINESS_MASTER_V1_0.zip",
+      "internal_sha256s": "20/20 PASS",
+      "master_verifier": "not_present; checksum validation PASS",
+      "sha256": "b8d34526d18f1a2c5646350ece638374fae2a872a02d9f842cd23c219337fd17",
+      "sidecar_status": "PASS",
+      "status": "HOLD_SOURCE_INCOMPLETE"
+    },
+    {
+      "branch_id": "B03A",
+      "branch_name": "H0DN_SINGULAR_COVARIANCE_AND_PSEUDOINVERSE_AUDIT",
+      "bytes": 227419,
+      "filename": "H0DN_SINGULAR_COVARIANCE_MASTER_REFERENCE_PACKAGE_v1.0.0.zip",
+      "internal_sha256s": "18/18 PASS",
+      "master_verifier": "PASS: 18 manifested master files verified; canonical ZIP verified",
+      "sha256": "27e29bd3e5d78ddd3ad708aa1988de7f3d4e3baeffaf0ba9fc7e244c656afefc",
+      "sidecar_status": "PASS",
+      "status": "MASTER_REFERENCE_PACKAGE_COMPLETE_WITH_SCOPE"
+    },
+    {
+      "branch_id": "B03B",
+      "branch_name": "H0DN_SNIA_SAME_CID_RESIDUAL_DEFICIT_AUDIT",
+      "bytes": 837238,
+      "filename": "H0DN_SNIA_SAME_CID_RESIDUAL_DEFICIT_MASTER_REFERENCE_PACKAGE_v1.0.0.zip",
+      "internal_sha256s": "33/33 PASS",
+      "master_verifier": "checks=80 pass=80 fail=0",
+      "sha256": "1c095aaf5cb6255a86022f859385a344a83efc5e783e568c0f9fb1f1e3d7ae50",
+      "sidecar_status": "PASS",
+      "status": "BRANCH_CLOSED_AT_PUBLIC_EVIDENCE_FRONTIER_WITH_SCOPE"
+    }
+  ],
+  "historical_pause_snapshot": {
+    "classification": "HISTORICAL_SUPERSEDED",
+    "internal_sha256s": "22/22 PASS",
+    "sha256": "ce3cec111cf6b5ef22c8a39ac5eab5f567c472b8cf213bbac3dbfcce55a24315"
+  },
+  "nested_zip_crc": {
+    "checked": 16,
+    "fail": 0,
+    "pass": 16
+  },
+  "outer_sidecars": {
+    "checked": 15,
+    "fail": 0,
+    "pass": 15
+  },
+  "source_season_identity": {
+    "bytes": 60717246,
+    "filename": "2nd season.zip",
+    "outer_directories": 15,
+    "outer_files": 36,
+    "outer_zip_crc": "PASS",
+    "outer_zip_entries": 51,
+    "sha256": "9cf896f1d37460ebb46f2082b57ea2085685ce6c75fe7046065510873e220a8c"
+  },
+  "stale_phase1f_delivery_record": {
+    "classification": "STALE_PRECORRECTION_METADATA_ONLY",
+    "current_phase1f_sha256": "137e8c6fe95426996eca6504f95995d8e522a20468b93e9c2844156a601d6b03",
+    "recorded_sha256": "751d983a188def2e96f899f18691c06e2356f98deb91982c444a8c7794f2dec1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "branch": "TDCOSMO_ALTERNATE_IMPLEMENTATION",
+  "branch_status": "COMPLETE_WITH_SCOPE",
+  "final_classification": "PASS_TABLE6_EXTENSION_ALTERNATE_IMPLEMENTATION_WITHIN_PREREGISTERED_TOLERANCE_WITH_SCOPE",
+  "automatic_continuation": false,
+  "next_branch_selected": false,
+  "sentinel": {
+    "files": 3,
+    "structural_pass": "3/3",
+    "quantile_exact_match": "9/9"
+  },
+  "extension": {
+    "files": 13,
+    "structural_pass": "13/13",
+    "quantile_tolerance_pass": "39/39",
+    "quantile_exact_binary64_after_tsv": "32/39",
+    "max_absolute_delta": 1.4210854715202004e-14,
+    "table6_published_precision_pass": "12/12"
+  },
+  "frozen_implementation_sha256": "6360c803c584cc29e939445001fa6508cd875d16b4cdba5caba8be8b031368f7",
+  "source_commit": "d7f38db341f68be1df0d9ac1fc528c45113f94cf",
+  "paper_version_for_master_refreeze": "arXiv:2506.03023v4"
+}

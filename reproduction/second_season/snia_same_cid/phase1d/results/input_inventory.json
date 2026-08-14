@@ -1,0 +1,20 @@
+{
+  "group_size_counts": {
+    "2": 21,
+    "3": 9
+  },
+  "phase1b_map_row_count": 277,
+  "same_cid_group_count": 30,
+  "same_cid_row_count": 69,
+  "status": "PASS",
+  "survey_codes": [
+    5,
+    51,
+    56,
+    57,
+    62,
+    63,
+    64,
+    65
+  ]
+}

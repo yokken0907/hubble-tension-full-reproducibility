@@ -1,0 +1,97 @@
+{
+  "byte_identical_file_count": 22,
+  "clean_main_run_return_code": 0,
+  "clean_posthoc_run_return_code": 0,
+  "compared_file_count": 22,
+  "comparisons": [
+    {
+      "byte_identical": true,
+      "path": "results/EXECUTION_STATUS.json"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/alternative_basis_checks.json"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/audit_summary.json"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/component_diagnostics.json"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/contrast_definition.tsv"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/contract_verification.json"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/covariance_baselines.json"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/covariance_lineage.json"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/dependency_mapping_verification.json"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/input_inventory.json"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/known_phase1a_reproduction.json"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/numerical_crosschecks.json"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/orthogonal_invariance.tsv"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/orthogonal_invariance_summary.json"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/quadratic_forms.tsv"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/run_environment.json"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/source_verification.json"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/upstream_audit_dependency_verification.json"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/mapped_submatrix_asymmetry_diagnostic.json"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/mapped_submatrix_asymmetry_sensitivity.tsv"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/printed_vs_high_precision_contrast_diagnostic.json"
+    },
+    {
+      "byte_identical": true,
+      "path": "results/printed_vs_high_precision_contrast_diagnostic.tsv"
+    }
+  ],
+  "status": "PASS"
+}

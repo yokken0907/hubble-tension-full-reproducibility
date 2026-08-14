@@ -1,0 +1,41 @@
+{
+  "checks": [
+    {
+      "actual_sha256": "890272af80f3a1a92543bb7a793438ae383bb84b2e329f8c51a997f45aa98e54",
+      "expected_sha256": "890272af80f3a1a92543bb7a793438ae383bb84b2e329f8c51a997f45aa98e54",
+      "path": "AUDIT_CONTRACT.md",
+      "status": "PASS",
+      "verification_scope": "whole_file"
+    },
+    {
+      "actual_sha256": "f36d65ec35e9314af7cc56abf427493a936e57ffce56a41ada98c416971c4bf2",
+      "expected_sha256": "f36d65ec35e9314af7cc56abf427493a936e57ffce56a41ada98c416971c4bf2",
+      "path": "provenance/CONTRACT_AMENDMENTS.tsv",
+      "status": "PASS",
+      "verification_scope": "frozen_header_plus_append_only_ledger"
+    },
+    {
+      "actual_sha256": "301c275adfafe935a7e953ade77c180c077eb9ce9087866ada66c3dc0442986a",
+      "expected_sha256": "301c275adfafe935a7e953ade77c180c077eb9ce9087866ada66c3dc0442986a",
+      "path": "provenance/DECISION_CONFIG.json",
+      "status": "PASS",
+      "verification_scope": "whole_file"
+    },
+    {
+      "actual_sha256": "136602b45fef7629e920628cbd53a6135532ef8f174421d2db49ac21a79eb502",
+      "expected_sha256": "136602b45fef7629e920628cbd53a6135532ef8f174421d2db49ac21a79eb502",
+      "path": "provenance/SOURCE_LOCK.tsv",
+      "status": "PASS",
+      "verification_scope": "whole_file"
+    }
+  ],
+  "contract_amendment_count": 1,
+  "contract_amendment_ids": [
+    "AMEND-001"
+  ],
+  "contract_freeze_sha256": "a66fb62ef0be291be754f6c8cbc73a98f20c6002304fba1938e0b75f6efec7df",
+  "contract_id": "H0DN-SNIA-RESIDUAL-PHASE1A-20260730-01",
+  "freeze_timestamp_utc": "2026-07-29T18:59:40Z",
+  "partition_results_observed_before_freeze": false,
+  "status": "PASS"
+}

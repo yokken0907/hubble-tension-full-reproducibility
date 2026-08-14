@@ -1,0 +1,3 @@
+state	h0	context_sigma	interpretation
+Frozen baseline	73.49875364360662	0.8088000253378453	Frozen public contract
+Row-standardized projected loss	73.44630822099562	0.8088000253378453	Off-support projected-loss diagnostic; not independent measurement

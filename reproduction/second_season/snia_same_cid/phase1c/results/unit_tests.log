@@ -1,0 +1,38 @@
+test_alternative_basis_invariance (test_auditlib.Phase1CTests.test_alternative_basis_invariance) ... ok
+test_baseline_result_scale_interval (test_auditlib.Phase1CTests.test_baseline_result_scale_interval) ... ok
+test_component_diagnostics_detects_negative_direction (test_auditlib.Phase1CTests.test_component_diagnostics_detects_negative_direction) ... ok
+test_contract_freeze (test_auditlib.Phase1CTests.test_contract_freeze) ... ok
+test_dispersion_labels (test_auditlib.Phase1CTests.test_dispersion_labels) ... ok
+test_generalized_identity_comparison (test_auditlib.Phase1CTests.test_generalized_identity_comparison) ... ok
+test_group_cross_survey_gate_can_fail (test_auditlib.Phase1CTests.test_group_cross_survey_gate_can_fail) ... ok
+test_helmert_basis_two_and_three_rows (test_auditlib.Phase1CTests.test_helmert_basis_two_and_three_rows) ... ok
+test_invalid_ordered_classification_length (test_auditlib.Phase1CTests.test_invalid_ordered_classification_length) ... ok
+test_json_safe_rejects_nonfinite (test_auditlib.Phase1CTests.test_json_safe_rejects_nonfinite) ... ok
+test_matrix_diagnostics_spd (test_auditlib.Phase1CTests.test_matrix_diagnostics_spd) ... ok
+test_ordered_classification (test_auditlib.Phase1CTests.test_ordered_classification) ... ok
+test_orthogonal_invariance (test_auditlib.Phase1CTests.test_orthogonal_invariance) ... ok
+test_parse_covariance_rejects_payload_mismatch (test_auditlib.Phase1CTests.test_parse_covariance_rejects_payload_mismatch) ... ok
+test_parse_covariance_schema_and_asymmetry (test_auditlib.Phase1CTests.test_parse_covariance_schema_and_asymmetry) ... ok
+test_quadratic_solvers_agree (test_auditlib.Phase1CTests.test_quadratic_solvers_agree) ... ok
+test_source_lock_schema_and_count (test_auditlib.Phase1CTests.test_source_lock_schema_and_count) ... ok
+test_write_json_is_sorted_and_newline_terminated (test_auditlib.Phase1CTests.test_write_json_is_sorted_and_newline_terminated) ... ok
+test_actual_selected_submatrices_are_symmetric (test_correction.Phase1CCorrectionTests.test_actual_selected_submatrices_are_symmetric) ... ok
+test_added_source_locks_have_expected_git_blobs (test_correction.Phase1CCorrectionTests.test_added_source_locks_have_expected_git_blobs) ... ok
+test_config_lock_mismatch_detection (test_correction.Phase1CCorrectionTests.test_config_lock_mismatch_detection) ... ok
+test_data_loader_lock_mismatch_detection (test_correction.Phase1CCorrectionTests.test_data_loader_lock_mismatch_detection) ... ok
+test_intercept_lock_mismatch_detection (test_correction.Phase1CCorrectionTests.test_intercept_lock_mismatch_detection) ... ok
+test_main_lock_mismatch_detection (test_correction.Phase1CCorrectionTests.test_main_lock_mismatch_detection) ... ok
+test_manifest_target_hash_snapshot_detects_change (test_correction.Phase1CCorrectionTests.test_manifest_target_hash_snapshot_detects_change) ... ok
+test_phase1a_archive_sha_mismatch_detection (test_correction.Phase1CCorrectionTests.test_phase1a_archive_sha_mismatch_detection) ... ok
+test_posthoc_does_not_replace_main_results (test_correction.Phase1CCorrectionTests.test_posthoc_does_not_replace_main_results) ... ok
+test_posthoc_json_rejects_nonstandard_constants (test_correction.Phase1CCorrectionTests.test_posthoc_json_rejects_nonstandard_constants) ... ok
+test_posthoc_same_mapping_and_basis_recorded (test_correction.Phase1CCorrectionTests.test_posthoc_same_mapping_and_basis_recorded) ... ok
+test_probability_reference_questions_are_separate (test_correction.Phase1CCorrectionTests.test_probability_reference_questions_are_separate) ... ok
+test_selected_submatrix_asymmetry_fixture (test_correction.Phase1CCorrectionTests.test_selected_submatrix_asymmetry_fixture) ... ok
+test_upper_lower_and_symmetric_representations (test_correction.Phase1CCorrectionTests.test_upper_lower_and_symmetric_representations) ... ok
+test_verify_results_module_has_no_write_primitives (test_correction.Phase1CCorrectionTests.test_verify_results_module_has_no_write_primitives) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.010s
+
+OK

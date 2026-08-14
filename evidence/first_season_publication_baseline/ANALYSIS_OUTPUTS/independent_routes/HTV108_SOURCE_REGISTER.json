@@ -1,0 +1,35 @@
+[
+  {
+    "id": "MCP_XIII",
+    "type": "primary_paper",
+    "title": "The Megamaser Cosmology Project. XIII. Combined Hubble Constant Constraints",
+    "url": "https://arxiv.org/abs/2001.09213",
+    "used_for": [
+      "Table 1 galaxy inputs",
+      "Table 2 jackknife posteriors",
+      "peculiar-velocity contracts",
+      "NGC4258 covariance footnote"
+    ]
+  },
+  {
+    "id": "H0DN_2026",
+    "type": "primary_consensus_analysis",
+    "title": "The Local Distance Network: a community consensus report on the measurement of the Hubble constant at ~1% precision",
+    "url": "https://arxiv.org/abs/2510.23823",
+    "used_for": [
+      "baseline network result",
+      "variant removing NGC4258",
+      "network role separation"
+    ]
+  },
+  {
+    "id": "MCP_STATUS_2025",
+    "type": "official_conference_abstract",
+    "title": "The Quest For 3%: Strategies to Improve H0 Precision with the Megamaser Cosmology Project",
+    "url": "https://baas.aas.org/pub/2025n2i250p17",
+    "used_for": [
+      "current status of six-galaxy 73.9±3.0 result",
+      "future improvement targets"
+    ]
+  }
+]

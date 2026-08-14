@@ -1,0 +1,12 @@
+main_return_code=0
+main_stdout:
+{
+  "status": "AUDIT_COMPLETE_CONTRAST_COVARIANCE_CALIBRATION_DIAGNOSTIC"
+}
+main_stderr:
+posthoc_return_code=0
+posthoc_stdout:
+{
+  "status": "POSTHOC_DIAGNOSTIC_COMPLETE"
+}
+posthoc_stderr:

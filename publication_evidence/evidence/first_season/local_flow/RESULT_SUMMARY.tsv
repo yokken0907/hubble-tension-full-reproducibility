@@ -1,0 +1,2 @@
+record_id	record_type	status	statement_or_quantity	value	unit	source_record	source_version	source_artifact_path	source_artifact_sha256	scope_limit
+FS-B13	branch_state	HOLD_LIKELIHOOD_AND_COVARIANCE_PRODUCTS_MISSING	Single-galaxy dominance rejected; flow interface open			FS-B13	FIRST_MASTER_v1.0.0	FIRST_MASTER::03_BRANCH_STATUS_LEDGER.tsv	c1f450eaa6e5062690aecbc7595202ad9ad75aa20e1d622e534f0f9d4eaf7214	Joint covariance, distance samples, zero-point covariance, likelihood

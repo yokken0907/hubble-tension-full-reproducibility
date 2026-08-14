@@ -1,0 +1,151 @@
+{
+  "byte_identical_output_count": 20,
+  "commands": [
+    {
+      "name": "main_audit",
+      "returncode": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "posthoc_negative_control",
+      "returncode": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "second_implementation",
+      "returncode": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "unit_tests",
+      "returncode": 0,
+      "status": "PASS"
+    }
+  ],
+  "external_source_repository_not_copied": true,
+  "generated_output_count": 20,
+  "outputs": [
+    {
+      "original_sha256": "110657e577f5f0486385d7a7b23bd4e646130c131325c95eb65d87475dd1d911",
+      "path": "results/EXECUTION_STATUS.json",
+      "reproduced_sha256": "110657e577f5f0486385d7a7b23bd4e646130c131325c95eb65d87475dd1d911",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "d0d71080a9d82239c199bfaa9a8125128d4da7efbc24b525661effa311689bd5",
+      "path": "results/audit_summary.json",
+      "reproduced_sha256": "d0d71080a9d82239c199bfaa9a8125128d4da7efbc24b525661effa311689bd5",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "27b1ed39460baab1a2a5e3c9b81387970813bfb5bcfa34906fd46adf9ec19919",
+      "path": "results/contract_verification.json",
+      "reproduced_sha256": "27b1ed39460baab1a2a5e3c9b81387970813bfb5bcfa34906fd46adf9ec19919",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "e6b26a604765b909c2ca1f0fab519dd2afac11e19a888819565d56dbf260023b",
+      "path": "results/evidence_semantics.json",
+      "reproduced_sha256": "e6b26a604765b909c2ca1f0fab519dd2afac11e19a888819565d56dbf260023b",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "6825e8c52553bda99c4ded5059ca6640f60e336de124a47ec76972b682e3db7e",
+      "path": "results/filter_calibration_mapping.tsv",
+      "reproduced_sha256": "6825e8c52553bda99c4ded5059ca6640f60e336de124a47ec76972b682e3db7e",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "7fd5d5901ca14f3b18cee5e93652d30d66121541d7774d64ec0834897a89eafa",
+      "path": "results/input_candidate_map.tsv",
+      "reproduced_sha256": "7fd5d5901ca14f3b18cee5e93652d30d66121541d7774d64ec0834897a89eafa",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "7aca492c38c811755514f3c4edb63435929f858695ae4082b268914a879a7cfc",
+      "path": "results/input_inventory.json",
+      "reproduced_sha256": "7aca492c38c811755514f3c4edb63435929f858695ae4082b268914a879a7cfc",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "733fb0b7d0f982aa8b26d05c1962bdb1e5eb8512624f05eabae61fb5f3191d20",
+      "path": "results/observation_match_evidence.tsv",
+      "reproduced_sha256": "733fb0b7d0f982aa8b26d05c1962bdb1e5eb8512624f05eabae61fb5f3191d20",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "aca6e7172a54e7fd2e0bba5f49d797d0c799cefc086a93278cd0478367a0832d",
+      "path": "results/pair_dependency_classification.tsv",
+      "reproduced_sha256": "aca6e7172a54e7fd2e0bba5f49d797d0c799cefc086a93278cd0478367a0832d",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "61e901c063836b69af7b4cc6590f207c0b8125cb96afdbeff30d9431428daac3",
+      "path": "results/public_asset_availability.tsv",
+      "reproduced_sha256": "61e901c063836b69af7b4cc6590f207c0b8125cb96afdbeff30d9431428daac3",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "afe66ea01b2de2127675ef0d6afe7e33e2980a8c53cdd73718beec5653252f7e",
+      "path": "results/row_input_profile.tsv",
+      "reproduced_sha256": "afe66ea01b2de2127675ef0d6afe7e33e2980a8c53cdd73718beec5653252f7e",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "7f4ae98fa16259499f78cbd205a74b36c88bdf0ad187d74a2c7ffecf110cdb8d",
+      "path": "results/run_environment.json",
+      "reproduced_sha256": "7f4ae98fa16259499f78cbd205a74b36c88bdf0ad187d74a2c7ffecf110cdb8d",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "3f37337de2f708d4f027480119a09f3bddba6f5bea38d96aa4850c22a9c151ef",
+      "path": "results/series_configuration_lineage.tsv",
+      "reproduced_sha256": "3f37337de2f708d4f027480119a09f3bddba6f5bea38d96aa4850c22a9c151ef",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "d889624ea6649e729c002570ddc838a34f76063c660192f39dac17d41a4686e2",
+      "path": "results/shared_dependency_ledger.tsv",
+      "reproduced_sha256": "d889624ea6649e729c002570ddc838a34f76063c660192f39dac17d41a4686e2",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "003b27a73b2fc5217ed41e516435e2787649f3f950d204bdc1622fb0e78e4fbf",
+      "path": "results/source_verification.json",
+      "reproduced_sha256": "003b27a73b2fc5217ed41e516435e2787649f3f950d204bdc1622fb0e78e4fbf",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "db369a538b63b906401544926493dddcef259b97f6d65f7b8e203bed7d70ea18",
+      "path": "results/posthoc_cross_cid_negative_control_pairs.tsv",
+      "reproduced_sha256": "db369a538b63b906401544926493dddcef259b97f6d65f7b8e203bed7d70ea18",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "1b6d32bb5de0e6254fc7c7b3ef995a1bd26437872863ba482edab29f6157c432",
+      "path": "results/posthoc_cross_cid_negative_control_by_directory_pair.tsv",
+      "reproduced_sha256": "1b6d32bb5de0e6254fc7c7b3ef995a1bd26437872863ba482edab29f6157c432",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "687db8a43b414cc6324e118acb643f553f9933fa3e35a08be04271b94da13ab8",
+      "path": "results/posthoc_cross_cid_negative_control_summary.json",
+      "reproduced_sha256": "687db8a43b414cc6324e118acb643f553f9933fa3e35a08be04271b94da13ab8",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "9b676dc52fe46a764aba55a8a34d690f97a9938a5fc3b9349f187117f80be345",
+      "path": "results/independent_verification.json",
+      "reproduced_sha256": "9b676dc52fe46a764aba55a8a34d690f97a9938a5fc3b9349f187117f80be345",
+      "status": "PASS"
+    },
+    {
+      "original_sha256": "f3324e15fbe5d5e3ffed53cc043c9b3253abd70675901e82280305c9bdef99a8",
+      "path": "results/unit_tests_summary.json",
+      "reproduced_sha256": "f3324e15fbe5d5e3ffed53cc043c9b3253abd70675901e82280305c9bdef99a8",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS",
+  "verification_type": "CLEAN_DIRECTORY_FULL_PIPELINE_BYTE_REPRODUCTION"
+}

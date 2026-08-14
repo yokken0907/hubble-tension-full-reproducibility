@@ -1,0 +1,11 @@
+operating_system=Linux-6.12.13-x86_64-with-glibc2.41
+system=Linux
+release=6.12.13
+version=#1 SMP Wed Jul 22 00:33:13 UTC 2026
+machine_architecture=x86_64
+processor=
+python_executable=/opt/pyvenv/bin/python
+python_version=3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]
+numpy_version=2.3.5
+h5py_version=3.15.1
+hdf5_version=1.14.6

@@ -1,0 +1,20 @@
+[
+  {
+    "file_name": "1st season.zip(2).001",
+    "bytes": 524288000,
+    "sha256": "72254e753eac306d3d180bcfe08917b7b16d398965215e852fd5b5610edf4587",
+    "role": "split_source_part"
+  },
+  {
+    "file_name": "1st season.zip(2).002",
+    "bytes": 249546064,
+    "sha256": "52ceeed953cf258120b7eeaeb1e71bc0f0fb652d1fd44481578dd11a082c88b3",
+    "role": "split_source_part"
+  },
+  {
+    "file_name": "1st_season_combined.zip",
+    "bytes": 773834064,
+    "sha256": "64048a39842bfed467e77db0f6c72348995001a4c2ca079367d24b25ac7d97ce",
+    "role": "reconstructed_full_source_archive"
+  }
+]

@@ -1,0 +1,13 @@
+FINAL_URL: https://lambda.gsfc.nasa.gov/data/suborbital/SPT/spt_3g_d1/chains_ttteee_winter1920.zip
+STATUS: 206
+Accept-Ranges: bytes
+Connection: close
+Content-Length: 1
+Content-Range: bytes 0-0/6194573499
+Content-Type: application/zip
+Date: Tue, 28 Jul 2026 10:57:31 GMT
+ETag: "17139b0bb-64e54728c7c2b"
+Last-Modified: Tue, 31 Mar 2026 16:27:46 GMT
+Server: Apache
+Strict-Transport-Security: max-age=31536000; includeSubDomains;
+X-Frame-Options: SAMEORIGIN

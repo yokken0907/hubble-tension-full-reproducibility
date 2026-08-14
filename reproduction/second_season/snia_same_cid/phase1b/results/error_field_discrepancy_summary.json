@@ -1,0 +1,19 @@
+{
+  "catalog_field": "m_b_corr_err_DIAG",
+  "catalog_vs_matrix_exact_equal_count": 0,
+  "catalog_vs_matrix_max_abs_difference": 0.14130297508896889,
+  "catalog_vs_matrix_maximum_absolute_difference_tolerance": 5.00001e-07,
+  "catalog_vs_matrix_outside_tolerance_count": 277,
+  "catalog_vs_matrix_within_tolerance_count": 0,
+  "cause_classification": "UNRESOLVED_DOCUMENTATION_DATA_DISCREPANCY",
+  "fixed_readme_description": "m_b_corr_err_DIAG is described as an uncertainty determined from the covariance-matrix diagonal",
+  "h0dn_field": "err_m_b",
+  "h0dn_vs_matrix_exact_equal_count": 0,
+  "h0dn_vs_matrix_max_abs_difference": 4.959714075936095e-06,
+  "h0dn_vs_matrix_maximum_absolute_difference_tolerance": 5.000001e-06,
+  "h0dn_vs_matrix_outside_tolerance_count": 0,
+  "h0dn_vs_matrix_within_h0dn_print_tolerance_count": 277,
+  "matrix_reference": "sqrt(diag(Pantheon+SH0ES_STAT+SYS.cov))",
+  "row_count": 277,
+  "status": "PASS_DIAGNOSTIC_RECORDED"
+}

@@ -1,0 +1,90 @@
+{
+  "check_count": 16,
+  "checks": [
+    {
+      "check_id": "GATE-P1B-01",
+      "detail": "contract=PASS; source=PASS; locked_files=9",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GATE-P1B-02",
+      "detail": "[('AMEND-001', 'NO', 'NO'), ('AMEND-002', 'YES', 'NO'), ('AMEND-003', 'YES', 'YES'), ('AMEND-004', 'YES', 'NO')]",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GATE-P1B-03",
+      "detail": "reader-facing prohibited uncertainty-type assertions",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GATE-P1B-04",
+      "detail": "UNRESOLVED_DOCUMENTATION_DATA_DISCREPANCY",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GATE-P1B-05",
+      "detail": "rows=277; catalog_within=0; h0dn_within=277",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GATE-P1B-06",
+      "detail": "{'CATALOG_ONLY_AMBIGUOUS': 2, 'CATALOG_ONLY_UNIQUE': 275}",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GATE-P1B-07",
+      "detail": "covariance_required=2; ambiguous=0; unmatched=0",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GATE-P1B-08",
+      "detail": "277/277 mapping rows; 279 candidates",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GATE-P1B-09",
+      "detail": "30 groups; 69 rows",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GATE-P1B-10",
+      "detail": "{'MULTI_SURVEY_ONLY': 30}",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GATE-P1B-11",
+      "detail": "76729/76729; max_abs=0.0",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GATE-P1B-12",
+      "detail": "reader-facing covariance-process overclaims",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GATE-P1B-13",
+      "detail": "joint catalog-and-covariance lineage disclosure",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GATE-P1B-14",
+      "detail": "status=AUDIT_COMPLETE_PROVENANCE_AND_COVARIANCE_LINEAGE_TRACED; boundary=PROVENANCE_ONLY_NO_ROW_MODIFICATION_NO_COVARIANCE_CORRECTION_NO_CORRECTED_H0_NO_TENSION_RESOLUTION",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GATE-P1B-15",
+      "detail": "tests=18; test_returncode=0; clean=PASS",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GATE-P1B-16",
+      "detail": "default verification path left the project tree unchanged",
+      "status": "PASS"
+    }
+  ],
+  "fail_count": 0,
+  "manifest_checked": false,
+  "pass_count": 16,
+  "status": "PASS",
+  "verification_scope": "CLOSURE_RECORD_PRE_MANIFEST"
+}

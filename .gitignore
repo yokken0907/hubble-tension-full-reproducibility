@@ -1,0 +1,6 @@
+external/
+_work/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store

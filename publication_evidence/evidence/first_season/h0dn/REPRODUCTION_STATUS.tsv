@@ -1,0 +1,3 @@
+item_id	object	status	directly_runnable	required_input	source_record	limitation
+H0DN-PACKAGE-TRACE	claim-level evidence and source locators	PASS	YES: python scripts/verify_package.py	none	FIRST_MASTER_v1.0.0	Verifies extraction and provenance, not the original scientific computation.
+H0DN-SCIENCE-STATUS	H0DN network and local-flow contract	FROZEN_REPRESENTATION_BASELINE_REPRODUCED; CORRELATED_PV_EXACT_REPRODUCTION_HOLD	NO	Source matrix/removal vector/author package or external re-entry	FS-B15	No new analysis or substituted external product is bundled.

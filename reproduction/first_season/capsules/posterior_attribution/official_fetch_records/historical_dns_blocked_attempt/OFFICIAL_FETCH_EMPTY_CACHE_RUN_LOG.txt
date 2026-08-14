@@ -1,0 +1,97 @@
+OFFICIAL EMPTY-CACHE FETCH ATTEMPT
+UTC=2026-07-28T09:19:12.057206+00:00
+RETURN_CODE=1
+COMMAND=python REPRODUCTION/posterior_attribution/run_all.py --fetch-inputs --cache ./_external_cache --work ./_work/posterior_attribution --output ./_outputs/posterior_attribution --verify
+CACHE_STATE=NEW_EMPTY_DIRECTORY
+RESULT=NOT_VERIFIED_RUNTIME_DNS_UNAVAILABLE
+
+--- COMMAND OUTPUT ---
++ /opt/pyvenv/bin/python /mnt/data/_v170_prov/repo/hubble-constant-inference-traceability/REPRODUCTION/posterior_attribution/fetch_selected_chains.py --cache /mnt/data/_v170_prov/official_fetch_attempt/_external_cache --fetch
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/urllib/request.py", line 1319, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/client.py", line 1338, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/client.py", line 1384, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/usr/lib/python3.13/http/client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 1472, in connect
+    super().connect()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 1003, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socket.py", line 840, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/_v170_prov/repo/hubble-constant-inference-traceability/REPRODUCTION/posterior_attribution/fetch_selected_chains.py", line 75, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/mnt/data/_v170_prov/repo/hubble-constant-inference-traceability/REPRODUCTION/posterior_attribution/fetch_selected_chains.py", line 68, in main
+    od,_,_,_=c.materialize_original_factorial(downloads,store,stage,False);fd,_,_,_=c.materialize_fixed_full(downloads,store,stage,False)
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/_v170_prov/repo/hubble-constant-inference-traceability/REPRODUCTION/posterior_attribution/stages/hts59/hts59_common.py", line 735, in materialize_original_factorial
+    outer,rf,meta=_open_original_outer(store,downloads,stage_cache,test)
+                  ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/_v170_prov/repo/hubble-constant-inference-traceability/REPRODUCTION/posterior_attribution/stages/hts59/hts59_common.py", line 704, in _open_original_outer
+    rf=HTTPRangeFile(ORIGINAL_URL)
+  File "/mnt/data/_v170_prov/repo/hubble-constant-inference-traceability/REPRODUCTION/posterior_attribution/stages/hts59/hts59_common.py", line 174, in __init__
+    self.size,self.etag,self.last_modified,self.accept_ranges=self._probe()
+                                                              ~~~~~~~~~~~^^
+  File "/mnt/data/_v170_prov/repo/hubble-constant-inference-traceability/REPRODUCTION/posterior_attribution/stages/hts59/hts59_common.py", line 191, in _probe
+    with self._open(0,0) as r:
+         ~~~~~~~~~~^^^^^
+  File "/mnt/data/_v170_prov/repo/hubble-constant-inference-traceability/REPRODUCTION/posterior_attribution/stages/hts59/hts59_common.py", line 178, in _open
+    r=urllib.request.urlopen(req,timeout=120);status=getattr(r,'status',200)
+  File "/usr/lib/python3.13/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.13/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/lib/python3.13/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.13/urllib/request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 1322, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno -3] Temporary failure in name resolution>
+Traceback (most recent call last):
+  File "/mnt/data/_v170_prov/repo/hubble-constant-inference-traceability/REPRODUCTION/posterior_attribution/run_all.py", line 71, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ~~~~^^
+  File "/mnt/data/_v170_prov/repo/hubble-constant-inference-traceability/REPRODUCTION/posterior_attribution/run_all.py", line 41, in main
+    run(cmd,log)
+    ~~~^^^^^^^^^
+  File "/mnt/data/_v170_prov/repo/hubble-constant-inference-traceability/REPRODUCTION/posterior_attribution/run_all.py", line 18, in run
+    if rc: raise subprocess.CalledProcessError(rc,cmd)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+subprocess.CalledProcessError: Command '['/opt/pyvenv/bin/python', PosixPath('/mnt/data/_v170_prov/repo/hubble-constant-inference-traceability/REPRODUCTION/posterior_attribution/fetch_selected_chains.py'), '--cache', PosixPath('/mnt/data/_v170_prov/official_fetch_attempt/_external_cache'), '--fetch']' returned non-zero exit status 1.

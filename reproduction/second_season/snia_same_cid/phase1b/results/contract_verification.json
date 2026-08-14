@@ -1,0 +1,42 @@
+{
+  "checks": [
+    {
+      "actual_sha256": "14608b5c9068940f16f5d43b4f7a3fcfa718b3d4c54a0c3c712487572dcc6792",
+      "expected_sha256": "14608b5c9068940f16f5d43b4f7a3fcfa718b3d4c54a0c3c712487572dcc6792",
+      "path": "provenance/CONTRACT_FREEZE.json",
+      "status": "PASS"
+    },
+    {
+      "actual_sha256": "236b796b37ba1d95e7327d9042e945391053acaf6486b68aa6b579cb680851fa",
+      "expected_sha256": "236b796b37ba1d95e7327d9042e945391053acaf6486b68aa6b579cb680851fa",
+      "path": "AUDIT_CONTRACT.md",
+      "status": "PASS",
+      "verification_scope": "whole_file"
+    },
+    {
+      "actual_sha256": "20a402ac5c0a4c137e85f23d45d7283a4e8968074dc7cb10c7c7ef7dea0f8279",
+      "expected_sha256": "20a402ac5c0a4c137e85f23d45d7283a4e8968074dc7cb10c7c7ef7dea0f8279",
+      "path": "provenance/CONTRACT_AMENDMENTS.tsv",
+      "status": "PASS",
+      "verification_scope": "frozen_header_plus_append_only_ledger"
+    },
+    {
+      "actual_sha256": "19d3adff731d19c2e8aad83b1cc837fd1b870d0d3e2587935ea32d36e7e1e5cd",
+      "expected_sha256": "19d3adff731d19c2e8aad83b1cc837fd1b870d0d3e2587935ea32d36e7e1e5cd",
+      "path": "provenance/DECISION_CONFIG.json",
+      "status": "PASS",
+      "verification_scope": "whole_file"
+    },
+    {
+      "actual_sha256": "6916a3b188b3017a04ca63226327156916e1272849b4c25e80c669031b8f79ac",
+      "expected_sha256": "6916a3b188b3017a04ca63226327156916e1272849b4c25e80c669031b8f79ac",
+      "path": "provenance/SOURCE_LOCK.tsv",
+      "status": "PASS",
+      "verification_scope": "whole_file"
+    }
+  ],
+  "chronology_status": "PASS",
+  "contract_freeze_sha256": "14608b5c9068940f16f5d43b4f7a3fcfa718b3d4c54a0c3c712487572dcc6792",
+  "contract_id": "H0DN-SNIA-MULTIROW-PROVENANCE-PHASE1B-20260730-01",
+  "status": "PASS"
+}

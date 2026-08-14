@@ -1,0 +1,121 @@
+{
+  "audit_id": "H0DN-SNIA-SURVEY-CODE-CROSSWALK-PHASE1E-20260802-01",
+  "boundary_marker": "PUBLIC_METADATA_CROSSWALK_ONLY_NO_UPSTREAM_RELABELING_NO_SURVEY_RANKING_NO_COVARIANCE_CHANGE_NO_CORRECTED_H0_NO_TENSION_RESOLUTION",
+  "catalog": {
+    "column_count": 47,
+    "required_columns": [
+      "CID",
+      "IDSURVEY",
+      "USED_IN_SH0ES_HF"
+    ],
+    "row_count": 1701,
+    "status": "PASS"
+  },
+  "crosswalk_universe": {
+    "classification": "PROSPECTIVELY_FROZEN_SEVEN_PUBLIC_PHOTOMETRY_DIRECTORIES",
+    "configured_directory_count": 7,
+    "directories": [
+      "CSPDR3_anthony",
+      "CSP_data2",
+      "SWIFT",
+      "LOSS",
+      "KAIT_DS15",
+      "CfA3_DJ20",
+      "PS1_LOWZ_COMBINED_TEXT_DS17"
+    ],
+    "external_archive_uniqueness_claim": false,
+    "full_public_photometry_tree_uniqueness_claim": false,
+    "uniqueness_scope": "WITHIN_FROZEN_SEVEN_DIRECTORY_UNIVERSE_ONLY"
+  },
+  "interpretive_scope": {
+    "bias_correction_run_lineage_proven": false,
+    "direct_final_measurement_ancestry_proven": false,
+    "executed_run_to_final_catalog_lineage_proven": false,
+    "fit_output_lineage_proven": false,
+    "statistical_independence_proven": false,
+    "target_application_preferred_label": "UNIQUE_FROZEN_CROSSWALK_COMPATIBLE_PUBLIC_INPUT_CANDIDATE"
+  },
+  "label_header_diagnostic_counts": {
+    "PUBLIC_LABEL_RAW_HEADER_CFA_TOKEN_MISMATCH": 1
+  },
+  "nonclaims": [
+    "no official SURVEY.DEF mapping claim",
+    "no upstream row or label modification",
+    "no direct ancestry from a compatible public input candidate to a final m_b_corr row",
+    "no exact light-curve fit output or FITRES-row identity claim",
+    "no bias-correction-run or executed-run-to-final-catalog lineage claim",
+    "no statistical-independence claim",
+    "no survey or object ranking",
+    "no residual or influence analysis",
+    "no covariance modification",
+    "no corrected a_B, M_B, H0, or tension significance",
+    "no causal explanation of the Phase 1A or Phase 1C result",
+    "no new physics or Hubble-tension resolution claim"
+  ],
+  "official_label_source": {
+    "expected": {
+      "51": "LOSS1",
+      "57": "LOSS2",
+      "65": "CFA4p2"
+    },
+    "observed": {
+      "51": "LOSS1",
+      "57": "LOSS2",
+      "65": "CFA4p2"
+    },
+    "status": "PASS"
+  },
+  "phase1d_preservation": {
+    "phase1d_main_result_changed": false,
+    "phase1d_row_lineage_sha256": "c39890d89772f0df94a9789728a24195a7b3bfd45786d3bedb12db5d89d1b24a",
+    "relationship": "SUPPLEMENTARY_PHASE1E_RESULT_NO_RETROACTIVE_PHASE1D_REWRITE"
+  },
+  "photometry_scan": {
+    "active_file_count": 847,
+    "configured_directory_count": 7,
+    "parse_failure_count": 0
+  },
+  "population": {
+    "excluded_multirow_CID_count": 30,
+    "phase1b_row_count": 277,
+    "phase1d_row_count": 69,
+    "status": "PASS",
+    "target_row_count": 31,
+    "target_rows_by_IDSURVEY": {
+      "51": 7,
+      "57": 16,
+      "65": 8
+    }
+  },
+  "result_blindness": "NOT_BLIND_POSTHOC_HYPOTHESES_FULLY_DISCLOSED",
+  "scientific_classification": "PUBLIC_INTERNAL_CROSSWALK_SUPPORTED_3_OF_3_TARGET_ROWS_UNIQUE_31_OF_31",
+  "status": "AUDIT_COMPLETE_TARGET_EXCLUDED_PUBLIC_INTERNAL_CROSSWALK_CLASSIFIED",
+  "target_application": {
+    "by_IDSURVEY": {
+      "51": {
+        "row_count": 7,
+        "unique_count": 7
+      },
+      "57": {
+        "row_count": 16,
+        "unique_count": 16
+      },
+      "65": {
+        "row_count": 8,
+        "unique_count": 8
+      }
+    },
+    "candidate_evidence_row_count": 31,
+    "target_row_count": 31,
+    "unique_target_row_count": 31,
+    "unresolved_target_row_count": 0
+  },
+  "target_excluded_inference": {
+    "anchor_row_count": 62,
+    "crosswalk_count": 3,
+    "eligible_row_count": 74,
+    "support_status_counts": {
+      "TARGET_EXCLUDED_PUBLIC_INTERNAL_CROSSWALK_SUPPORTED": 3
+    }
+  }
+}

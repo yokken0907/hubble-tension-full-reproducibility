@@ -1,0 +1,9 @@
+domain	numerical_traceability	source_completeness	convention_stability	implementation_independence	causal_attribution
+Local ladder	2	1	1	1	0
+Supernova processing	2	0	1	0	0
+BAO / early scale	2	1	2	1	0
+DESI sensitivity	2	1	1	1	0
+CMB / ACT	2	1	1	1	0
+Posterior decomposition	2	1	0	1	0
+Other distance methods	2	1	1	1	0
+Strong-lensing samples	2	0	1	1	0

@@ -1,0 +1,162 @@
+{
+  "PHASE1A_FULL": {
+    "baseline": "PHASE1A_FULL",
+    "cdf_gammainc_absolute_difference": 0.0,
+    "chi2": 11.209315063602716,
+    "covariance": {
+      "all_finite": true,
+      "cholesky_success": true,
+      "condition_number": 6.017221776559004,
+      "diagonal_maximum": 0.001702454948867049,
+      "diagonal_minimum": 0.0002906382929854188,
+      "eigenvalue_maximum": 0.0017195672005506715,
+      "eigenvalue_minimum": 0.0002857742766353577,
+      "log_determinant": -293.24810499900286,
+      "log_determinant_sign": 1.0,
+      "numerical_rank": 39,
+      "shape": [
+        39,
+        39
+      ],
+      "symmetry_max_absolute_error": 5.421010862427522e-20,
+      "trace": 0.023037742760563928
+    },
+    "degrees_of_freedom": 39,
+    "dispersion_label": "STRONG_LOW_DISPERSION_RELATIVE_TO_BASELINE",
+    "low_flag_at_alpha_0_01": true,
+    "lower_tail_probability": 3.6795245876638087e-06,
+    "reference_chi2_absolute_difference": 8.881784197001252e-15,
+    "reference_eigendecomposition_chi2": 11.209315063602707,
+    "scalar_scale_95_percent_interval_lower": 0.1928648235182894,
+    "scalar_scale_95_percent_interval_upper": 0.47388015820576596,
+    "scalar_scale_estimate_q_over_df": 0.2874183349641722
+  },
+  "STAT_ONLY": {
+    "baseline": "STAT_ONLY",
+    "cdf_gammainc_absolute_difference": 0.0,
+    "chi2": 16.233447508593247,
+    "covariance": {
+      "all_finite": true,
+      "cholesky_success": true,
+      "condition_number": 6.790132606380958,
+      "diagonal_maximum": 0.0014096248666666672,
+      "diagonal_minimum": 0.00020826979999999994,
+      "eigenvalue_maximum": 0.0014141795599044403,
+      "eigenvalue_minimum": 0.00020826979999999994,
+      "log_determinant": -307.8621714414551,
+      "log_determinant_sign": 1.0,
+      "numerical_rank": 39,
+      "shape": [
+        39,
+        39
+      ],
+      "symmetry_max_absolute_error": 5.421010862427522e-20,
+      "trace": 0.016196185066666667
+    },
+    "degrees_of_freedom": 39,
+    "dispersion_label": "STRONG_LOW_DISPERSION_RELATIVE_TO_BASELINE",
+    "low_flag_at_alpha_0_01": true,
+    "lower_tail_probability": 0.0004856832550848106,
+    "reference_chi2_absolute_difference": 7.105427357601002e-15,
+    "reference_eigendecomposition_chi2": 16.23344750859324,
+    "scalar_scale_95_percent_interval_lower": 0.279308857951931,
+    "scalar_scale_95_percent_interval_upper": 0.6862782096807885,
+    "scalar_scale_estimate_q_over_df": 0.4162422438100833
+  },
+  "STAT_ONLY_DIAGONAL_ONLY": {
+    "baseline": "STAT_ONLY_DIAGONAL_ONLY",
+    "cdf_gammainc_absolute_difference": 0.0,
+    "chi2": 9.937211599987144,
+    "covariance": {
+      "all_finite": true,
+      "cholesky_success": true,
+      "condition_number": 5.413863715342344,
+      "diagonal_maximum": 0.0017935624666666672,
+      "diagonal_minimum": 0.00035686819999999995,
+      "eigenvalue_maximum": 0.0019320357991395342,
+      "eigenvalue_minimum": 0.00035686819999999995,
+      "log_determinant": -286.62113639729506,
+      "log_determinant_sign": 1.0,
+      "numerical_rank": 39,
+      "shape": [
+        39,
+        39
+      ],
+      "symmetry_max_absolute_error": 5.421010862427522e-20,
+      "trace": 0.02729683973333333
+    },
+    "degrees_of_freedom": 39,
+    "dispersion_label": "STRONG_LOW_DISPERSION_RELATIVE_TO_BASELINE",
+    "low_flag_at_alpha_0_01": true,
+    "lower_tail_probability": 6.374456114681651e-07,
+    "reference_chi2_absolute_difference": 1.7763568394002505e-15,
+    "reference_eigendecomposition_chi2": 9.937211599987146,
+    "scalar_scale_95_percent_interval_lower": 0.17097731222833842,
+    "scalar_scale_95_percent_interval_upper": 0.4201012620669951,
+    "scalar_scale_estimate_q_over_df": 0.2548002974355678
+  },
+  "STAT_SYS_DIAGONAL_ONLY": {
+    "baseline": "STAT_SYS_DIAGONAL_ONLY",
+    "cdf_gammainc_absolute_difference": 0.0,
+    "chi2": 9.15541437067798,
+    "covariance": {
+      "all_finite": true,
+      "cholesky_success": true,
+      "condition_number": 5.25027043536633,
+      "diagonal_maximum": 0.0018894592666666673,
+      "diagonal_minimum": 0.0003948217999999999,
+      "eigenvalue_maximum": 0.0020729212237781177,
+      "eigenvalue_minimum": 0.0003948217999999999,
+      "log_determinant": -282.6323913419827,
+      "log_determinant_sign": 1.0,
+      "numerical_rank": 39,
+      "shape": [
+        39,
+        39
+      ],
+      "symmetry_max_absolute_error": 5.421010862427522e-20,
+      "trace": 0.029967222266666666
+    },
+    "degrees_of_freedom": 39,
+    "dispersion_label": "STRONG_LOW_DISPERSION_RELATIVE_TO_BASELINE",
+    "low_flag_at_alpha_0_01": true,
+    "lower_tail_probability": 1.8613924280962657e-07,
+    "reference_chi2_absolute_difference": 0.0,
+    "reference_eigendecomposition_chi2": 9.15541437067798,
+    "scalar_scale_95_percent_interval_lower": 0.15752589402818498,
+    "scalar_scale_95_percent_interval_upper": 0.38705034034628977,
+    "scalar_scale_estimate_q_over_df": 0.23475421463276872
+  },
+  "STAT_SYS_NO_ROWWISE_VELOCITY": {
+    "baseline": "STAT_SYS_NO_ROWWISE_VELOCITY",
+    "cdf_gammainc_absolute_difference": 0.0,
+    "chi2": 14.734235950587198,
+    "covariance": {
+      "all_finite": true,
+      "cholesky_success": true,
+      "condition_number": 6.9987041335869264,
+      "diagonal_maximum": 0.0015248876666666673,
+      "diagonal_minimum": 0.00022046179999999995,
+      "eigenvalue_maximum": 0.0015421042510454452,
+      "eigenvalue_minimum": 0.00022034139772316631,
+      "log_determinant": -304.25421820736824,
+      "log_determinant_sign": 1.0,
+      "numerical_rank": 39,
+      "shape": [
+        39,
+        39
+      ],
+      "symmetry_max_absolute_error": 5.421010862427522e-20,
+      "trace": 0.017761577733333332
+    },
+    "degrees_of_freedom": 39,
+    "dispersion_label": "STRONG_LOW_DISPERSION_RELATIVE_TO_BASELINE",
+    "low_flag_at_alpha_0_01": true,
+    "lower_tail_probability": 0.00014711328968576817,
+    "reference_chi2_absolute_difference": 1.4210854715202004e-14,
+    "reference_eigendecomposition_chi2": 14.734235950587212,
+    "scalar_scale_95_percent_interval_lower": 0.2535137785103434,
+    "scalar_scale_95_percent_interval_upper": 0.6228981899150242,
+    "scalar_scale_estimate_q_over_df": 0.37780092180992814
+  }
+}

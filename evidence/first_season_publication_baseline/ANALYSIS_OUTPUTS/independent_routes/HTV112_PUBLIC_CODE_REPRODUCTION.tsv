@@ -1,0 +1,6 @@
+contract	H0	plus68	minus68	mean_log10_H0	sigma_log10_H0	contract_scope
+CMB_no_flow_correction	73.04015198237155	3.0512563032859674	2.9289012931987486	1.8635616682096576	0.017773953806916577	public H0DN point-correction, symmetrized distance errors, diagonal 240-km/s residual velocity errors
+GROUP	72.43761730549477	3.025990621018437	2.904652409262013	1.8599641566048284	0.017773408441413632	public H0DN point-correction, symmetrized distance errors, diagonal 240-km/s residual velocity errors
+2M++	71.76693327507705	3.0057115139298958	2.8848878927986163	1.8559243884760457	0.017818353906053803	public H0DN point-correction, symmetrized distance errors, diagonal 240-km/s residual velocity errors
+CF3	71.8559727027993	3.0155003240529368	2.8940489643193956	1.8564628727355361	0.017853504818048007	public H0DN point-correction, symmetrized distance errors, diagonal 240-km/s residual velocity errors
+M2000	76.73491146264304	3.167633113929938	3.0420563929676945	1.884992996361294	0.017567613715748782	public H0DN point-correction, symmetrized distance errors, diagonal 240-km/s residual velocity errors

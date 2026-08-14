@@ -1,0 +1,76 @@
+{
+  "audit_id": "H0DN-SNIA-SAME-CID-MEASUREMENT-LINEAGE-PHASE1D-20260730-01",
+  "boundary_marker": "PUBLIC_MEASUREMENT_LINEAGE_AND_SHARED_DEPENDENCY_ONLY_NO_SURVEY_RANKING_NO_COVARIANCE_MODIFICATION_NO_CORRECTED_H0_NO_TENSION_RESOLUTION",
+  "group_lineage": {
+    "classification_counts": {
+      "ALL_ROWS_UNIQUE_DISTINCT_PUBLIC_PHOTOMETRY_FILES": 3,
+      "PUBLIC_PHOTOMETRY_LINEAGE_UNRESOLVED": 27
+    },
+    "group_count": 30,
+    "pair_count": 48,
+    "pairs_with_byte_identical_observation_lines": 0,
+    "resolved_pair_count": 10
+  },
+  "nonclaims": [
+    "no statistical-independence claim from distinct files",
+    "no causal attribution for the Phase 1A or Phase 1C result",
+    "no survey or object ranking",
+    "no covariance modification",
+    "no corrected a_B, M_B, H0, or tension significance",
+    "no claim that an untracked public asset was absent from the original analysis"
+  ],
+  "photometry_scan": {
+    "active_file_count": 847,
+    "configured_directory_count": 7,
+    "parse_failure_count": 0
+  },
+  "population": {
+    "group_size_counts": {
+      "2": 21,
+      "3": 9
+    },
+    "phase1b_map_row_count": 277,
+    "same_cid_group_count": 30,
+    "same_cid_row_count": 69,
+    "status": "PASS",
+    "survey_codes": [
+      5,
+      51,
+      56,
+      57,
+      62,
+      63,
+      64,
+      65
+    ]
+  },
+  "referenced_assets": {
+    "asset_count": 3,
+    "availability_counts": {
+      "REFERENCED_NOT_TRACKED_IN_RELEASE": 3
+    },
+    "required_asset_count": 3,
+    "required_asset_present_count": 0
+  },
+  "release_sufficiency_classification": "PUBLIC_RELEASE_PARTIAL_MEASUREMENT_LINEAGE",
+  "result_blindness": "PARTIAL_RESULT_BLINDNESS_DISCLOSED",
+  "row_lineage": {
+    "candidate_evidence_row_count": 38,
+    "classification_counts": {
+      "NO_ACTIVE_PUBLIC_PHOTOMETRY_FILE": 31,
+      "UNIQUE_ACTIVE_PUBLIC_PHOTOMETRY_FILE": 38
+    },
+    "row_count": 69,
+    "unique_active_public_photometry_file_count": 38
+  },
+  "shared_pipeline": {
+    "anchor_count": 12,
+    "anchor_pass_count": 12,
+    "pipeline_config_path": "Pantheon+_Data/7_PIPPIN/PPLUS.yml",
+    "pipeline_config_sha256": "869ee1b5fdeedfdcde094e5162355322e9fe00eec5010ea2aed81ef1993050d8",
+    "required_asset_count": 3,
+    "required_asset_present_count": 0,
+    "status": "PASS"
+  },
+  "status": "AUDIT_COMPLETE_SHARED_DEPENDENCY_AND_LINEAGE_CLASSIFIED"
+}

@@ -1,0 +1,7 @@
+release	metric	computed_raw	computed_rounded_1dp	official_headline_1dp	match
+GWTC-4	median	76.637257552567235	76.6	76.6	YES
+GWTC-4	lower_error	9.5275698381456664	9.5	9.5	YES
+GWTC-4	upper_error	13.042187385434005	13.0	13.0	YES
+GWTC-5	median	71.017005223697197	71.0	71.0	YES
+GWTC-5	lower_error	7.1410862774844546	7.1	7.1	YES
+GWTC-5	upper_error	8.9854906980138765	9.0	9.0	YES

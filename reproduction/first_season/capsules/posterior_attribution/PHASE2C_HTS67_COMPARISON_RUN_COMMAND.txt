@@ -1,0 +1,1 @@
+python REPRODUCTION/posterior_attribution/generate_hts67_phase2c_comparison.py --zip REPRODUCTION/posterior_attribution/official_fetch_records/phase2c_network_execution/outputs/HTS67_RESULTS_FOR_REVIEW.zip --historical-dir REPRODUCTION/posterior_attribution/historical_substantive_reference/hts67 --output REPRODUCTION/posterior_attribution/HTS67_HISTORICAL_VS_FRESH_COMPARISON.tsv

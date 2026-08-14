@@ -1,0 +1,46 @@
+test_distinct_unique_group (test_auditlib.LineageRuleTests.test_distinct_unique_group) ... ok
+test_exact_observation_overlap (test_auditlib.LineageRuleTests.test_exact_observation_overlap) ... ok
+test_multiple_candidates_are_ambiguous (test_auditlib.LineageRuleTests.test_multiple_candidates_are_ambiguous) ... ok
+test_parse_failure_has_precedence (test_auditlib.LineageRuleTests.test_parse_failure_has_precedence) ... ok
+test_reused_file_hash_classification (test_auditlib.LineageRuleTests.test_reused_file_hash_classification) ... ok
+test_zero_candidate_is_unresolved (test_auditlib.LineageRuleTests.test_zero_candidate_is_unresolved) ... ok
+test_all_machine_formats_are_strict_and_rectangular (test_auditlib.LockedResultTests.test_all_machine_formats_are_strict_and_rectangular) ... ok
+test_amendment_register_contains_exact_amend_001 (test_auditlib.LockedResultTests.test_amendment_register_contains_exact_amend_001) ... ok
+test_candidate_ledger_does_not_claim_direct_ancestry (test_auditlib.LockedResultTests.test_candidate_ledger_does_not_claim_direct_ancestry) ... ok
+test_citation_and_ai_disclosure_metadata (test_auditlib.LockedResultTests.test_citation_and_ai_disclosure_metadata) ... ok
+test_contract_freeze (test_auditlib.LockedResultTests.test_contract_freeze) ... ok
+test_default_closure_verifier_has_no_write_operation (test_auditlib.LockedResultTests.test_default_closure_verifier_has_no_write_operation) ... ok
+test_execution_status_records_both_boundaries (test_auditlib.LockedResultTests.test_execution_status_records_both_boundaries) ... ok
+test_group_legacy_statuses_have_explicit_interpretations (test_auditlib.LockedResultTests.test_group_legacy_statuses_have_explicit_interpretations) ... ok
+test_main_independent_verification (test_auditlib.LockedResultTests.test_main_independent_verification) ... ok
+test_main_summary_counts (test_auditlib.LockedResultTests.test_main_summary_counts) ... ok
+test_pair_ledger_has_candidate_evidence_boundary (test_auditlib.LockedResultTests.test_pair_ledger_has_candidate_evidence_boundary) ... ok
+test_pipeline_anchors_are_configuration_level_only (test_auditlib.LockedResultTests.test_pipeline_anchors_are_configuration_level_only) ... ok
+test_posthoc_independent_verification (test_auditlib.LockedResultTests.test_posthoc_independent_verification) ... ok
+test_posthoc_is_nonpromoting_and_protected (test_auditlib.LockedResultTests.test_posthoc_is_nonpromoting_and_protected) ... ok
+test_reader_documents_avoid_prohibited_overclaims (test_auditlib.LockedResultTests.test_reader_documents_avoid_prohibited_overclaims) ... ok
+test_reader_documents_contain_required_boundaries (test_auditlib.LockedResultTests.test_reader_documents_contain_required_boundaries) ... ok
+test_referenced_assets_use_frozen_release_boundary (test_auditlib.LockedResultTests.test_referenced_assets_use_frozen_release_boundary) ... ok
+test_row_legacy_statuses_have_explicit_interpretations (test_auditlib.LockedResultTests.test_row_legacy_statuses_have_explicit_interpretations) ... ok
+test_summary_preserves_scientific_counts_and_adds_boundaries (test_auditlib.LockedResultTests.test_summary_preserves_scientific_counts_and_adds_boundaries) ... ok
+test_survey_crosswalk_evidence_register (test_auditlib.LockedResultTests.test_survey_crosswalk_evidence_register) ... ok
+test_duplicate_nobs_fails (test_auditlib.PhotometryParserTests.test_duplicate_nobs_fails) ... ok
+test_duplicate_snid_fails (test_auditlib.PhotometryParserTests.test_duplicate_snid_fails) ... ok
+test_invalid_header_utf8_fails (test_auditlib.PhotometryParserTests.test_invalid_header_utf8_fails) ... ok
+test_missing_survey_fails (test_auditlib.PhotometryParserTests.test_missing_survey_fails) ... ok
+test_negative_nobs_fails (test_auditlib.PhotometryParserTests.test_negative_nobs_fails) ... ok
+test_nobs_count_mismatch_fails (test_auditlib.PhotometryParserTests.test_nobs_count_mismatch_fails) ... ok
+test_nobs_is_optional (test_auditlib.PhotometryParserTests.test_nobs_is_optional) ... ok
+test_observation_digest_normalizes_line_terminators (test_auditlib.PhotometryParserTests.test_observation_digest_normalizes_line_terminators) ... ok
+test_valid_blob (test_auditlib.PhotometryParserTests.test_valid_blob) ... ok
+test_active_list_entries (test_auditlib.PrimitiveTests.test_active_list_entries) ... ok
+test_json_writer_is_deterministic (test_auditlib.PrimitiveTests.test_json_writer_is_deterministic) ... ok
+test_normalize_repository (test_auditlib.PrimitiveTests.test_normalize_repository) ... ok
+test_normalize_survey (test_auditlib.PrimitiveTests.test_normalize_survey) ... ok
+test_sha256_bytes (test_auditlib.PrimitiveTests.test_sha256_bytes) ... ok
+test_tsv_round_trip_and_schema (test_auditlib.PrimitiveTests.test_tsv_round_trip_and_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 0.007s
+
+OK

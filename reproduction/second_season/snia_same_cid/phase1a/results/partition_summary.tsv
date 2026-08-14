@@ -1,0 +1,4 @@
+component	chi2	degrees_of_freedom	lower_tail_probability	primary_or_secondary
+total	206.760636437324	276	0.0006676284563444067	known_global_diagnostic
+duplicate_name_contrasts	11.209315063602752	39	3.679524587663957e-06	secondary_marginal
+between_name_modes	195.55132137369947	237	0.022934426680855293	secondary_marginal

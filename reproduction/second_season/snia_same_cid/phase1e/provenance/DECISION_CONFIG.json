@@ -1,0 +1,73 @@
+{
+  "contract_id": "H0DN-SNIA-SURVEY-CODE-CROSSWALK-PHASE1E-20260802-01",
+  "pantheonplus": {
+    "commit": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+    "repository": "https://github.com/PantheonPlusSH0ES/DataRelease.git",
+    "catalog_path": "Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES.dat",
+    "distance_readme_path": "Pantheon+_Data/4_DISTANCES_AND_COVAR/README",
+    "pipeline_config_path": "Pantheon+_Data/7_PIPPIN/PPLUS.yml",
+    "photometry_root": "Pantheon+_Data/1_DATA/photometry",
+    "photometry_tree_oid": "3facbb99276c7589349d8eceaac218ccd2ad0726"
+  },
+  "upstream": {
+    "phase1d_archive_name": "h0dn-snia-same-cid-measurement-lineage-audit_v0.1.0.zip",
+    "phase1d_archive_sha256": "3c201733aee688ee3535928029317f6b9e0bc012a4cca79cfb8c9145e54c7342",
+    "phase1b_row_map_path": "provenance/PHASE1B_ROW_MAP.tsv",
+    "phase1b_row_map_sha256": "a3cd37e836d39f623dfedcea6c3c8a0ac0c0f80ae5647bd163610fdbd1bd9d69",
+    "phase1d_row_lineage_path": "provenance/PHASE1D_ROW_LINEAGE.tsv",
+    "phase1d_row_lineage_sha256": "c39890d89772f0df94a9789728a24195a7b3bfd45786d3bedb12db5d89d1b24a",
+    "phase1d_audit_summary_path": "provenance/PHASE1D_AUDIT_SUMMARY.json",
+    "phase1d_audit_summary_sha256": "cda451771dc08e8bb16313890729f81fb7622e0646d753322737565c72a7b167"
+  },
+  "target": {
+    "IDSURVEY_codes": [51, 57, 65],
+    "expected_row_count": 31,
+    "expected_rows_by_IDSURVEY": {"51": 7, "57": 16, "65": 8},
+    "required_phase1d_status": "NO_ACTIVE_PUBLIC_PHOTOMETRY_FILE"
+  },
+  "catalog_schema": {
+    "required_columns": ["CID", "IDSURVEY", "USED_IN_SH0ES_HF"],
+    "expected_row_count": 1701
+  },
+  "directory_inventory": [
+    {"directory": "CSPDR3_anthony", "list_file": "CSPDR3_anthony.LIST", "ignore_file": "CSPDR3_anthony.IGNORE", "readme_file": "CSPDR3_anthony.README"},
+    {"directory": "CSP_data2", "list_file": "CSP_data2.LIST", "ignore_file": "CSP_data2.IGNORE", "readme_file": "CSP_data2.README"},
+    {"directory": "SWIFT", "list_file": "SWIFT.LIST", "ignore_file": "SWIFT.IGNORE", "readme_file": "SWIFT.README"},
+    {"directory": "LOSS", "list_file": "LOSS.LIST", "ignore_file": "LOSS.IGNORE", "readme_file": "LOSS.README"},
+    {"directory": "KAIT_DS15", "list_file": "KAIT_DS15.LIST", "ignore_file": "KAIT_DS15.IGNORE", "readme_file": "KAIT_DS15.README"},
+    {"directory": "CfA3_DJ20", "list_file": "CfA3_DJ20.LIST", "ignore_file": "CfA3_DJ20.IGNORE", "readme_file": "CfA3_DJ20.README"},
+    {"directory": "PS1_LOWZ_COMBINED_TEXT_DS17", "list_file": "PS1_LOWZ_COMBINED_TEXT_DS17.LIST", "ignore_file": "PS1_LOWZ_COMBINED_TEXT_DS17.IGNORE", "readme_file": "PS1_LOWZ_COMBINED_TEXT_DS17.README"}
+  ],
+  "official_labels": {"51": "LOSS1", "57": "LOSS2", "65": "CFA4p2"},
+  "inference_rule": {
+    "exclude_every_CID_in_phase1b_multirow_groups": true,
+    "require_CID_occurs_once_in_full_1701_row_catalog": true,
+    "require_IDSURVEY_in_target_codes": true,
+    "anchor_requires_exactly_one_active_file_across_all_seven_directories": true,
+    "candidate_requires_exact_SNID": true,
+    "candidate_requires_parser_PASS": true,
+    "minimum_anchor_rows_per_code": 5,
+    "minimum_hubble_flow_anchor_rows_per_code": 3,
+    "required_distinct_source_directory_count_per_code": 1,
+    "accepted_SURVEY_headers_are_exactly_the_observed_anchor_headers": true,
+    "mapping_must_not_use_any_target_CID": true
+  },
+  "target_application_rule": {
+    "candidate_directory_must_equal_inferred_directory": true,
+    "candidate_SURVEY_must_be_in_inferred_header_set": true,
+    "candidate_SNID_must_equal_target_CID": true,
+    "unique_candidate_count_required": 1
+  },
+  "label_header_diagnostic": {
+    "CFA_token_regex": "CFA4p[0-9]+",
+    "comparison_codes": [65],
+    "diagnostic_only": true
+  },
+  "classification": {
+    "supported": "TARGET_EXCLUDED_PUBLIC_INTERNAL_CROSSWALK_SUPPORTED",
+    "insufficient": "HOLD_INSUFFICIENT_TARGET_EXCLUDED_EVIDENCE",
+    "conflicting": "HOLD_CONFLICTING_TARGET_EXCLUDED_EVIDENCE",
+    "target_unique": "UNIQUE_ACTIVE_FILE_UNDER_INFERRED_CROSSWALK",
+    "target_unresolved": "TARGET_NOT_UNIQUELY_RESOLVED_UNDER_INFERRED_CROSSWALK"
+  }
+}

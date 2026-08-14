@@ -1,0 +1,57 @@
+{
+  "active_file_count": 847,
+  "configured_directory_count": 7,
+  "directories": {
+    "CSPDR3_anthony": {
+      "active_file_count": 136,
+      "ignored_filename_count": 0,
+      "listed_filename_count": 136,
+      "parse_failure_count": 0,
+      "parse_failure_paths": []
+    },
+    "CSP_data2": {
+      "active_file_count": 5,
+      "ignored_filename_count": 0,
+      "listed_filename_count": 5,
+      "parse_failure_count": 0,
+      "parse_failure_paths": []
+    },
+    "CfA3_DJ20": {
+      "active_file_count": 185,
+      "ignored_filename_count": 0,
+      "listed_filename_count": 185,
+      "parse_failure_count": 0,
+      "parse_failure_paths": []
+    },
+    "KAIT_DS15": {
+      "active_file_count": 163,
+      "ignored_filename_count": 0,
+      "listed_filename_count": 163,
+      "parse_failure_count": 0,
+      "parse_failure_paths": []
+    },
+    "LOSS": {
+      "active_file_count": 81,
+      "ignored_filename_count": 0,
+      "listed_filename_count": 81,
+      "parse_failure_count": 0,
+      "parse_failure_paths": []
+    },
+    "PS1_LOWZ_COMBINED_TEXT_DS17": {
+      "active_file_count": 159,
+      "ignored_filename_count": 0,
+      "listed_filename_count": 159,
+      "parse_failure_count": 0,
+      "parse_failure_paths": []
+    },
+    "SWIFT": {
+      "active_file_count": 118,
+      "ignored_filename_count": 0,
+      "listed_filename_count": 118,
+      "parse_failure_count": 0,
+      "parse_failure_paths": []
+    }
+  },
+  "parse_failure_count": 0,
+  "status": "PASS_SCAN_COMPLETE"
+}

@@ -1,0 +1,1 @@
+python run_all.py --fetch-inputs --cache ./_external_cache --work ./_work --output ./_outputs --verify

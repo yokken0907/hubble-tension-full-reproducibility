@@ -1,0 +1,65 @@
+{
+  "comparison_tolerance_absolute": 0.0,
+  "contract_id": "H0DN-SNIA-PHASE1C-POSTHOC-PRECISION-ASYMMETRY-20260730-01",
+  "contract_sha256": "050272af008385d0f4d5e247d1a81a432411115f972bc6a52562a580d8f3d5b4",
+  "mapping_row_count": 277,
+  "mapping_sha256": "a3cd37e836d39f623dfedcea6c3c8a0ac0c0f80ae5647bd163610fdbd1bd9d69",
+  "promotion_status": "POSTHOC_ONLY_NO_MAIN_RESULT_CHANGE",
+  "sources": {
+    "STAT_ONLY": {
+      "full_1701_source_schema": {
+        "asymmetric_element_count": 778,
+        "dimension": 1701,
+        "exactly_symmetric": false,
+        "maximum_absolute_transpose_difference": 3.0000000000038676e-08,
+        "payload_value_count": 2893401
+      },
+      "interpretive_statement": "FULL_1701_ASYMMETRY_LIES_OUTSIDE_SELECTED_MAPPING",
+      "raw_selected_submatrix": {
+        "asymmetric_offdiagonal_element_count": 0,
+        "asymmetric_offdiagonal_pair_count": 0,
+        "asymmetric_pair_count_above_tolerance": 0,
+        "comparison_tolerance_absolute": 0.0,
+        "exactly_symmetric": true,
+        "maximum_absolute_offdiagonal_transpose_difference": 0.0,
+        "maximum_location": null,
+        "maximum_location_status": "NOT_APPLICABLE_EXACTLY_SYMMETRIC",
+        "offdiagonal_unordered_pair_count": 38226,
+        "shape": [
+          277,
+          277
+        ]
+      },
+      "representations": {},
+      "sensitivity_triggered": false
+    },
+    "STAT_SYS": {
+      "full_1701_source_schema": {
+        "asymmetric_element_count": 778,
+        "dimension": 1701,
+        "exactly_symmetric": false,
+        "maximum_absolute_transpose_difference": 3.0000000000038676e-08,
+        "payload_value_count": 2893401
+      },
+      "interpretive_statement": "FULL_1701_ASYMMETRY_LIES_OUTSIDE_SELECTED_MAPPING",
+      "raw_selected_submatrix": {
+        "asymmetric_offdiagonal_element_count": 0,
+        "asymmetric_offdiagonal_pair_count": 0,
+        "asymmetric_pair_count_above_tolerance": 0,
+        "comparison_tolerance_absolute": 0.0,
+        "exactly_symmetric": true,
+        "maximum_absolute_offdiagonal_transpose_difference": 0.0,
+        "maximum_location": null,
+        "maximum_location_status": "NOT_APPLICABLE_EXACTLY_SYMMETRIC",
+        "offdiagonal_unordered_pair_count": 38226,
+        "shape": [
+          277,
+          277
+        ]
+      },
+      "representations": {},
+      "sensitivity_triggered": false
+    }
+  },
+  "status": "POSTHOC_DIAGNOSTIC_COMPLETE"
+}

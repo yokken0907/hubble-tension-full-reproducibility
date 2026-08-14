@@ -1,0 +1,12 @@
+{
+  "phase1b": {
+    "archive_name": "h0dn-snia-multirow-provenance-audit_v0.1.0.zip",
+    "archive_sha256": "1b099109ac7dca7fd34d5e28b51c299acd87c0626e9c3976a37dd35c5df42959",
+    "role": "source of the one-to-one final-catalog row mapping and 30 same-CID groups"
+  },
+  "phase1c": {
+    "archive_name": "h0dn-snia-contrast-covariance-calibration-audit_v0.1.0.zip",
+    "archive_sha256": "f5111854ee0d8f1138824cb8793af21ace84370c2e11ee29a4b05bfce716b455",
+    "role": "scientific motivation and byte-for-byte carrier of PHASE1B_ROW_MAP.tsv"
+  }
+}

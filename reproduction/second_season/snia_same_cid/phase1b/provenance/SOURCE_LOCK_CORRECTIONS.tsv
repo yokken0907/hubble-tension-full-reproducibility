@@ -1,0 +1,2 @@
+correction_id	source_id	path	field	frozen_value	corrected_value	results_observed	interpretation_affected	reason
+SRC-001	h0dn	data/README.md	git_blob_sha1	6b5c2c3cc120c1fc148f3fa09d18e666488ad	6b5c2c3cc120c1fc148f3fa09d18e666cbde59f2	NO	NO	Transcription correction; frozen byte count and SHA-256 already identified the intended blob.

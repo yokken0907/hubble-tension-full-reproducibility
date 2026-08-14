@@ -1,0 +1,56 @@
+{
+  "all_multirow_groups_cross_survey": true,
+  "checks": {
+    "all_multirow_groups_cross_survey": true,
+    "contrast_degrees_of_freedom": true,
+    "contrast_orthogonality": true,
+    "contrast_rank": true,
+    "group_annihilation": true,
+    "h0dn_covariance_exact_symmetry": true,
+    "h0dn_row_count": true,
+    "multirow_exact_name_groups": true,
+    "official_row_count": true,
+    "rows_in_multirow_groups": true,
+    "stat_only_transpose_tolerance": true,
+    "stat_sys_transpose_tolerance": true,
+    "unique_exact_names": true
+  },
+  "contrast_degrees_of_freedom": 39,
+  "contrast_orthogonality_max_absolute_error": 2.220446049250313e-16,
+  "contrast_rank": 39,
+  "covariance_schemas": {
+    "H0DN": {
+      "asymmetric_element_count": 0,
+      "dimension": 277,
+      "exactly_symmetric": true,
+      "maximum_absolute_transpose_difference": 0.0,
+      "payload_value_count": 76729
+    },
+    "STAT_ONLY": {
+      "asymmetric_element_count": 778,
+      "dimension": 1701,
+      "exactly_symmetric": false,
+      "maximum_absolute_transpose_difference": 3.0000000000038676e-08,
+      "payload_value_count": 2893401
+    },
+    "STAT_SYS": {
+      "asymmetric_element_count": 778,
+      "dimension": 1701,
+      "exactly_symmetric": false,
+      "maximum_absolute_transpose_difference": 3.0000000000038676e-08,
+      "payload_value_count": 2893401
+    }
+  },
+  "group_annihilation_max_absolute_error": 0.0,
+  "h0dn_row_count": 277,
+  "multiplicity_histogram": {
+    "1": 208,
+    "2": 21,
+    "3": 9
+  },
+  "multirow_exact_name_group_count": 30,
+  "official_row_count": 1701,
+  "rows_in_multirow_groups": 69,
+  "status": "PASS",
+  "unique_exact_name_count": 238
+}

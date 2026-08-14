@@ -1,0 +1,549 @@
+H0DN audit full clean reproduction log
+created_utc: 2026-07-29T16:42:23.188328+00:00
+
+===== START clone-audit-worktree =====
+cwd: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction
+command: git clone --no-hardlinks /workspace/scratch/e688ee23bbb8/h0dn-covariance-influence-audit /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work
+Cloning into '/workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work'...
+done.
+exit_code: 0
+===== END clone-audit-worktree =====
+clean_start: removed cloned results and package checksums; created an empty results directory
+clean_input_git_status: clean (generated paths were marked assume-unchanged only inside the isolated clone)
+
+===== START create-fresh-venv =====
+cwd: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work
+command: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12 -m venv .venv
+exit_code: 0
+===== END create-fresh-venv =====
+
+===== START install-exact-dependencies =====
+cwd: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work
+command: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work/.venv/bin/python -m pip install -r requirements-lock.txt
+Collecting numpy==2.4.2 (from -r requirements-lock.txt (line 2))
+  Downloading numpy-2.4.2-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting scipy==1.17.0 (from -r requirements-lock.txt (line 3))
+  Downloading scipy-1.17.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting pandas==3.0.0 (from -r requirements-lock.txt (line 4))
+  Downloading pandas-3.0.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (79 kB)
+Collecting PyYAML==6.0.3 (from -r requirements-lock.txt (line 5))
+  Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting python-dateutil>=2.8.2 (from pandas==3.0.0->-r requirements-lock.txt (line 4))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==3.0.0->-r requirements-lock.txt (line 4))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading numpy-2.4.2-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 86.4 MB/s eta 0:00:00
+Downloading scipy-1.17.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.0/35.0 MB 58.0 MB/s eta 0:00:00
+Downloading pandas-3.0.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (10.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.9/10.9 MB 116.5 MB/s eta 0:00:00
+Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 12.2 MB/s eta 0:00:00
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, PyYAML, numpy, scipy, python-dateutil, pandas
+Successfully installed PyYAML-6.0.3 numpy-2.4.2 pandas-3.0.0 python-dateutil-2.9.0.post0 scipy-1.17.0 six-1.17.0
+WARNING: There was an error checking the latest version of pip.
+exit_code: 0
+===== END install-exact-dependencies =====
+
+===== START acquire-fresh-upstream =====
+cwd: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work
+command: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work/.venv/bin/python scripts/acquire_upstream.py --destination /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/H0DN_CLEAN
+Cloning into '/workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/H0DN_CLEAN'...
+From https://github.com/StefCas789/H0DN
+ * branch            cc0a4b9f36e65470d514f254a3c5cffa463fbd94 -> FETCH_HEAD
+HEAD is now at cc0a4b9 Readme update
+PASS: frozen H0DN source acquired at cc0a4b9f36e65470d514f254a3c5cffa463fbd94 (69 files)
+exit_code: 0
+===== END acquire-fresh-upstream =====
+
+===== START primary-audit =====
+cwd: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work
+command: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work/.venv/bin/python scripts/run_audit.py --upstream /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/H0DN_CLEAN
+{
+  "status": "PASS_WITH_FLAGGED_NUMERICAL_SENSITIVITY",
+  "baseline_gate": "PASS",
+  "independent_solver_match": "PASS",
+  "covariance_decomposition_closure": "PASS",
+  "representation_invariance": "FAIL",
+  "hubble_flow_reproduction": "PASS",
+  "covariance_component_count": 60,
+  "covariance_aggregate_count": 4,
+  "equation_block_count": 32,
+  "component_ablation_status_counts": {
+    "HOLD_UNIDENTIFIED": 1,
+    "OK": 62,
+    "OK_INDEFINITE_COVARIANCE": 1
+  },
+  "component_ablation_solver_status_counts": {
+    "HOLD_UNIDENTIFIED": 1,
+    "OK": 62,
+    "OK_INDEFINITE_COVARIANCE": 1
+  },
+  "component_ablation_interpretation_status_counts": {
+    "HOLD_UNIDENTIFIED": 1,
+    "INDEFINITE_ALGEBRAIC_DIAGNOSTIC": 1,
+    "PSD_ALGEBRAIC_SENSITIVITY": 52,
+    "PSEUDOINVERSE_DISCARDED_CONSTRAINT": 10
+  },
+  "leave_one_out_status_counts": {
+    "HOLD_UNIDENTIFIED": 1,
+    "OK": 31
+  },
+  "component_ranking_policy": "Public ranking includes only PSD_ALGEBRAIC_SENSITIVITY rows.",
+  "top_component_influences": [
+    {
+      "identifier": "aggregate:mas:all",
+      "label": "All mas covariance components",
+      "delta_h0": 0.5514684311687859,
+      "delta_h0_in_baseline_sigma": 0.6818353287494409,
+      "delta_sigma_h0": -0.109267851068509,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSD_ALGEBRAIC_SENSITIVITY",
+      "covariance_model_status": "SINGULAR_PSD"
+    },
+    {
+      "identifier": "anchor:00:LMC",
+      "label": "Geometric anchor LMC",
+      "delta_h0": 0.22658263446247418,
+      "delta_h0_in_baseline_sigma": 0.28014667082611416,
+      "delta_sigma_h0": -0.06198639009839724,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSD_ALGEBRAIC_SENSITIVITY",
+      "covariance_model_status": "SINGULAR_PSD"
+    },
+    {
+      "identifier": "aggregate:hms:all",
+      "label": "All hms covariance components",
+      "delta_h0": -0.20611422159420556,
+      "delta_h0_in_baseline_sigma": -0.25483953404688536,
+      "delta_sigma_h0": -0.035175652057844786,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSD_ALGEBRAIC_SENSITIVITY",
+      "covariance_model_status": "PSD"
+    },
+    {
+      "identifier": "mas:06:trgb_jwst_N4258_A25",
+      "label": "MAS trgb_jwst&N4258&A25",
+      "delta_h0": 0.20422840512301832,
+      "delta_h0_in_baseline_sigma": 0.2525079113810731,
+      "delta_sigma_h0": -0.06502148388383944,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSD_ALGEBRAIC_SENSITIVITY",
+      "covariance_model_status": "SINGULAR_PSD"
+    },
+    {
+      "identifier": "mas:03:ceph_jwst_N4258_SH0ES",
+      "label": "MAS ceph_jwst&N4258&SH0ES",
+      "delta_h0": 0.13330822122085806,
+      "delta_h0_in_baseline_sigma": 0.16482222681085307,
+      "delta_sigma_h0": -0.0038964953464102337,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSD_ALGEBRAIC_SENSITIVITY",
+      "covariance_model_status": "SINGULAR_PSD"
+    },
+    {
+      "identifier": "aggregate:anchor:all",
+      "label": "All anchor covariance components",
+      "delta_h0": -0.1298313559902624,
+      "delta_h0_in_baseline_sigma": -0.16052343215003032,
+      "delta_sigma_h0": -0.15069270354014463,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSD_ALGEBRAIC_SENSITIVITY",
+      "covariance_model_status": "SINGULAR_PSD"
+    },
+    {
+      "identifier": "anchor:02:N4258",
+      "label": "Geometric anchor N4258",
+      "delta_h0": -0.12221381019136857,
+      "delta_h0_in_baseline_sigma": -0.1511051018331984,
+      "delta_sigma_h0": -0.11118385761503191,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSD_ALGEBRAIC_SENSITIVITY",
+      "covariance_model_status": "SINGULAR_PSD"
+    },
+    {
+      "identifier": "hms:072:N5584_ceph_hst_R22",
+      "label": "HMS N5584&ceph_hst&R22",
+      "delta_h0": 0.11812061886708136,
+      "delta_h0_in_baseline_sigma": 0.146044281857856,
+      "delta_sigma_h0": -0.0013862034758744812,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSD_ALGEBRAIC_SENSITIVITY",
+      "covariance_model_status": "SINGULAR_PSD"
+    },
+    {
+      "identifier": "hms:045:N3982_ceph_hst_R22",
+      "label": "HMS N3982&ceph_hst&R22",
+      "delta_h0": -0.10387571183022715,
+      "delta_h0_in_baseline_sigma": -0.12843188498521255,
+      "delta_sigma_h0": -0.0037849843194948107,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSD_ALGEBRAIC_SENSITIVITY",
+      "covariance_model_status": "SINGULAR_PSD"
+    },
+    {
+      "identifier": "anchor:01:MW",
+      "label": "Geometric anchor MW",
+      "delta_h0": -0.0910648201980706,
+      "delta_h0_in_baseline_sigma": -0.11259250413602763,
+      "delta_sigma_h0": -0.1240757298811559,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSD_ALGEBRAIC_SENSITIVITY",
+      "covariance_model_status": "SINGULAR_PSD"
+    }
+  ],
+  "flagged_component_diagnostics": [
+    {
+      "identifier": "sn1a_hubble_flow_link_variance",
+      "label": "SN-Ia Hubble-flow link variance",
+      "delta_h0": 0.8672160359466687,
+      "delta_h0_in_baseline_sigma": 1.072225530141919,
+      "delta_sigma_h0": 0.736801667975314,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSEUDOINVERSE_DISCARDED_CONSTRAINT",
+      "covariance_model_status": "SINGULAR_PSD"
+    },
+    {
+      "identifier": "sn1a_calibrator_diagonal",
+      "label": "All SN-Ia calibrator diagonal variances",
+      "delta_h0": 0.23837254264093133,
+      "delta_h0_in_baseline_sigma": 0.29472370817664145,
+      "delta_sigma_h0": 0.8920761076407757,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSEUDOINVERSE_DISCARDED_CONSTRAINT",
+      "covariance_model_status": "SINGULAR_PSD"
+    },
+    {
+      "identifier": "sbf_hubble_flow_link_variance",
+      "label": "SBF Hubble-flow link variance",
+      "delta_h0": -0.2061237742548201,
+      "delta_h0_in_baseline_sigma": -0.25485134495231965,
+      "delta_sigma_h0": 0.020176172022473793,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSEUDOINVERSE_DISCARDED_CONSTRAINT",
+      "covariance_model_status": "SINGULAR_PSD"
+    },
+    {
+      "identifier": "sbf_calibrator_diagonal",
+      "label": "All SBF calibrator diagonal variances",
+      "delta_h0": -0.18894500273424342,
+      "delta_h0_in_baseline_sigma": -0.233611519306418,
+      "delta_sigma_h0": 0.020485607382951798,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSEUDOINVERSE_DISCARDED_CONSTRAINT",
+      "covariance_model_status": "SINGULAR_PSD"
+    },
+    {
+      "identifier": "aggregate:megamaser:all",
+      "label": "All megamaser covariance components",
+      "delta_h0": 0.13437601989031123,
+      "delta_h0_in_baseline_sigma": 0.16614245262193306,
+      "delta_sigma_h0": 0.03211490665705696,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSEUDOINVERSE_DISCARDED_CONSTRAINT",
+      "covariance_model_status": "SINGULAR_PSD"
+    },
+    {
+      "identifier": "host_measurement_diagonal",
+      "label": "All host-measurement diagonal variances",
+      "delta_h0": -0.13103901859911105,
+      "delta_h0_in_baseline_sigma": -0.16201658567502455,
+      "delta_sigma_h0": -0.03219958647726173,
+      "status": "OK_INDEFINITE_COVARIANCE",
+      "solver_status": "OK_INDEFINITE_COVARIANCE",
+      "interpretation_status": "INDEFINITE_ALGEBRAIC_DIAGNOSTIC",
+      "covariance_model_status": "INDEFINITE"
+    },
+    {
+      "identifier": "megamaser:00:UGC_3789",
+      "label": "Megamaser UGC_3789",
+      "delta_h0": 0.09631072457935375,
+      "delta_h0_in_baseline_sigma": 0.11907853803432265,
+      "delta_sigma_h0": 0.005200678786195567,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSEUDOINVERSE_DISCARDED_CONSTRAINT",
+      "covariance_model_status": "SINGULAR_PSD"
+    },
+    {
+      "identifier": "megamaser:03:NGC_5765b",
+      "label": "Megamaser NGC_5765b",
+      "delta_h0": 0.04809916021017102,
+      "delta_h0_in_baseline_sigma": 0.05946978079047344,
+      "delta_sigma_h0": 0.017243743861001803,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSEUDOINVERSE_DISCARDED_CONSTRAINT",
+      "covariance_model_status": "SINGULAR_PSD"
+    },
+    {
+      "identifier": "megamaser:04:CGCG_074-064",
+      "label": "Megamaser CGCG_074-064",
+      "delta_h0": -0.03806536966045826,
+      "delta_h0_in_baseline_sigma": -0.047064006513300866,
+      "delta_sigma_h0": 0.005268488100668378,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSEUDOINVERSE_DISCARDED_CONSTRAINT",
+      "covariance_model_status": "SINGULAR_PSD"
+    },
+    {
+      "identifier": "megamaser:02:NGC_6323",
+      "label": "Megamaser NGC_6323",
+      "delta_h0": 0.014830237408475,
+      "delta_h0_in_baseline_sigma": 0.01833609908985875,
+      "delta_sigma_h0": 0.0008708683269134099,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": "PSEUDOINVERSE_DISCARDED_CONSTRAINT",
+      "covariance_model_status": "SINGULAR_PSD"
+    }
+  ],
+  "largest_leave_one_block_out_shifts": [
+    {
+      "identifier": "sn1a_hubble_flow_link",
+      "label": "SN-Ia Hubble-flow link",
+      "delta_h0": 0.8672160359466687,
+      "delta_h0_in_baseline_sigma": 1.072225530141919,
+      "delta_sigma_h0": 0.736801667975314,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": null,
+      "covariance_model_status": null
+    },
+    {
+      "identifier": "host_by_source:SH0ES",
+      "label": "Host rows with source=SH0ES",
+      "delta_h0": -0.42408556693082744,
+      "delta_h0_in_baseline_sigma": -0.5243392107383799,
+      "delta_sigma_h0": 0.005935395769313345,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": null,
+      "covariance_model_status": null
+    },
+    {
+      "identifier": "host_by_anchor:N4258",
+      "label": "Host rows with anchor=N4258",
+      "delta_h0": -0.3629287338731757,
+      "delta_h0_in_baseline_sigma": -0.44872492891129184,
+      "delta_sigma_h0": 0.11124492589620161,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": null,
+      "covariance_model_status": null
+    },
+    {
+      "identifier": "host_by_method:ceph_jwst",
+      "label": "Host rows with method=ceph_jwst",
+      "delta_h0": -0.3344675780724913,
+      "delta_h0_in_baseline_sigma": -0.4135355682423232,
+      "delta_sigma_h0": 0.003909701708693092,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": null,
+      "covariance_model_status": null
+    },
+    {
+      "identifier": "host_by_mas:ceph_jwst_N4258_SH0ES",
+      "label": "Host rows with mas_name=ceph_jwst&N4258&SH0ES",
+      "delta_h0": -0.3344675780724913,
+      "delta_h0_in_baseline_sigma": -0.4135355682423232,
+      "delta_sigma_h0": 0.003909701708693092,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": null,
+      "covariance_model_status": null
+    },
+    {
+      "identifier": "host_by_source:CCHP",
+      "label": "Host rows with source=CCHP",
+      "delta_h0": 0.3165234430358339,
+      "delta_h0_in_baseline_sigma": 0.3913494474775991,
+      "delta_sigma_h0": 0.01735471661692145,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": null,
+      "covariance_model_status": null
+    },
+    {
+      "identifier": "host_by_mas:trgb_hst_N4258_CCHP",
+      "label": "Host rows with mas_name=trgb_hst&N4258&CCHP",
+      "delta_h0": 0.24942083210015653,
+      "delta_h0_in_baseline_sigma": 0.3083838084648557,
+      "delta_sigma_h0": 0.014106429847956292,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": null,
+      "covariance_model_status": null
+    },
+    {
+      "identifier": "all_sn1a_calibrator_equations",
+      "label": "All SN-Ia calibrator equations",
+      "delta_h0": 0.23837254264697094,
+      "delta_h0_in_baseline_sigma": 0.2947237081841088,
+      "delta_sigma_h0": 0.8920761076409036,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": null,
+      "covariance_model_status": null
+    },
+    {
+      "identifier": "sbf_hubble_flow_link",
+      "label": "SBF Hubble-flow link",
+      "delta_h0": -0.20612377425555906,
+      "delta_h0_in_baseline_sigma": -0.2548513449532333,
+      "delta_sigma_h0": 0.020176172022459582,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": null,
+      "covariance_model_status": null
+    },
+    {
+      "identifier": "all_sbf_calibrator_equations",
+      "label": "All SBF calibrator equations",
+      "delta_h0": -0.1889450027351387,
+      "delta_h0_in_baseline_sigma": -0.2336115193075249,
+      "delta_sigma_h0": 0.020485607382937587,
+      "status": "OK",
+      "solver_status": "OK",
+      "interpretation_status": null,
+      "covariance_model_status": null
+    }
+  ],
+  "diagonal_only_hubble_flow_network_result": {
+    "case": "diagonal_only_sn1a_hubble_flow_covariance",
+    "policy": "network_with_diagonal_only_sn1a_hubble_flow_covariance",
+    "nrows": 255,
+    "npars": 64,
+    "atol": 1e-10,
+    "rtol": 0.0,
+    "covar_rank": 183,
+    "covar_nullity": 72,
+    "normal_rank": 64,
+    "normal_nullity": 0,
+    "covar_min_eigenvalue": -2.7006434517013595e-17,
+    "covar_max_eigenvalue": 0.19083307124362708,
+    "covar_materially_indefinite": 0,
+    "status": "OK",
+    "message": "",
+    "logh0_value": 1.8657625020334043,
+    "logh0_variance": 2.2136015076891168e-05,
+    "h0_value": 73.41123022438912,
+    "h0_error": 0.7996178525875308,
+    "chi2": 117.65216024471124,
+    "ndof": 119,
+    "reduced_chi2": 0.9886736155017751,
+    "normal_condition_number": 11811.73581637221,
+    "mzero_value": -19.25138487427683,
+    "mzero_error": 0.02243929843748579,
+    "delta_h0": -0.08752341921750428,
+    "absolute_delta_h0": 0.08752341921750428,
+    "delta_h0_in_baseline_sigma": -0.10821391750197426,
+    "delta_sigma_h0": -0.009182172750314521,
+    "absolute_delta_sigma_h0": 0.009182172750314521
+  }
+}
+exit_code: 0
+===== END primary-audit =====
+
+===== START posthoc-diagnostics =====
+cwd: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work
+command: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work/.venv/bin/python scripts/run_posthoc_diagnostics.py --upstream /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/H0DN_CLEAN
+{'status': 'PASS', 'diagnosis': 'HOLD_INCONSISTENT_SUPPORT', 'moore_penrose_relative_congruence_defect': 0.00038046837415446405, 'public_support_residual_l2_norm': 0.1887490826897376, 'row_standardized_delta_h0': -0.052445422611000936, 'numeric_scaling_h0_range': [71.76693327507698, 73.52647030424535], 'same_rank_scaling_h0_range': [73.41815459790728, 73.52647030424535]}
+exit_code: 0
+===== END posthoc-diagnostics =====
+
+===== START exploratory-variance-component =====
+cwd: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work
+command: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work/.venv/bin/python scripts/run_exploratory_variance_component.py --upstream /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/H0DN_CLEAN
+{'status': 'PASS_WITH_FLAGGED_PROFILE_NUMERICS', 'summary': 'results/exploratory_variance_component_summary.json', 'profile': 'results/exploratory_variance_component_profile.tsv', 'report': 'EXPLORATORY_REPORT.md'}
+exit_code: 0
+===== END exploratory-variance-component =====
+
+===== START unit-tests =====
+cwd: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work
+command: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work/.venv/bin/python -m unittest discover -s tests -v
+test_covariance_model_status_is_separate_from_solver_status (test_auditlib.AblationClassificationTests.test_covariance_model_status_is_separate_from_solver_status) ... ok
+test_exact_discarded_row_match_checks_all_parameters (test_auditlib.AblationClassificationTests.test_exact_discarded_row_match_checks_all_parameters) ... ok
+test_fixed_interpretation_vocabulary_is_applied_by_precedence (test_auditlib.AblationClassificationTests.test_fixed_interpretation_vocabulary_is_applied_by_precedence) ... ok
+test_json_writer_never_emits_nonstandard_nan_tokens (test_auditlib.SerializationTests.test_json_writer_never_emits_nonstandard_nan_tokens) ... ok
+test_full_rank_gls_is_invariant_to_exact_row_scaling (test_auditlib.SolveGlsTests.test_full_rank_gls_is_invariant_to_exact_row_scaling) ... ok
+test_singular_mp_gls_can_depend_on_row_scaling (test_auditlib.SolveGlsTests.test_singular_mp_gls_can_depend_on_row_scaling) ... ok
+test_missing_trailing_field_is_rejected (test_auditlib.TsvSchemaTests.test_missing_trailing_field_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.003s
+
+OK
+exit_code: 0
+===== END unit-tests =====
+PASS fixed-scientific-value-comparison
+
+===== START verify-results-before-manifest =====
+cwd: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work
+command: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work/.venv/bin/python scripts/verify_results.py --upstream /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/H0DN_CLEAN --skip-package-integrity
+PASS REQUIRED_OUTPUTS: 24 required files
+PASS TSV_SCHEMA: 21 TSV files
+PASS AUTHORSHIP_SYNC: CFF, LICENSE, README, and AI disclosure name Keiji Yoshimura
+PASS CFF_PARSE: valid CFF 1.2.0; unpublished version 0.1.0
+PASS SOURCE_LOCK: 69 files at cc0a4b9f36e65470d514f254a3c5cffa463fbd94
+PASS EXECUTION_STATUS: all three runners completed
+PASS CORE_SCIENTIFIC_VALUES: baseline, scaling, nullspace, closure, and REML values unchanged
+PASS ABLATION_CLASSIFICATION: all 64 rows use fixed interpretation/model vocabularies
+PASS SNIA_LINK_DROP: rank 183->182; equation 248 has zero variance/precision
+PASS LOO_MATCH: SN-Ia link ablation matches leave-one-block-out within 1e-9
+PASS INDEFINITE_SEPARATION: main ranking contains PSD algebraic sensitivities only
+PASS REPORT_GENERATION: REPORT.md hash and generator classification text verified
+PASS SCIENTIFIC_BOUNDARY: no corrected-H0, causal-systematic, or tension-resolution claim
+PASS NO_UPSTREAM_BYTES: no upstream source/data root is packaged
+PASS: 14 verification gates and upstream cc0a4b9f36e65470d514f254a3c5cffa463fbd94
+exit_code: 0
+===== END verify-results-before-manifest =====
+
+===== START regenerate-and-check-manifests =====
+cwd: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work
+command: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work/.venv/bin/python scripts/finalize_package.py --write-manifests --check
+PASS: verified 63 manifested files
+exit_code: 0
+===== END regenerate-and-check-manifests =====
+
+===== START verify-results-with-root-closure =====
+cwd: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work
+command: /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work/.venv/bin/python scripts/verify_results.py --upstream /workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/H0DN_CLEAN
+PASS REQUIRED_OUTPUTS: 24 required files
+PASS TSV_SCHEMA: 22 TSV files
+PASS AUTHORSHIP_SYNC: CFF, LICENSE, README, and AI disclosure name Keiji Yoshimura
+PASS CFF_PARSE: valid CFF 1.2.0; unpublished version 0.1.0
+PASS SOURCE_LOCK: 69 files at cc0a4b9f36e65470d514f254a3c5cffa463fbd94
+PASS EXECUTION_STATUS: all three runners completed
+PASS CORE_SCIENTIFIC_VALUES: baseline, scaling, nullspace, closure, and REML values unchanged
+PASS ABLATION_CLASSIFICATION: all 64 rows use fixed interpretation/model vocabularies
+PASS SNIA_LINK_DROP: rank 183->182; equation 248 has zero variance/precision
+PASS LOO_MATCH: SN-Ia link ablation matches leave-one-block-out within 1e-9
+PASS INDEFINITE_SEPARATION: main ranking contains PSD algebraic sensitivities only
+PASS REPORT_GENERATION: REPORT.md hash and generator classification text verified
+PASS SCIENTIFIC_BOUNDARY: no corrected-H0, causal-systematic, or tension-resolution claim
+PASS NO_UPSTREAM_BYTES: no upstream source/data root is packaged
+PASS ROOT_CLOSURE: 63 packaged files covered by hashes
+PASS: 15 verification gates and upstream cc0a4b9f36e65470d514f254a3c5cffa463fbd94
+exit_code: 0
+===== END verify-results-with-root-closure =====

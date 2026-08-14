@@ -1,0 +1,12 @@
+GATE_ID	STATUS	EVIDENCE_PATH	NOTE
+E001_FRESH_REPLAY	PASS	REPRODUCTION/cmb_fixed_seed_bootstrap/fresh_replay_records/E001_FRESH_VERIFY.txt	clean fixed-input replay completed with seed 10199 and 1,000 draws
+E002_FRESH_OUTPUT_REPLAY	PASS	REPRODUCTION/posterior_attribution/official_fetch_records/phase2c_network_execution/evidence/E002_FRESH_OUTPUT_COMPARISON.tsv	Phase2C canonical run compared N029-N035 and HTS66/HTS67 classifications directly
+HTS67_SELECTED_CACHE_VIEW	PASS	REPRODUCTION/posterior_attribution/official_fetch_records/phase2c_network_execution/evidence/E002_INPUT_VERIFICATION.tsv	Phase2C canonical run verified 51 selected members by registered byte size and SHA-256
+CURRENT_STAGE_CHECKSUMS	PASS	REPRODUCTION/posterior_attribution/stages/	HTS59-HTS67 current checksum sets and history registers pass
+OFFICIAL_FETCH_EMPTY_CACHE	PASS_WITH_SCOPE_RANGE_SELECTED_MEMBER_IDENTITY	REPRODUCTION/posterior_attribution/official_fetch_records/OFFICIAL_FETCH_RESULT.txt	ORIGINAL used official HTTP Range and 40/40 selected-member identity; FIXED full archive SHA-256 and 11/11 selected-member identity passed; complete ORIGINAL archive hash is not claimed
+GLOBAL_HISTORY_SOURCE_REGISTER	PASS	REPRODUCTION/posterior_attribution/HISTORY_SOURCE_REGISTER.tsv	125 stage-local rows aggregate exactly and current hashes pass
+HTS67_PHASE2C_SUBSTANTIVE_TABLE_BYTE_IDENTITY	PASS	REPRODUCTION/posterior_attribution/HTS67_HISTORICAL_VS_FRESH_COMPARISON.tsv	canonical Phase2C result ZIP has 8/8 designated substantive tables byte-identical to the preserved historical substantive reference
+ARCHIVE_DESCRIPTION	PASS	TRACEABILITY_ARCHIVE_DESCRIPTION.pdf	Bilingual archive purpose, reading order, integrity method, and interpretation boundaries added without changing scientific records
+EXTERNAL_MANUSCRIPT_REPOSITORY_VERSION_SYNC	PASS	RELEASE_STATUS.md	Author-supplied latest manuscript metadata updated to repository snapshot v1.7.1; manuscript submission files are intentionally not included in this pre-Jxiv repository package
+FINAL_PACKAGE_INTEGRITY	PASS	tools/verify_publication_package.py	final-package mode validates the exact tree, manifest, checksums, and CAP001-CAP013
+REMOTE_PUBLICATION_ACTIONS	NOT_PERFORMED	RELEASE_CHECKLIST.md	GitHub tag/Release, persistent identifier, and Jxiv submission are external actions and are not claimed

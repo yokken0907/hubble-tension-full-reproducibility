@@ -1,0 +1,18 @@
+{
+  "audit_returncode": 0,
+  "audit_summary_bytes_identical": true,
+  "audit_summary_semantically_identical": true,
+  "byte_equality_explanation": "Deterministic serialized bytes are identical.",
+  "isolated_project_root": "h0dn-snia-residual-deficit-localization-audit-0.1.0",
+  "live_verification_returncode": 0,
+  "manifest_generation_returncode": 0,
+  "original_audit_summary_sha256": "503f35177edbbb5666f5b1c748305928c4b5f194c0676d58ed73e93ac5943330",
+  "original_status": "AUDIT_COMPLETE_LOW_CHI2_LOCALIZED_TO_DUPLICATE_NAME_CONTRASTS",
+  "record_verification_returncode": 0,
+  "reproduced_audit_summary_sha256": "503f35177edbbb5666f5b1c748305928c4b5f194c0676d58ed73e93ac5943330",
+  "reproduced_status": "AUDIT_COMPLETE_LOW_CHI2_LOCALIZED_TO_DUPLICATE_NAME_CONTRASTS",
+  "source_verification_returncode": 0,
+  "status": "PASS",
+  "unit_test_returncode": 0,
+  "upstream_commit": "cc0a4b9f36e65470d514f254a3c5cffa463fbd94"
+}

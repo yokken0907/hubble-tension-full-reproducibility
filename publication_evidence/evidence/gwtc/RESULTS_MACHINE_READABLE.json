@@ -1,0 +1,122 @@
+{
+  "definitions": {
+    "crosscheck_tolerance": 1e-10,
+    "percentiles": [
+      15.865,
+      50.0,
+      84.135
+    ],
+    "primary_algorithm": "custom_hyndman_fan_type_7_linear",
+    "rounding": "each median/lower_error/upper_error independently to 1 dp",
+    "secondary_algorithm": "numpy.percentile(method='linear')"
+  },
+  "environment": {
+    "numpy": "2.3.5",
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.39",
+    "python": "3.12.13"
+  },
+  "gate_a_decision": "PASS",
+  "gate_b_carry_forward": {
+    "metric_arithmetic_trace": "PASS",
+    "metric_code_path": "PASS",
+    "metric_posterior_pair_provenance": "HOLD_NOT_UNIQUE"
+  },
+  "headline_pair_diagnostic": {
+    "new_average_uncertainty_raw": 8.063288487749166,
+    "old_average_uncertainty_raw": 11.284878611789836,
+    "published_metric_percent": 25.7,
+    "relative_reduction_percent_raw": 28.54784916051224,
+    "used_for_gate_a": false,
+    "used_to_reproduce_published_25p7": false
+  },
+  "no_automatic_expansion": true,
+  "results": {
+    "GWTC-4": {
+      "custom_quantiles": {
+        "15.865": 67.10968771442157,
+        "50.0": 76.63725755256723,
+        "84.135": 89.67944493800124
+      },
+      "derived": {
+        "average_uncertainty_68_27": 11.284878611789836,
+        "lower_error": 9.527569838145666,
+        "q15_865": 67.10968771442157,
+        "q50": 76.63725755256723,
+        "q84_135": 89.67944493800124,
+        "upper_error": 13.042187385434005
+      },
+      "headline_comparison": "PASS",
+      "identity": {
+        "byte_size": 66251,
+        "identity_status": "PASS",
+        "json_keys": [
+          "posterior"
+        ],
+        "local_md5": "00c057f15e215d909ad1b7a6760a7af2",
+        "local_sha256": "b4b5e271d94f0ac828c840a46d72bd5e9433d706a47f352abfcdd3fbc2014fc8",
+        "sample_count": 3500
+      },
+      "implementation_crosscheck": "PASS",
+      "numpy_quantiles": {
+        "15.865": 67.10968771442157,
+        "50.0": 76.63725755256723,
+        "84.135": 89.67944493800124
+      },
+      "official_headline": {
+        "lower_error": 9.5,
+        "median": 76.6,
+        "upper_error": 13.0
+      },
+      "release_gate": "PASS",
+      "rounded": {
+        "lower_error": 9.5,
+        "median": 76.6,
+        "upper_error": 13.0
+      }
+    },
+    "GWTC-5": {
+      "custom_quantiles": {
+        "15.865": 63.87591894621274,
+        "50.0": 71.0170052236972,
+        "84.135": 80.00249592171107
+      },
+      "derived": {
+        "average_uncertainty_68_27": 8.063288487749166,
+        "lower_error": 7.141086277484455,
+        "q15_865": 63.87591894621274,
+        "q50": 71.0170052236972,
+        "q84_135": 80.00249592171107,
+        "upper_error": 8.985490698013876
+      },
+      "headline_comparison": "PASS",
+      "identity": {
+        "byte_size": 66225,
+        "identity_status": "PASS",
+        "json_keys": [
+          "posterior"
+        ],
+        "local_md5": "532f9c59374dede625e08987985e4df5",
+        "local_sha256": "00aaee9573ae940ac156c1b4af441e075a462a4c54152ac20d03511b877ce0d5",
+        "sample_count": 3500
+      },
+      "implementation_crosscheck": "PASS",
+      "numpy_quantiles": {
+        "15.865": 63.87591894621274,
+        "50.0": 71.0170052236972,
+        "84.135": 80.00249592171107
+      },
+      "official_headline": {
+        "lower_error": 7.1,
+        "median": 71.0,
+        "upper_error": 9.0
+      },
+      "release_gate": "PASS",
+      "rounded": {
+        "lower_error": 7.1,
+        "median": 71.0,
+        "upper_error": 9.0
+      }
+    }
+  },
+  "stop_after_gate_a": true
+}

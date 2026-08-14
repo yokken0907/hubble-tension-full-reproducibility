@@ -1,0 +1,46 @@
+{
+  "complete_30_group_classification_observed_before_freeze": false,
+  "complete_69_row_scan_observed_before_freeze": false,
+  "contract_id": "H0DN-SNIA-SAME-CID-MEASUREMENT-LINEAGE-PHASE1D-20260730-01",
+  "files": {
+    "AUDIT_CONTRACT.md": {
+      "bytes": 11721,
+      "sha256": "87efd27ffcd0c45d3d48e37958523f3a4fc0d35e52c3e6678840bb3c7bd28189"
+    },
+    "provenance/CONTRACT_AMENDMENTS.tsv": {
+      "bytes": 92,
+      "sha256": "a4c4c88cdee4b40415caa78fc85ddf01c9e97a4569908494d4c3f1fad94044a7"
+    },
+    "provenance/DECISION_CONFIG.json": {
+      "bytes": 7115,
+      "sha256": "7d75fb8ed22f8c76be1f1fb51f0f09b1ec2f91278649ca97ea7e144d9391d565"
+    },
+    "provenance/PHASE1B_ROW_MAP.tsv": {
+      "bytes": 10690,
+      "sha256": "a3cd37e836d39f623dfedcea6c3c8a0ac0c0f80ae5647bd163610fdbd1bd9d69"
+    },
+    "provenance/PREEXECUTION_EXPOSURE.json": {
+      "bytes": 1425,
+      "sha256": "8b7f9148cd569953af8363b968a4a1329a766c57a8564da842eb98869a5fdf44"
+    },
+    "provenance/REPOSITORY_LOCK.json": {
+      "bytes": 756,
+      "sha256": "75b057c8c5ac38a27d1e9f24ee568735f20e69ff911fbf6ca3e887c3bf487337"
+    },
+    "provenance/SOURCE_LOCK.tsv": {
+      "bytes": 8360,
+      "sha256": "8c061f736a487c63ff972ba52fb1b9579737744ac51c942424266aa4b79ab571"
+    },
+    "provenance/UPSTREAM_AUDIT_DEPENDENCIES.json": {
+      "bytes": 548,
+      "sha256": "acaf7e46888839d6db77b18fde3ebc9077a8663ddfa100370f0bb0baa66cc876"
+    }
+  },
+  "freeze_timestamp_utc": "2026-07-30T07:26:17Z",
+  "independent_verification_observed_before_freeze": false,
+  "known_phase1b_results_observed_before_freeze": true,
+  "known_phase1c_results_observed_before_freeze": true,
+  "partial_result_blindness": true,
+  "release_sufficiency_classification_observed_before_freeze": false,
+  "status": "FROZEN_BEFORE_COMPLETE_PHASE1D_SCAN"
+}

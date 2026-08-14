@@ -1,0 +1,18 @@
+{
+  "phase1a": {
+    "contract_id": "H0DN-SNIA-RESIDUAL-PHASE1A-20260730-01",
+    "known_contrast_chi2": 11.209315063602752,
+    "known_contrast_degrees_of_freedom": 39,
+    "known_status": "AUDIT_COMPLETE_LOW_CHI2_LOCALIZED_TO_DUPLICATE_NAME_CONTRASTS"
+  },
+  "phase1b": {
+    "archive_name": "h0dn-snia-multirow-provenance-audit_v0.1.0.zip",
+    "archive_sha256": "1b099109ac7dca7fd34d5e28b51c299acd87c0626e9c3976a37dd35c5df42959",
+    "contract_id": "H0DN-SNIA-MULTIROW-PROVENANCE-PHASE1B-20260730-01",
+    "derived_compact_mapping": "provenance/PHASE1B_ROW_MAP.tsv",
+    "row_mapping_dependency_sha256": "8d3cd7554ead02ac82c8ab15a1d45132b576d744e481846686b68c42926b1d29",
+    "row_mapping_sha256": "024ffcc86b7b002d7d1a2213ac4d54d1c754d60a486d837cb554a77e7702a82e",
+    "status": "AUDIT_COMPLETE_PROVENANCE_AND_COVARIANCE_LINEAGE_TRACED"
+  }
+}
+

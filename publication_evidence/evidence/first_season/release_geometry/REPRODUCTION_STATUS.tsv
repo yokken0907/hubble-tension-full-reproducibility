@@ -1,0 +1,3 @@
+item_id	object	status	directly_runnable	required_input	source_record	limitation
+RELEASE_GEOMETRY-PACKAGE-TRACE	claim-level evidence and source locators	PASS	YES: python scripts/verify_package.py	none	FIRST_MASTER_v1.0.0	Verifies extraction and provenance, not the original scientific computation.
+RELEASE_GEOMETRY-SCIENCE-STATUS	Release-geometry attribution and metric boundary	INVARIANT_CORE_RETAINED; SYMMETRIC_POOLING_EXTERNAL_REENTRY_HOLD	NO	Externally justified physical parameterization or independent data | External metric, joint likelihood, or component posterior	FS-B08;FS-B09	No new analysis or substituted external product is bundled.

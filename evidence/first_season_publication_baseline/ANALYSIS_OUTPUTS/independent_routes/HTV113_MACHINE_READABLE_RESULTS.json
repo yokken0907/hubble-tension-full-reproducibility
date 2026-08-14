@@ -1,0 +1,43 @@
+{
+  "phase": "HTV113",
+  "classification": "COMPLETE_WITH_SCOPE",
+  "baseline": {
+    "H0": 73.499,
+    "sigma": 0.809,
+    "chi2": 117.5597,
+    "ndof": 119,
+    "equations": 255,
+    "distinct_measurements": 183,
+    "redundant_equations": 72
+  },
+  "orthogonal_paths": {
+    "O1": {
+      "H0": 73.11,
+      "sigma": 0.92
+    },
+    "O2": {
+      "H0": 73.451,
+      "sigma": 1.777
+    },
+    "difference_display_sigma": 0.17041206875691337,
+    "weighted_mean": 73.18208119418729,
+    "weighted_sigma": 0.8169984354444492,
+    "weight_fraction_O1": 0.7886181988642224,
+    "weight_fraction_O2": 0.21138180113577762
+  },
+  "audit": {
+    "naive_average": false,
+    "rank_deficiency_handled": true,
+    "shared_anchor_covariance_encoded": true,
+    "shared_MAS_covariance_encoded": true,
+    "shared_HMS_covariance_encoded": true,
+    "pantheon_offdiag_encoded": true,
+    "cross_method_flow_covariance_encoded": false,
+    "baseline_sigma_model_averaged": false,
+    "data_graph_orthogonal_confirmation": true,
+    "full_systematics_orthogonal_confirmation": false,
+    "hubble_tension_resolved": false
+  },
+  "next": "H0DN_EXACT_PUBLIC_CODE_COVARIANCE_BLOCK_INFLUENCE_AND_NUMERICAL_STABILITY_AUDIT",
+  "independent_acceptance": "NOT_YET_PRESENT"
+}

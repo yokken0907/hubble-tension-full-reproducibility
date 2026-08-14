@@ -1,0 +1,11 @@
+{
+  "source_contract": "HT-FINAL-INTERNAL-CLOSURE-20260809-01",
+  "source_path": "FINAL_VALIDATION::results/internal_validation_results.json::sn_compression.exact_synthetic_diagnostic_loss",
+  "compressed_mean_first": "0",
+  "compressed_mean_second": "0",
+  "compressed_variance_both": "1/3",
+  "residual_chi2_first": "2",
+  "residual_chi2_second": "8",
+  "status": "PASS",
+  "boundary": "Exact diagnostic-loss fixture for the stated one-intercept class; no universal model claim."
+}

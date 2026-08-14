@@ -1,0 +1,936 @@
+--- a/tools/run_hts68_tdcosmo_audit.py
++++ b/tools/run_hts68_tdcosmo_audit.py
+@@ -1,10 +1,12 @@
+ #!/usr/bin/env python3
+-"""HTS68: audit the public TDCOSMO-2025 posterior-chain contract.
++"""HTS68 corrected future rerun: audit the frozen TDCOSMO-2025 sources.
+ 
+-This stage is deliberately posterior-descriptive.  It validates the public
+-HDF5 exports, reproduces the published flat-LambdaCDM H0 table, and maps the
+-effect of nested external-lens and auxiliary-cosmology layers.  It does not
+-claim independent tension significance or rerun the original likelihood.
++This is a source-enforced future-rerun patch for a post-hoc formalized,
++exploratory public-chain reconstruction. It validates identity before opening
++any HDF5 file, compares equal-weight chain quantiles with a separately stored and
++independently hashed reference table, and maps descriptive nested-posterior shifts. It
++does not parse Table 6 from the PDF, claim independent significance or causal
++attribution, or perform an alternate-implementation recomputation.
+ """
+ 
+ from __future__ import annotations
+@@ -16,6 +18,7 @@
+ import math
+ import re
+ import subprocess
++from datetime import datetime, timezone
+ from pathlib import Path
+ from typing import Any
+ 
+@@ -54,6 +57,66 @@
+     "w_phiCDM2.h5",
+ }
+ 
++EXPECTED_REMOTE_URL = "https://github.com/TDCOSMO/TDCOSMO2025_public.git"
++EXPECTED_COMMIT_SHA = "d7f38db341f68be1df0d9ac1fc528c45113f94cf"
++EXPECTED_PAPER_PDF_SHA256 = (
++    "e94a728864f3afe9cc7672b97918ff366863a55df183ba116c3ceff526a7f5c7"
++)
++EXPECTED_PAPER_IDENTIFIER = "arXiv:2506.03023"
++# The original HTS68 did not record the paper version. Replace this sentinel
++# with an independently verified version and update the reference-table hash
++# before authorizing any future rerun. Until then, the source gate must HOLD.
++EXPECTED_PAPER_VERSION = "UNRESOLVED_MUST_BE_FROZEN_BEFORE_RERUN"
++
++# Gate G0 is intentionally unresolved in this template. A future authorized
++# preparation step must replace both hash sentinels, update the paper version,
++# freeze the exact files, and issue a separately hashed approval record and
++# G0 freeze manifest.
++# The script-normalized hash replaces only the value of its own expected-hash
++# assignment with a fixed marker before hashing, avoiding a self-reference loop.
++EXPECTED_SCRIPT_NORMALIZED_SHA256 = "UNRESOLVED_MUST_BE_FROZEN_BEFORE_RERUN"
++EXPECTED_G0_FREEZE_MANIFEST_SHA256 = "UNRESOLVED_MUST_BE_FROZEN_BEFORE_RERUN"
++EXPECTED_APPROVAL_CONTRACT_ID = "HTS68_CORRECTED_EXECUTION_CONTRACT_FOR_FUTURE_RERUN"
++EXPECTED_APPROVAL_CONTRACT_VERSION = "CORR2"
++
++EXPECTED_REQUIRED_INPUT_SHA256 = {
++    "README.md": "20ba4944985c1435b1b111f713a58968e8468c430022fec11ab526797b6e89f5",
++    "likelihood_sampling.py": "45825cbe3104a8bbd73f1001c6ede7fa08105e4c26e09486115639a3855b5a42",
++    "HTS68_PAPER_TABLE6_REFERENCE.tsv": (
++        "1cd322aa9e1131bd6a81702e1b81d3afb49f0388b59825983573e05d260d00ed"
++    ),
++}
++EXPECTED_CHAIN_SHA256 = {
++    "LambdaCDM1a.h5": "c46bf18d72b03835c1c1cc9bc5b38a752e3e3185d5beaf3833fe750e6c6ef161",
++    "LambdaCDM1b.h5": "5a04e219bbabfc8d16b3448731a35d592d4bd132e30ddf75fb8dde6659ab2acd",
++    "LambdaCDM1c.h5": "13bbdbc41758389cec1c21e0ee649a48cac82a6b38ce2052310cea9ba99841bf",
++    "LambdaCDM1d.h5": "14a7e790fd91386cd97cb26690b5a9fc8269488fbb440890ba3e3d97c361d7b8",
++    "LambdaCDM2a.h5": "2d4dd6ea2370f190fcb8a695d003b3337f7c0f0b6d4d8f9f73d1908bb8d57be7",
++    "LambdaCDM2b.h5": "93387730574ff82d5c03326eb1e69bf97d1c783221d19842383755376aabbea9",
++    "LambdaCDM2c.h5": "808dc197fcc7fa695f6f27fcfa87964b99510dfc03e12af71e26fcd606cb7296",
++    "LambdaCDM2d.h5": "e62c0fb6877809efb36ea415e40566a676a93d76a7bcc6152ee8f114ae6b4ee6",
++    "LambdaCDM3a.h5": "ed7e069c4c5f2b33552649dd508a43c900da831e000475dfd0486ec1d0768bb6",
++    "LambdaCDM3b.h5": "4a745a04110f4443766449c438d0ca129d63cd0ce08ab32053b277e030139435",
++    "ULambdaCDM1.h5": "96f96ca0c1eb2ad8b7fd1bba0f7ea7c945179c3e553d03322eeee0a8ec632af3",
++    "ULambdaCDM2.h5": "a4d8f3f08e7d59841f5272e705a5216269473d2f2504672cf4640d35153c0a9c",
++    "ULambdaCDM3.h5": "4daf0cc6d276aefb3a5e1e45f9a9d0346b1ad163b00377bf82d7bd18b32f2022",
++    "ULambdaCDM4.h5": "f5ffc0a6ccd47ee81c81bba66eb61ea6c58db4aed15801622152e6b584323626",
++    "UoLambdaCDM.h5": "caff596a1396d7e34b4c99b9231d7a65c5a5e3ccad52b80d494001289341fd18",
++    "UwCDM.h5": "4eda5aaa14ea4acdcbe53e75d37614771e10f47e69a3bd2d5f7c9e878c35710c",
++    "Uw_0w_aCDM.h5": "657d93b7c0fa4df2eb8e1b374c9061964df1d7e26f166b13794d241178fb316c",
++    "Uw_phiCDM.h5": "27dc48414a1b429ee61f084f7d53de2f782848c37b2f43ddcdde5948d2cb6111",
++    "oLambdaCDM.h5": "d1d4ce10c4bd0fcf6f31328679a0b6b0c27bbb9b9e6abed36efb0dfc7bab908a",
++    "wCDM1.h5": "b277a3bf5da1983c4852cfd6f63efe8a0e211b32b163d8651a9492abb98e348a",
++    "wCDM2.h5": "07d44238d213ed7237cca6ca8fa9d42c8644936b78156838fc8940d95390e2fa",
++    "wCDM3.h5": "2ecfa671db610a9ed0c06026a44fde0e75ca055e0647b0a6f24c3f7983d32040",
++    "w_0w_aCDM1.h5": "1b41f39c3f4b04cfdc1713108879c2a4e9df342c4f1467cd2ec6fe58d44ef575",
++    "w_0w_aCDM2.h5": "2ab389b10986930a8b8b7953c35f479242a67d35f995d6e04ade2ce52118cff8",
++    "w_0w_aCDM3.h5": "ac2f67dd93bb495c59f76a63361d575bd1befb87604e3ce1543434ee4f68e473",
++    "w_0w_aCDM4.h5": "bf8e555f08e886763a1e0aef99a5d55b9d0dd6c16f71d8421d80f584d429e7ee",
++    "w_phiCDM1.h5": "61819e1803e714047c7e31cc1ceb9d8cea3836c8fa67d7e0ecdeb4b1eed0c9ef",
++    "w_phiCDM2.h5": "7526a5dc3b8430e77a0833572db21b497a889c634636f6710ed2acb30721288c",
++}
++
+ KEY_PARAMETERS = (
+     "h0",
+     "om",
+@@ -65,24 +128,6 @@
+     "a_ani_sigma",
+ )
+ 
+-# Paper Table 6. Values are medians with 16th/84th-percentile errors.
+-# The DES-SN5YR full-lens paper row is called LambdaCDM2b in the paper but is
+-# LambdaCDM2d in the expanded public chain grid.
+-PAPER_H0 = {
+-    "ULambdaCDM1": ("UΛCDM1", 73.7, 4.4, 4.7),
+-    "ULambdaCDM2": ("UΛCDM2", 76.8, 4.6, 3.9),
+-    "ULambdaCDM3": ("UΛCDM3", 74.2, 4.5, 4.6),
+-    "ULambdaCDM4": ("UΛCDM4", 77.8, 4.7, 3.7),
+-    "LambdaCDM1a": ("ΛCDM1a", 71.6, 3.3, 3.9),
+-    "LambdaCDM1b": ("ΛCDM1b", 74.1, 3.3, 3.6),
+-    "LambdaCDM1c": ("ΛCDM1c", 72.1, 3.4, 3.6),
+-    "LambdaCDM1d": ("ΛCDM1d", 74.3, 3.7, 3.1),
+-    "LambdaCDM2a": ("ΛCDM2a", 71.2, 3.6, 3.7),
+-    "LambdaCDM2d": ("ΛCDM2b", 73.9, 3.0, 3.4),
+-    "LambdaCDM3a": ("ΛCDM3a", 72.4, 3.6, 3.9),
+-    "LambdaCDM3b": ("ΛCDM3b", 74.8, 3.4, 3.5),
+-}
+-
+ GROUPS = {
+     "NO_AUXILIARY_COSMOLOGY": {
+         "BASE": "ULambdaCDM1",
+@@ -117,6 +162,79 @@
+     return digest.hexdigest()
+ 
+ 
++def normalized_script_sha256(path: Path) -> str:
++    text = path.read_text(encoding="utf-8")
++    normalized = re.sub(
++        r'EXPECTED_SCRIPT_NORMALIZED_SHA256 = "[^"]+"',
++        'EXPECTED_SCRIPT_NORMALIZED_SHA256 = "<NORMALIZED_SELF_HASH>"',
++        text,
++        count=1,
++    )
++    normalized = re.sub(
++        r'EXPECTED_G0_FREEZE_MANIFEST_SHA256 = "[^"]+"',
++        'EXPECTED_G0_FREEZE_MANIFEST_SHA256 = "<NORMALIZED_MANIFEST_HASH>"',
++        normalized,
++        count=1,
++    )
++    if normalized == text:
++        raise RuntimeError("SCRIPT_HASH_NORMALIZATION_ASSIGNMENTS_NOT_FOUND")
++    return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
++
++
++def parse_utc_timestamp(value: str) -> datetime:
++    parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
++    if parsed.tzinfo is None:
++        raise ValueError("timestamp must include UTC offset")
++    return parsed.astimezone(timezone.utc)
++
++
++def load_json_record(
++    path: Path, label: str, required: set[str]
++) -> tuple[dict[str, Any], list[str]]:
++    if not path.is_file():
++        return {}, [f"MISSING_{label}:{path}"]
++    try:
++        record = json.loads(path.read_text(encoding="utf-8"))
++    except (OSError, json.JSONDecodeError) as exc:
++        return {}, [f"INVALID_{label}:{exc}"]
++    missing = sorted(required - set(record))
++    issues = [f"{label}_FIELDS_MISSING:{missing}"] if missing else []
++    return record, issues
++
++
++def load_approval_record(path: Path) -> tuple[dict[str, Any], list[str]]:
++    return load_json_record(
++        path,
++        "G0_APPROVAL_RECORD",
++        {
++            "contract_id",
++            "contract_version",
++            "approval_status",
++            "approved_at_utc",
++            "approver",
++            "paper_identifier",
++            "paper_version",
++        },
++    )
++
++
++def load_g0_freeze_manifest(path: Path) -> tuple[dict[str, Any], list[str]]:
++    return load_json_record(
++        path,
++        "G0_FREEZE_MANIFEST",
++        {
++            "contract_id",
++            "contract_version",
++            "script_normalized_sha256",
++            "execution_contract_sha256",
++            "approval_record_sha256",
++            "reference_tsv_sha256",
++            "paper_identifier",
++            "paper_version",
++        },
++    )
++
++
+ def run_git(repo: Path, *args: str) -> str:
+     completed = subprocess.run(
+         ["git", *args],
+@@ -129,6 +247,13 @@
+     return completed.stdout.strip()
+ 
+ 
++def try_git(repo: Path, *args: str) -> str:
++    try:
++        return run_git(repo, *args)
++    except (FileNotFoundError, subprocess.CalledProcessError):
++        return ""
++
++
+ def decode(value: Any) -> str:
+     if isinstance(value, bytes):
+         return value.decode("utf-8")
+@@ -143,6 +268,54 @@
+             writer.writerow({field: row.get(field, "") for field in fields})
+ 
+ 
++def load_paper_reference(path: Path) -> tuple[list[dict[str, str]], list[str]]:
++    required_fields = {
++        "release_model_id",
++        "model_label",
++        "paper_table_row",
++        "h0_median",
++        "h0_lower_error_magnitude",
++        "h0_upper_error_magnitude",
++        "paper_identifier",
++        "paper_version",
++        "transcription_method",
++        "source_location",
++    }
++    issues: list[str] = []
++    if not path.is_file():
++        return [], [f"MISSING_REQUIRED_INPUT:{path.name}"]
++    with path.open("r", encoding="utf-8", newline="") as handle:
++        reader = csv.DictReader(handle, delimiter="\t")
++        fields = set(reader.fieldnames or [])
++        if fields != required_fields:
++            issues.append(
++                "PAPER_REFERENCE_SCHEMA_MISMATCH:"
++                f"expected={sorted(required_fields)}:actual={sorted(fields)}"
++            )
++        rows = list(reader)
++    expected_ids = {
++        "ULambdaCDM1",
++        "ULambdaCDM2",
++        "ULambdaCDM3",
++        "ULambdaCDM4",
++        "LambdaCDM1a",
++        "LambdaCDM1b",
++        "LambdaCDM1c",
++        "LambdaCDM1d",
++        "LambdaCDM2a",
++        "LambdaCDM2d",
++        "LambdaCDM3a",
++        "LambdaCDM3b",
++    }
++    actual_ids = {row.get("release_model_id", "") for row in rows}
++    if len(rows) != 12 or actual_ids != expected_ids:
++        issues.append(
++            "PAPER_REFERENCE_ROW_SET_MISMATCH:"
++            f"count={len(rows)}:ids={sorted(actual_ids)}"
++        )
++    return rows, issues
++
++
+ def rounded_match(actual: float, expected: float, digits: int = 1) -> bool:
+     return math.isclose(round(actual, digits), expected, abs_tol=10 ** (-digits) / 2)
+ 
+@@ -224,31 +397,316 @@
+     parser = argparse.ArgumentParser()
+     parser.add_argument("--repo", type=Path, required=True)
+     parser.add_argument("--paper-pdf", type=Path, required=True)
++    parser.add_argument("--paper-reference-tsv", type=Path, required=True)
++    parser.add_argument("--execution-contract", type=Path, required=True)
++    parser.add_argument("--approval-record-json", type=Path, required=True)
++    parser.add_argument("--g0-freeze-manifest-json", type=Path, required=True)
++    parser.add_argument("--paper-identifier", required=True)
++    parser.add_argument("--paper-version", required=True)
+     parser.add_argument("--output", type=Path, required=True)
+     args = parser.parse_args()
+ 
++    execution_started_utc = datetime.now(timezone.utc)
+     repo = args.repo.resolve()
+     paper_pdf = args.paper_pdf.resolve()
++    paper_reference_tsv = args.paper_reference_tsv.resolve()
++    execution_contract = args.execution_contract.resolve()
++    approval_record_json = args.approval_record_json.resolve()
+     output = args.output.resolve()
+     output.mkdir(parents=True, exist_ok=True)
+ 
+-    commit = run_git(repo, "rev-parse", "HEAD")
+-    commit_date = run_git(repo, "show", "-s", "--format=%aI", "HEAD")
+-    remote_url = run_git(repo, "remote", "get-url", "origin")
+-    tracked_status = run_git(repo, "status", "--short", "--untracked-files=no")
+-    git_fsck = subprocess.run(
+-        ["git", "fsck", "--full"],
+-        cwd=repo,
+-        text=True,
+-        stdout=subprocess.PIPE,
+-        stderr=subprocess.PIPE,
++    # Gate G0 reads governance artifacts only. Repository metadata, paper PDF,
++    # and chain files remain untouched until G0 passes.
++    g0_issues: list[str] = []
++    script_path = Path(__file__).resolve()
++    g0_freeze_manifest_json = args.g0_freeze_manifest_json.resolve()
++
++    try:
++        actual_script_normalized_sha256 = normalized_script_sha256(script_path)
++    except (OSError, RuntimeError) as exc:
++        actual_script_normalized_sha256 = ""
++        g0_issues.append(f"SCRIPT_NORMALIZED_HASH_FAILURE:{exc}")
++
++    if not execution_contract.is_file():
++        actual_execution_contract_sha256 = ""
++        g0_issues.append(f"MISSING_EXECUTION_CONTRACT:{execution_contract}")
++    else:
++        actual_execution_contract_sha256 = sha256_path(execution_contract)
++
++    approval_record, approval_issues = load_approval_record(approval_record_json)
++    g0_issues.extend(approval_issues)
++    actual_approval_record_sha256 = (
++        sha256_path(approval_record_json) if approval_record_json.is_file() else ""
++    )
++
++    freeze_manifest, manifest_issues = load_g0_freeze_manifest(
++        g0_freeze_manifest_json
++    )
++    g0_issues.extend(manifest_issues)
++    actual_g0_freeze_manifest_sha256 = (
++        sha256_path(g0_freeze_manifest_json)
++        if g0_freeze_manifest_json.is_file()
++        else ""
++    )
++
++    reference_tsv_sha256 = (
++        sha256_path(paper_reference_tsv) if paper_reference_tsv.is_file() else ""
++    )
++    expected_reference_hash = EXPECTED_REQUIRED_INPUT_SHA256[
++        "HTS68_PAPER_TABLE6_REFERENCE.tsv"
++    ]
++
++    if EXPECTED_SCRIPT_NORMALIZED_SHA256.startswith("UNRESOLVED_"):
++        g0_issues.append("EXPECTED_SCRIPT_NORMALIZED_SHA256_NOT_FROZEN")
++    elif actual_script_normalized_sha256 != EXPECTED_SCRIPT_NORMALIZED_SHA256:
++        g0_issues.append(
++            "SCRIPT_NORMALIZED_SHA256_MISMATCH:"
++            f"expected={EXPECTED_SCRIPT_NORMALIZED_SHA256}:"
++            f"actual={actual_script_normalized_sha256}"
++        )
++
++    if EXPECTED_G0_FREEZE_MANIFEST_SHA256.startswith("UNRESOLVED_"):
++        g0_issues.append("EXPECTED_G0_FREEZE_MANIFEST_SHA256_NOT_FROZEN")
++    elif (
++        actual_g0_freeze_manifest_sha256
++        != EXPECTED_G0_FREEZE_MANIFEST_SHA256
++    ):
++        g0_issues.append(
++            "G0_FREEZE_MANIFEST_SHA256_MISMATCH:"
++            f"expected={EXPECTED_G0_FREEZE_MANIFEST_SHA256}:"
++            f"actual={actual_g0_freeze_manifest_sha256}"
++        )
++
++    if EXPECTED_PAPER_VERSION.startswith("UNRESOLVED_"):
++        g0_issues.append("PAPER_VERSION_NOT_FROZEN_IN_CONTRACT")
++
++    if freeze_manifest:
++        manifest_expectations = {
++            "contract_id": EXPECTED_APPROVAL_CONTRACT_ID,
++            "contract_version": EXPECTED_APPROVAL_CONTRACT_VERSION,
++            "script_normalized_sha256": actual_script_normalized_sha256,
++            "execution_contract_sha256": actual_execution_contract_sha256,
++            "approval_record_sha256": actual_approval_record_sha256,
++            "reference_tsv_sha256": reference_tsv_sha256,
++            "paper_identifier": EXPECTED_PAPER_IDENTIFIER,
++            "paper_version": EXPECTED_PAPER_VERSION,
++        }
++        for field, expected in manifest_expectations.items():
++            actual = freeze_manifest.get(field)
++            if actual != expected:
++                g0_issues.append(
++                    f"G0_FREEZE_MANIFEST_FIELD_MISMATCH:{field}:"
++                    f"expected={expected}:actual={actual}"
++                )
++        if freeze_manifest.get("reference_tsv_sha256") != expected_reference_hash:
++            g0_issues.append(
++                "G0_MANIFEST_REFERENCE_HASH_NOT_EQUAL_TO_CODE_CONTRACT:"
++                f"code={expected_reference_hash}:"
++                f"manifest={freeze_manifest.get('reference_tsv_sha256')}"
++            )
++
++    if approval_record:
++        approval_expectations = {
++            "contract_id": EXPECTED_APPROVAL_CONTRACT_ID,
++            "contract_version": EXPECTED_APPROVAL_CONTRACT_VERSION,
++            "approval_status": "APPROVED",
++            "paper_identifier": EXPECTED_PAPER_IDENTIFIER,
++            "paper_version": EXPECTED_PAPER_VERSION,
++        }
++        for field, expected in approval_expectations.items():
++            actual = approval_record.get(field)
++            if actual != expected:
++                g0_issues.append(
++                    f"APPROVAL_RECORD_FIELD_MISMATCH:{field}:"
++                    f"expected={expected}:actual={actual}"
++                )
++        try:
++            approved_at_utc = parse_utc_timestamp(
++                str(approval_record.get("approved_at_utc", ""))
++            )
++            if approved_at_utc >= execution_started_utc:
++                g0_issues.append(
++                    "APPROVAL_TIME_NOT_BEFORE_EXECUTION_START:"
++                    f"approved={approved_at_utc.isoformat()}:"
++                    f"started={execution_started_utc.isoformat()}"
++                )
++        except (TypeError, ValueError) as exc:
++            approved_at_utc = None
++            g0_issues.append(f"INVALID_APPROVAL_TIMESTAMP:{exc}")
++    else:
++        approved_at_utc = None
++
++    g0_gate = {
++        "gate": "HTS68_G0_CONTRACT_COMPLETENESS_GATE",
++        "status": "PASS" if not g0_issues else "HOLD",
++        "must_precede_scientific_source_read": True,
++        "execution_started_utc": execution_started_utc.isoformat(),
++        "approval_time_utc": (
++            approved_at_utc.isoformat() if approved_at_utc is not None else None
++        ),
++        "expected_script_normalized_sha256": EXPECTED_SCRIPT_NORMALIZED_SHA256,
++        "actual_script_normalized_sha256": actual_script_normalized_sha256,
++        "expected_g0_freeze_manifest_sha256": (
++            EXPECTED_G0_FREEZE_MANIFEST_SHA256
++        ),
++        "actual_g0_freeze_manifest_sha256": (
++            actual_g0_freeze_manifest_sha256
++        ),
++        "actual_execution_contract_sha256": actual_execution_contract_sha256,
++        "actual_approval_record_sha256": actual_approval_record_sha256,
++        "expected_reference_tsv_sha256": expected_reference_hash,
++        "actual_reference_tsv_sha256": reference_tsv_sha256,
++        "expected_paper_identifier": EXPECTED_PAPER_IDENTIFIER,
++        "actual_paper_identifier": args.paper_identifier,
++        "expected_paper_version": EXPECTED_PAPER_VERSION,
++        "actual_paper_version": args.paper_version,
++        "freeze_manifest": freeze_manifest,
++        "approval_record": approval_record,
++        "issues": g0_issues,
++    }
++    (output / "HTS68_G0_CONTRACT_COMPLETENESS_GATE.json").write_text(
++        json.dumps(g0_gate, indent=2, ensure_ascii=False) + "\n",
++        encoding="utf-8",
+     )
++    if g0_issues:
++        print(json.dumps(g0_gate, indent=2, ensure_ascii=False))
++        return 2
++
++    commit = try_git(repo, "rev-parse", "HEAD")
++    commit_date = try_git(repo, "show", "-s", "--format=%aI", "HEAD")
++    remote_url = try_git(repo, "remote", "get-url", "origin")
++    tracked_status = try_git(repo, "status", "--short", "--untracked-files=no")
++    try:
++        git_fsck_returncode = subprocess.run(
++            ["git", "fsck", "--full"],
++            cwd=repo,
++            text=True,
++            stdout=subprocess.PIPE,
++            stderr=subprocess.PIPE,
++        ).returncode
++    except FileNotFoundError:
++        git_fsck_returncode = 1
+ 
+     chain_dir = repo / "chains_export"
+     chain_paths = sorted(chain_dir.glob("*.h5"))
+     found_names = {path.name for path in chain_paths}
+     set_match = found_names == EXPECTED_CHAIN_FILES
+ 
++    paper_reference_rows, source_identity_issues = load_paper_reference(
++        paper_reference_tsv
++    )
++    if set(EXPECTED_CHAIN_SHA256) != EXPECTED_CHAIN_FILES:
++        source_identity_issues.append(
++            "INTERNAL_CONTRACT_ERROR:CHAIN_FILE_SET_AND_HASH_SET_DIFFER"
++        )
++    if remote_url != EXPECTED_REMOTE_URL:
++        source_identity_issues.append(
++            f"REMOTE_URL_MISMATCH:expected={EXPECTED_REMOTE_URL}:actual={remote_url}"
++        )
++    if commit != EXPECTED_COMMIT_SHA:
++        source_identity_issues.append(
++            f"COMMIT_SHA_MISMATCH:expected={EXPECTED_COMMIT_SHA}:actual={commit}"
++        )
++    if found_names != EXPECTED_CHAIN_FILES:
++        source_identity_issues.append(
++            "CHAIN_FILE_SET_MISMATCH:"
++            f"missing={sorted(EXPECTED_CHAIN_FILES - found_names)}:"
++            f"unexpected={sorted(found_names - EXPECTED_CHAIN_FILES)}"
++        )
++    actual_chain_sha256: dict[str, str] = {}
++    for filename, expected_hash in sorted(EXPECTED_CHAIN_SHA256.items()):
++        path = chain_dir / filename
++        if not path.is_file():
++            continue
++        actual_hash = sha256_path(path)
++        actual_chain_sha256[filename] = actual_hash
++        if actual_hash != expected_hash:
++            source_identity_issues.append(
++                f"CHAIN_SHA256_MISMATCH:{filename}:"
++                f"expected={expected_hash}:actual={actual_hash}"
++            )
++    if not paper_pdf.is_file():
++        source_identity_issues.append(f"MISSING_REQUIRED_INPUT:{paper_pdf.name}")
++        paper_pdf_sha256 = ""
++    else:
++        paper_pdf_sha256 = sha256_path(paper_pdf)
++        if paper_pdf_sha256 != EXPECTED_PAPER_PDF_SHA256:
++            source_identity_issues.append(
++                "PAPER_PDF_SHA256_MISMATCH:"
++                f"expected={EXPECTED_PAPER_PDF_SHA256}:actual={paper_pdf_sha256}"
++            )
++    if args.paper_identifier != EXPECTED_PAPER_IDENTIFIER:
++        source_identity_issues.append(
++            "PAPER_IDENTIFIER_MISMATCH:"
++            f"expected={EXPECTED_PAPER_IDENTIFIER}:actual={args.paper_identifier}"
++        )
++    if args.paper_version != EXPECTED_PAPER_VERSION:
++        source_identity_issues.append(
++            "PAPER_VERSION_MISMATCH:"
++            f"expected={EXPECTED_PAPER_VERSION}:actual={args.paper_version}"
++        )
++    for row in paper_reference_rows:
++        if row.get("paper_identifier") != args.paper_identifier:
++            source_identity_issues.append(
++                "PAPER_REFERENCE_IDENTIFIER_MISMATCH:"
++                f"row={row.get('release_model_id', '')}"
++            )
++        if row.get("paper_version") != args.paper_version:
++            source_identity_issues.append(
++                "PAPER_REFERENCE_VERSION_MISMATCH:"
++                f"row={row.get('release_model_id', '')}"
++            )
++    required_paths = {
++        "README.md": repo / "README.md",
++        "likelihood_sampling.py": repo / "likelihood_sampling.py",
++        "HTS68_PAPER_TABLE6_REFERENCE.tsv": paper_reference_tsv,
++    }
++    required_input_actual_sha256: dict[str, str] = {}
++    for label, path in required_paths.items():
++        if not path.is_file():
++            source_identity_issues.append(f"MISSING_REQUIRED_INPUT:{label}")
++            continue
++        actual_hash = sha256_path(path)
++        required_input_actual_sha256[label] = actual_hash
++        expected_hash = EXPECTED_REQUIRED_INPUT_SHA256[label]
++        if actual_hash != expected_hash:
++            source_identity_issues.append(
++                f"REQUIRED_INPUT_SHA256_MISMATCH:{label}:"
++                f"expected={expected_hash}:actual={actual_hash}"
++            )
++
++    source_gate = {
++        "gate": "HTS68_SOURCE_IDENTITY_GATE",
++        "status": "PASS" if not source_identity_issues else "HOLD",
++        "g0_contract_completeness_pass": True,
++        "must_precede_hdf5_open": True,
++        "expected_remote_url": EXPECTED_REMOTE_URL,
++        "actual_remote_url": remote_url,
++        "expected_commit_sha": EXPECTED_COMMIT_SHA,
++        "actual_commit_sha": commit,
++        "expected_chain_file_count": 28,
++        "actual_chain_file_count": len(chain_paths),
++        "exact_chain_file_set_match": set_match,
++        "expected_chain_sha256": EXPECTED_CHAIN_SHA256,
++        "actual_chain_sha256": actual_chain_sha256,
++        "expected_paper_pdf_sha256": EXPECTED_PAPER_PDF_SHA256,
++        "actual_paper_pdf_sha256": paper_pdf_sha256,
++        "expected_paper_identifier": EXPECTED_PAPER_IDENTIFIER,
++        "actual_paper_identifier": args.paper_identifier,
++        "expected_paper_version": EXPECTED_PAPER_VERSION,
++        "actual_paper_version": args.paper_version,
++        "required_input_actual_sha256": required_input_actual_sha256,
++        "issues": source_identity_issues,
++    }
++    (output / "HTS68_SOURCE_IDENTITY_GATE.json").write_text(
++        json.dumps(source_gate, indent=2, ensure_ascii=False) + "\n",
++        encoding="utf-8",
++    )
++    if source_identity_issues:
++        print(json.dumps(source_gate, indent=2, ensure_ascii=False))
++        return 2
++
++    # HDF5 access is forbidden until the complete source-identity gate passes.
+     chain_rows: list[dict[str, Any]] = []
+     chain_stats: dict[str, dict[str, Any]] = {}
+     for path in chain_paths:
+@@ -332,40 +790,55 @@
+         posterior_fields,
+     )
+ 
+-    reproduction_rows: list[dict[str, Any]] = []
+-    for release_id, (paper_id, h0, minus, plus) in PAPER_H0.items():
++    reference_match_rows: list[dict[str, Any]] = []
++    for reference in paper_reference_rows:
++        release_id = reference["release_model_id"]
++        paper_id = reference["model_label"]
++        h0 = float(reference["h0_median"])
++        minus = float(reference["h0_lower_error_magnitude"])
++        plus = float(reference["h0_upper_error_magnitude"])
+         actual = chain_stats[release_id]["h0"]
+         passed = (
+             rounded_match(actual["q50"], h0)
+             and rounded_match(actual["minus"], minus)
+             and rounded_match(actual["plus"], plus)
+         )
+-        reproduction_rows.append(
++        reference_match_rows.append(
+             {
+                 "paper_model_id": paper_id,
++                "paper_table_row": reference["paper_table_row"],
+                 "release_model_id": release_id,
+-                "paper_h0_median": h0,
+-                "paper_h0_minus": minus,
+-                "paper_h0_plus": plus,
+-                "computed_h0_median": actual["q50"],
+-                "computed_h0_minus": actual["minus"],
+-                "computed_h0_plus": actual["plus"],
+-                "rounded_table_match": passed,
++                "reference_h0_median": h0,
++                "reference_h0_lower_error_magnitude": minus,
++                "reference_h0_upper_error_magnitude": plus,
++                "equal_weight_quantile_h0_median": actual["q50"],
++                "equal_weight_quantile_h0_lower_error_magnitude": actual["minus"],
++                "equal_weight_quantile_h0_upper_error_magnitude": actual["plus"],
++                "rounded_reference_match": passed,
++                "paper_identifier": reference["paper_identifier"],
++                "paper_version": reference["paper_version"],
++                "transcription_method": reference["transcription_method"],
++                "pdf_table_extraction_performed": False,
+             }
+         )
+     write_tsv(
+-        output / "HTS68_PAPER_TABLE6_REPRODUCTION.tsv",
+-        reproduction_rows,
++        output / "HTS68_PAPER_TABLE6_REFERENCE_MATCH.tsv",
++        reference_match_rows,
+         [
+             "paper_model_id",
++            "paper_table_row",
+             "release_model_id",
+-            "paper_h0_median",
+-            "paper_h0_minus",
+-            "paper_h0_plus",
+-            "computed_h0_median",
+-            "computed_h0_minus",
+-            "computed_h0_plus",
+-            "rounded_table_match",
++            "reference_h0_median",
++            "reference_h0_lower_error_magnitude",
++            "reference_h0_upper_error_magnitude",
++            "equal_weight_quantile_h0_median",
++            "equal_weight_quantile_h0_lower_error_magnitude",
++            "equal_weight_quantile_h0_upper_error_magnitude",
++            "rounded_reference_match",
++            "paper_identifier",
++            "paper_version",
++            "transcription_method",
++            "pdf_table_extraction_performed",
+         ],
+     )
+ 
+@@ -470,8 +943,8 @@
+     sl2s_rows = [
+         row for row in shift_rows if row["added_external_lens_layer"] == "SL2S"
+     ]
+-    paper_reproduction_pass = all(
+-        row["rounded_table_match"] for row in reproduction_rows
++    paper_reference_match_pass = all(
++        row["rounded_reference_match"] for row in reference_match_rows
+     )
+     chain_contract_pass = (
+         set_match
+@@ -492,8 +965,9 @@
+         row["delta_h0_median"] > 0 and row["delta_lambda_mst_median"] > 0
+         for row in both_rows
+     )
+-    slacs_dominates = all(
++    slacs_shift_exceeds_sl2s = all(
+         slacs["delta_h0_median"] > sl2s["delta_h0_median"]
++        and slacs["delta_lambda_mst_median"] > sl2s["delta_lambda_mst_median"]
+         for slacs, sl2s in zip(slacs_rows, sl2s_rows)
+     )
+ 
+@@ -575,6 +1049,12 @@
+             "status": "UNRESOLVED",
+             "detail": "The public TDCOSMO posteriors remain broad and do not establish a resolution, correction, or new-physics explanation.",
+         },
++        {
++            "limitation_id": "L06",
++            "scope": "HTS68_INDEPENDENT_ALTERNATE_IMPLEMENTATION",
++            "status": "NOT_DONE",
++            "detail": "Running this script or a copy of it does not constitute an independent alternate-implementation recomputation.",
++        },
+     ]
+     write_tsv(
+         output / "HTS68_LIMITATION_REGISTER.tsv",
+@@ -584,21 +1064,64 @@
+ 
+     source_rows = [
+         {
++            "source": "HTS68_EXECUTION_SCRIPT_NORMALIZED",
++            "locator": script_path.name,
++            "frozen_identifier": EXPECTED_APPROVAL_CONTRACT_VERSION,
++            "sha256": actual_script_normalized_sha256,
++            "validation": "PASS",
++        },
++        {
++            "source": "HTS68_EXECUTION_CONTRACT",
++            "locator": execution_contract.name,
++            "frozen_identifier": EXPECTED_APPROVAL_CONTRACT_ID,
++            "sha256": actual_execution_contract_sha256,
++            "validation": "PASS",
++        },
++        {
++            "source": "HTS68_APPROVAL_RECORD",
++            "locator": approval_record_json.name,
++            "frozen_identifier": str(approval_record.get("approved_at_utc", "")),
++            "sha256": actual_approval_record_sha256,
++            "validation": "PASS",
++        },
++        {
+             "source": "TDCOSMO2025_PUBLIC_REPOSITORY",
+             "locator": remote_url,
+             "frozen_identifier": commit,
+             "sha256": "",
+             "validation": (
+                 "PASS"
+-                if not tracked_status and git_fsck.returncode == 0
++                if remote_url == EXPECTED_REMOTE_URL
++                and commit == EXPECTED_COMMIT_SHA
++                and not tracked_status
++                and git_fsck_returncode == 0
+                 else "FAIL"
+             ),
+         },
+         {
+             "source": "TDCOSMO2025_ARXIV_PDF",
+             "locator": "https://arxiv.org/pdf/2506.03023",
+-            "frozen_identifier": "2506.03023",
+-            "sha256": sha256_path(paper_pdf),
++            "frozen_identifier": (
++                f"{args.paper_identifier};version={args.paper_version}"
++            ),
++            "sha256": paper_pdf_sha256,
++            "validation": (
++                "PASS"
++                if paper_pdf_sha256 == EXPECTED_PAPER_PDF_SHA256
++                and args.paper_identifier == EXPECTED_PAPER_IDENTIFIER
++                and args.paper_version == EXPECTED_PAPER_VERSION
++                else "FAIL"
++            ),
++        },
++        {
++            "source": "HTS68_PAPER_TABLE6_REFERENCE",
++            "locator": paper_reference_tsv.name,
++            "frozen_identifier": (
++                f"{args.paper_identifier};version={args.paper_version}"
++            ),
++            "sha256": required_input_actual_sha256[
++                "HTS68_PAPER_TABLE6_REFERENCE.tsv"
++            ],
+             "validation": "PASS",
+         },
+     ]
+@@ -608,30 +1131,57 @@
+         ["source", "locator", "frozen_identifier", "sha256", "validation"],
+     )
+ 
++    formal_pass = (
++        g0_gate["status"] == "PASS"
++        and source_gate["status"] == "PASS"
++        and chain_contract_pass
++        and paper_reference_match_pass
++    )
++    long_pass_classification = (
++        "PASS_TDCOSMO2025_FROZEN_PUBLIC_CHAIN_CONTRACT_AND_DESCRIPTIVE_"
++        "NESTED_POSTERIOR_SHIFT_MAPPING_WITH_SCOPE"
++    )
++    hold_classification = (
++        "HOLD_TDCOSMO2025_CHAIN_CONTRACT_OR_REFERENCE_MATCH_FAILURE"
++    )
++
+     classification = {
+         "phase": "HTS68",
+-        "stage": "TDCOSMO2025_PUBLIC_CHAIN_CONTRACT_AND_DEPENDENCY_AUDIT",
++        "analysis_mode": (
++            "PROSPECTIVELY_CONTRACTED_REPLICATION_OF_POSTHOC_EXPLORATORY_HTS68"
++        ),
++        "execution_contract_timing": "PROSPECTIVELY_FROZEN_FOR_THIS_FUTURE_RERUN",
++        "stage": "TDCOSMO2025_PUBLIC_CHAIN_CONTRACT_AND_DESCRIPTIVE_SHIFT_MAPPING",
+         "classification": (
+-            "PASS_TDCOSMO2025_PUBLIC_CHAIN_DEPENDENCY_RECONSTRUCTION_WITH_SCOPE"
+-            if chain_contract_pass
+-            and paper_reproduction_pass
+-            and consistent_both_direction
+-            else "HOLD_TDCOSMO2025_CHAIN_OR_REPRODUCTION_FAILURE"
++            long_pass_classification if formal_pass else hold_classification
++        ),
++        "management_classification": (
++            "PASS_WITH_SCOPE" if formal_pass else "HOLD"
+         ),
++        "g0_contract_completeness_gate": "PASS",
+         "source_reentry_gate": "PASS_TDCOSMO_PUBLIC_HDF5_TRIGGER_MET",
++        "source_identity_gate": "PASS",
+         "source_commit": commit,
+         "source_commit_date": commit_date,
+         "chain_count": len(chain_rows),
+         "expected_chain_set_match": set_match,
+         "chain_contract_pass": chain_contract_pass,
+-        "paper_table6_h0_reproduction_pass": paper_reproduction_pass,
+-        "paper_table6_h0_reproduction_count": sum(
+-            row["rounded_table_match"] for row in reproduction_rows
++        "paper_table6_reference_match_pass": paper_reference_match_pass,
++        "paper_table6_reference_match_count": sum(
++            row["rounded_reference_match"] for row in reference_match_rows
+         ),
+-        "paper_table6_h0_expected_count": len(reproduction_rows),
++        "paper_table6_reference_expected_count": len(reference_match_rows),
++        "pdf_table_extraction_performed": False,
++        "quantile_weighting": "EQUAL_WEIGHT_NO_WEIGHT_DATASET_PRESENT",
+         "combined_external_lens_h0_and_lambda_direction_consistent": consistent_both_direction,
+-        "slacs_shift_exceeds_sl2s_shift_in_all_comparable_contexts": slacs_dominates,
++        "slacs_shift_exceeds_sl2s_shift_in_all_comparable_contexts": slacs_shift_exceeds_sl2s,
++        "slacs_vs_sl2s_formal_gate_status": (
++            "DESCRIPTIVE_OBSERVATION_OUTSIDE_THE_FORMAL_PASS_GATE"
++        ),
++        "joint_slacs_sl2s_nonadditive_interaction_possible": True,
++        "precision_control_conclusion_permitted": False,
+         "identifier_crosswalk_required": True,
++        "hts68_independent_alternate_implementation_recomputation": "NOT_DONE",
+         "exact_mcmc_convergence_independently_rerun": False,
+         "exact_likelihood_reexecution": False,
+         "branch_decision": (
+@@ -661,9 +1211,12 @@
+         "LambdaCDM3b",
+     ]
+     report_lines = [
+-        "# HTS68 execution report",
++        "# HTS68 corrected future-rerun execution report",
+         "",
+-        "`PASS_TDCOSMO2025_PUBLIC_CHAIN_DEPENDENCY_RECONSTRUCTION_WITH_SCOPE`",
++        f"`{classification['classification']}`",
++        "",
++        "Execution contract timing: `PROSPECTIVELY_FROZEN_FOR_THIS_FUTURE_RERUN`.",
++        "This future rerun does not retroactively change the post-hoc status of the original HTS68.",
+         "",
+         "## Outcome",
+         "",
+@@ -673,8 +1226,11 @@
+         "rows, have internally consistent parameter dimensions, and match their",
+         "embedded model identifiers.",
+         "",
+-        f"The released chains reproduce {sum(row['rounded_table_match'] for row in reproduction_rows)}/{len(reproduction_rows)} "
+-        "flat-LambdaCDM H0 rows in the paper's Table 6 at the published precision.",
++        f"Equal-weight 16/50/84-percentile quantiles computed from the released "
++        f"chains match {sum(row['rounded_reference_match'] for row in reference_match_rows)}/{len(reference_match_rows)} "
++        "separately stored and independently hashed paper Table 6 reference rows "
++        "at the recorded precision. The reference values came from the TSV; "
++        "the script did not extract Table 6 from the PDF.",
+         "",
+         "## Key posterior layers",
+         "",
+@@ -692,23 +1248,28 @@
+     report_lines.extend(
+         [
+             "",
+-            "Across all four flat-LambdaCDM auxiliary-cosmology contexts, adding",
+-            "SLACS+SL2S moves both the H0 median and the internal mass-sheet",
+-            "population mean upward. Where SLACS and SL2S are separately released,",
+-            "the SLACS shift is larger in every comparable context. This localizes",
+-            "the dominant released-posterior dependency to the external-lens",
+-            "population layer, primarily SLACS. It does not establish a causal",
+-            "systematic or an independent shift significance.",
++            "In comparable public nested posteriors, the descriptive shifts of",
++            "the H0 median and lambda_int median associated with adding SLACS are",
++            "consistently larger than the shifts associated with adding SL2S.",
++            "This is a descriptive observation outside the formal PASS gate. It",
++            "does not imply causal attribution, independent significance, or",
++            "identification of a systematic. Joint SLACS+SL2S additions may contain",
++            "non-additive interaction, and no precision-control conclusion is made.",
+             "",
+             "## Contract warning",
+             "",
+             "The paper identifier `ΛCDM2b` denotes the DES-SN5YR posterior with",
+             "SLACS+SL2S. In the expanded chain release, `LambdaCDM2b.h5` is SLACS",
+-            "only; the paper row is reproduced by `LambdaCDM2d.h5`. Dataset",
++            "only; the matching release posterior is `LambdaCDM2d.h5`. Dataset",
+             "attributes, not filenames alone, are therefore authoritative.",
+             "",
+             "## Remaining hold",
+             "",
++            "HTS68 independent alternate-implementation recomputation = NOT_DONE.",
++            "A rerun by this script, or a copy of it, is not an independent audit.",
++            "The existing independent-audit bundle covers the project and HTS67;",
++            "it does not contain an HTS68 alternate-implementation recomputation.",
++            "",
+             "Exact MCMC convergence and exact likelihood reexecution are not",
+             "independently closed. The exports omit walker/time, burn-in, thinning,",
+             "seed, weights and log-probability metadata. The supplied sampling code",
+@@ -745,9 +1306,12 @@
+ 
+ ## Selected question
+ 
+-Which posterior layer—time-delay lenses, external SLACS/SL2S lenses, or
+-Pantheon+/DES-SN5YR/DESI-DR2 auxiliary cosmology—controls the movement and
+-precision of the released TDCOSMO-2025 H0 posterior?
++What descriptive H0-median and lambda_int-median shifts are associated with
++adding external SLACS/SL2S lens layers within comparable released nested
++TDCOSMO-2025 posteriors?
++
++The SLACS-versus-SL2S comparison is outside the formal PASS gate. No layer is
++classified as controlling precision, and joint additions may be non-additive.
+ 
+ ## Rejected operations
+ 
+@@ -766,8 +1330,8 @@
+ The official repository is adequate for:
+ 
+ - exact HDF5 structural validation;
+-- marginal posterior quantile reproduction;
+-- paper-table cross-checking;
++- equal-weight marginal posterior quantile calculation;
++- comparison with a separately stored and independently hashed paper-reference table;
+ - posterior-layer dependency mapping;
+ - parameter-correlation diagnostics.
+ 

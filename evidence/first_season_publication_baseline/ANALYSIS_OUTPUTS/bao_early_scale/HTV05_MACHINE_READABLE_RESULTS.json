@@ -1,0 +1,169 @@
+{
+  "classification": "PASS_WITH_CALIBRATION_DEPENDENCE_EXPLICIT_AND_VOTE_COUNT_CORRECTED",
+  "official_data": {
+    "n_observables": 13,
+    "n_effective_redshifts": 7,
+    "mean_sha256": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585",
+    "covariance_sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509"
+  },
+  "flat_LCDM_BAO_only_fit": {
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "omega_m": 0.297461818432141,
+    "omega_m_sigma": 0.008575498445886644,
+    "H0_rd_km_s": 10153.977325303938,
+    "H0_rd_sigma_km_s": 73.27616098554005,
+    "H0_rd_over_100": 101.53977325303939,
+    "H0_rd_over_100_sigma": 0.7327616098554004,
+    "parameter_covariance": [
+      [
+        7.353917359540425e-05,
+        -0.5802463541150724
+      ],
+      [
+        -0.5802463541150724,
+        5369.3957687787815
+      ]
+    ],
+    "parameter_correlation": -0.9234009980899693,
+    "chi2": 10.271041002564846,
+    "dof": 11,
+    "PTE": 0.5061843221216831
+  },
+  "redshift_splits": {
+    "z_less_than_1p1": {
+      "fit": {
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "omega_m": 0.309581449081269,
+        "omega_m_sigma": 0.016843644126334285,
+        "H0_rd_km_s": 10090.013883512442,
+        "H0_rd_sigma_km_s": 106.86374338490836,
+        "H0_rd_over_100": 100.90013883512442,
+        "H0_rd_over_100_sigma": 1.0686374338490836,
+        "parameter_covariance": [
+          [
+            0.00028370834745459545,
+            -1.7035828918597102
+          ],
+          [
+            -1.7035828918597105,
+            11419.859650235545
+          ]
+        ],
+        "parameter_correlation": -0.9464481567638655,
+        "chi2": 8.516580606690331,
+        "dof": 5,
+        "PTE": 0.12997046660817127
+      },
+      "approximate_BBN_H0": {
+        "mean": 68.84377409896513,
+        "standard_deviation": 0.6897774663578143,
+        "p16": 68.16286578924942,
+        "median": 68.85304603968669,
+        "p84": 69.52713696554929
+      }
+    },
+    "z_greater_than_1p1": {
+      "fit": {
+        "indices": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "omega_m": 0.29636247633961743,
+        "omega_m_sigma": 0.01906688316859824,
+        "H0_rd_km_s": 10147.262700261828,
+        "H0_rd_sigma_km_s": 218.90849270369867,
+        "H0_rd_over_100": 101.47262700261828,
+        "H0_rd_over_100_sigma": 2.1890849270369865,
+        "parameter_covariance": [
+          [
+            0.0003635460337649749,
+            -4.0725932987656455
+          ],
+          [
+            -4.0725932987656455,
+            47920.9281778053
+          ]
+        ],
+        "parameter_correlation": -0.9757279063256376,
+        "chi2": 0.9863211406603681,
+        "dof": 4,
+        "PTE": 0.911863009770717
+      },
+      "approximate_BBN_H0": {
+        "mean": 68.24695061241931,
+        "standard_deviation": 1.0673404893538079,
+        "p16": 67.19150035183645,
+        "median": 68.2916062919046,
+        "p84": 69.2999721057967
+      }
+    }
+  },
+  "approximate_BBN_calibration": {
+    "omega_b_h2_prior": {
+      "mean": 0.02218,
+      "sigma": 0.00055
+    },
+    "N_eff": 3.046,
+    "sum_mnu_eV": 0.06,
+    "draws": 500000,
+    "H0": {
+      "mean": 68.50837104338923,
+      "standard_deviation": 0.5424639996177139,
+      "p16": 67.96889477174524,
+      "median": 68.51043262807973,
+      "p84": 69.04715158572857
+    },
+    "rd_Mpc": {
+      "mean": 148.22343349597054,
+      "standard_deviation": 1.3773059910405796,
+      "p16": 146.85441226317602,
+      "median": 148.19773786706946,
+      "p84": 149.59046985914097
+    },
+    "published_DESI_BBN_H0": {
+      "mean": 68.51,
+      "sigma": 0.58
+    },
+    "scope": "Sanity check using DESI paper fitting formula, not CLASS/CAMB likelihood reproduction"
+  },
+  "local_H0_required_sound_horizon": {
+    "local_H0": 73.49,
+    "local_H0_sigma": 0.93,
+    "required_rd_Mpc": 138.16814975240086,
+    "required_rd_sigma_Mpc": 2.012808741343112,
+    "fractional_reduction_vs_approx_BBN_mean": 0.06783869126768693,
+    "fractional_reduction_vs_147p05_Mpc": 0.06040020569601601,
+    "scope": "Conditional on flat LambdaCDM BAO-only H0*rd fit"
+  },
+  "published_internal_consistency": {
+    "DESI_vs_CMB_flat_LCDM": "2.3 sigma mild tension",
+    "w0wa_preference_DESI_plus_CMB": "3.1 sigma",
+    "w0wa_preference_with_SNe": "2.8 to 4.2 sigma depending on SN sample"
+  }
+}

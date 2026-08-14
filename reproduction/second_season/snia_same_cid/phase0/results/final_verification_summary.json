@@ -1,0 +1,89 @@
+{
+  "fail_count": 0,
+  "gate_count": 16,
+  "gates": [
+    {
+      "detail": "frozen contract and one disclosed non-scientific amendment",
+      "gate_id": "contract_freeze",
+      "status": "PASS"
+    },
+    {
+      "detail": "12 strict JSON files",
+      "gate_id": "strict_json",
+      "status": "PASS"
+    },
+    {
+      "detail": "authoritative status and 14/14 scientific gates",
+      "gate_id": "authoritative_execution",
+      "status": "PASS"
+    },
+    {
+      "detail": "277-row input, SPD covariance, alpha reconstruction",
+      "gate_id": "input_and_intercept",
+      "status": "PASS"
+    },
+    {
+      "detail": "11 fixed profile points; max residual 3.553e-13",
+      "gate_id": "compression_profile_schema",
+      "status": "PASS"
+    },
+    {
+      "detail": "all parameters/covariances, normal equations, chi2, rank/dof, and blockwise solver",
+      "gate_id": "network_embedding_closure",
+      "status": "PASS"
+    },
+    {
+      "detail": "16 fixed-seed permutations; max difference 3.908e-12",
+      "gate_id": "permutation_schema",
+      "status": "PASS"
+    },
+    {
+      "detail": "generated report hashes and scientific non-claim boundary",
+      "gate_id": "report_and_scientific_boundary",
+      "status": "PASS"
+    },
+    {
+      "detail": "Keiji Yoshimura authorship, CFF, license, AI disclosure",
+      "gate_id": "authorship_and_disclosure",
+      "status": "PASS"
+    },
+    {
+      "detail": "H0DN-SNIA-COMP-0.1.0-PHASE0-FINAL-20260730-01",
+      "gate_id": "delivery_identity",
+      "status": "PASS"
+    },
+    {
+      "detail": "42 delivered files checked against 69 upstream hashes",
+      "gate_id": "no_upstream_bytes",
+      "status": "PASS"
+    },
+    {
+      "detail": "project and result allowlists",
+      "gate_id": "root_closure",
+      "status": "PASS"
+    },
+    {
+      "detail": "8 unit tests",
+      "gate_id": "unit_tests",
+      "status": "PASS"
+    },
+    {
+      "detail": "fresh workspace/upstream rerun and reference comparison",
+      "gate_id": "clean_reproduction_record",
+      "status": "PASS"
+    },
+    {
+      "detail": "69 frozen upstream files",
+      "gate_id": "live_upstream_source_lock",
+      "status": "PASS"
+    },
+    {
+      "detail": "42 manifested files",
+      "gate_id": "package_integrity",
+      "status": "PASS"
+    }
+  ],
+  "overall_status": "PASS",
+  "pass_count": 16,
+  "skip_count": 0
+}

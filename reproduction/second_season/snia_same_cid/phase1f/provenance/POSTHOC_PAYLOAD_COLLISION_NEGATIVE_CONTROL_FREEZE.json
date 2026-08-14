@@ -1,0 +1,64 @@
+{
+  "contract": {
+    "bytes": 2064,
+    "path": "POSTHOC_PAYLOAD_COLLISION_NEGATIVE_CONTROL_CONTRACT.md",
+    "sha256": "e8876cd8577d8ceac896c963a0130fb5a2390e636ef1f73969011b74d1afc2b3"
+  },
+  "freeze_timestamp_utc": "2026-08-09T12:44:25Z",
+  "main_result_observed_before_freeze": true,
+  "negative_control_result_observed_before_freeze": false,
+  "observed_main_counts": {
+    "byte_exact_positive_pair_count": 0,
+    "class_counts": {
+      "NO_MUTUAL_UNIQUE_ROUNDING_COMPATIBLE_PAYLOAD": 44,
+      "SINGLE_MUTUAL_UNIQUE_ROUNDING_COMPATIBLE_PAYLOAD": 4
+    },
+    "mutual_unique_rounding_match_record_count": 4,
+    "pair_count": 48,
+    "physical_exposure_identity_proven": false,
+    "statistical_independence_proven": false
+  },
+  "protected_main_results": {
+    "results/EXECUTION_STATUS.json": {
+      "bytes": 491,
+      "sha256": "110657e577f5f0486385d7a7b23bd4e646130c131325c95eb65d87475dd1d911"
+    },
+    "results/audit_summary.json": {
+      "bytes": 3368,
+      "sha256": "d0d71080a9d82239c199bfaa9a8125128d4da7efbc24b525661effa311689bd5"
+    },
+    "results/filter_calibration_mapping.tsv": {
+      "bytes": 251687,
+      "sha256": "6825e8c52553bda99c4ded5059ca6640f60e336de124a47ec76972b682e3db7e"
+    },
+    "results/input_candidate_map.tsv": {
+      "bytes": 14213,
+      "sha256": "7fd5d5901ca14f3b18cee5e93652d30d66121541d7774d64ec0834897a89eafa"
+    },
+    "results/observation_match_evidence.tsv": {
+      "bytes": 1569,
+      "sha256": "733fb0b7d0f982aa8b26d05c1962bdb1e5eb8512624f05eabae61fb5f3191d20"
+    },
+    "results/pair_dependency_classification.tsv": {
+      "bytes": 16266,
+      "sha256": "aca6e7172a54e7fd2e0bba5f49d797d0c799cefc086a93278cd0478367a0832d"
+    },
+    "results/public_asset_availability.tsv": {
+      "bytes": 3868,
+      "sha256": "61e901c063836b69af7b4cc6590f207c0b8125cb96afdbeff30d9431428daac3"
+    },
+    "results/row_input_profile.tsv": {
+      "bytes": 27040,
+      "sha256": "afe66ea01b2de2127675ef0d6afe7e33e2980a8c53cdd73718beec5653252f7e"
+    },
+    "results/series_configuration_lineage.tsv": {
+      "bytes": 2614,
+      "sha256": "3f37337de2f708d4f027480119a09f3bddba6f5bea38d96aa4850c22a9c151ef"
+    },
+    "results/shared_dependency_ledger.tsv": {
+      "bytes": 2249,
+      "sha256": "d889624ea6649e729c002570ddc838a34f76063c660192f39dac17d41a4686e2"
+    }
+  },
+  "status": "PROJECT_INTERNAL_POSTHOC_NEGATIVE_CONTROL_FREEZE_AFTER_MAIN_RESULT"
+}

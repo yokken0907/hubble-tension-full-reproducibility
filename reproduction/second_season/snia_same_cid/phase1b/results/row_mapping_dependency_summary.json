@@ -1,0 +1,16 @@
+{
+  "ambiguous_after_all_rules_row_count": 0,
+  "catalog_only_ambiguous_row_count": 2,
+  "catalog_only_unique_row_count": 275,
+  "catalog_only_unmatched_row_count": 0,
+  "covariance_diagonal_assisted_row_count": 2,
+  "covariance_diagonal_required_row_count": 2,
+  "final_one_to_one_match_count": 277,
+  "final_single_candidate_count": 277,
+  "h0dn_row_count": 277,
+  "lineage_classification": "JOINT_CATALOG_AND_COVARIANCE_LINEAGE",
+  "official_candidate_coverage_complete": true,
+  "official_row_reuse_count": 0,
+  "status": "PASS",
+  "unmatched_after_all_rules_row_count": 0
+}

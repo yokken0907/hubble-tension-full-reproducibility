@@ -1,0 +1,10 @@
+OBSERVED_TRACED_OR_REEXECUTED	NOT_EQUIVALENT_TO	WHY
+high response	outlier	a datum can be influential while remaining predictive under the fitted covariance
+algebraic localization	valid correction	validation against matched simulation-reference products and matched covariance are separate requirements
+common posterior direction	common cause	shared parameterization, calibration, and reference data can align posterior centers
+within-source robustness	independent validation	variants retain the same data and much of the same implementation
+posterior median shift	causal effect or measurement correction	nested posteriors share data, priors, model structure, and possible interactions
+many repeated analyses or output files	many independent evidence units	repeated analyses can transform the same source without adding independent data
+data-graph separation	full-systematics orthogonality	flow, cosmography, and framework assumptions can remain shared
+numerically traced or re-executed number	correct causal interpretation	arithmetic and provenance checks do not identify physical causes
+project-internal alternate implementation (V001)	external independent replication	the same project and general-purpose AI environment administered the implementation and post-pilot audit, and the original likelihood, sampler, convergence diagnostics, weights, and posterior-generation pipeline were not reconstructed

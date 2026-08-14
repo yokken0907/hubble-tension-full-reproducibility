@@ -1,0 +1,19 @@
+{
+  "complete_target_application_observed_before_freeze": false,
+  "complete_target_excluded_anchor_scan_observed_before_freeze": false,
+  "known_before_freeze": [
+    "Phase 1D resolved 38 of 69 rows under its frozen CID-plus-IDSURVEY vocabulary",
+    "Phase 1D left 31 rows unresolved: 7 with IDSURVEY 51, 16 with IDSURVEY 57, and 8 with IDSURVEY 65",
+    "Phase 1D post-hoc CID-only diagnostic found LOSS candidates for all code-51 target rows, KAIT_DS15 candidates for all code-57 target rows, and CFA4p1-header candidates for all code-65 target rows",
+    "the public distance README labels codes 51, 57, and 65 as LOSS1, LOSS2, and CFA4p2",
+    "the public combined-low-z README lists both CFA4 p1 and p2 source components",
+    "SURVEY.DEF is not tracked in the frozen Pantheon+SH0ES DataRelease commit"
+  ],
+  "result_blindness": "NOT_BLIND_POSTHOC_HYPOTHESES_FULLY_DISCLOSED",
+  "rules_frozen_before": [
+    "complete target-excluded anchor scan",
+    "inferred crosswalk classification",
+    "31-row target application",
+    "independent recomputation"
+  ]
+}

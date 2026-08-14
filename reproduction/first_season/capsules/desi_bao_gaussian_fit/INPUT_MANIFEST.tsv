@@ -1,0 +1,3 @@
+ROLE	EXPECTED_LOCAL_FILENAME	PUBLIC_SOURCE	SOURCE_PATH	BYTES	SHA256	SCOPE
+mean	desi_gaussian_bao_ALL_GCcomb_mean.txt	https://github.com/CobayaSampler/bao_data/tree/master/desi_bao_dr2	desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_mean.txt	472	9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585	external fixed input; historical repository commit unresolved; verify by SHA-256
+covariance	desi_gaussian_bao_ALL_GCcomb_cov.txt	https://github.com/CobayaSampler/bao_data/tree/master/desi_bao_dr2	desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt	2547	252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509	external fixed input; historical repository commit unresolved; verify by SHA-256

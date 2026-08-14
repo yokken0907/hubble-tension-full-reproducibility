@@ -1,0 +1,17 @@
+branch_id	branch	stages	first_season_final_state	established_scope	reentry_requirement
+FS-B01	HTS authority / ontology baseline	HTS01-05	ACTIVE_BASELINE_NOT_SCIENTIFIC_RESULT	source/evidence/quantity/route vocabulary	Formal change-control only
+FS-B02	Local ladder / BBC structural audit	HTV02-31; HTV105	STRUCTURAL_LOCALIZATION_CONFIRMED_CAUSAL_CLOSURE_HOLD	Single zero point/SN/gray/survey mix not sufficient; BBC term localization	Truth-level BiasCor, aligned truth/fitted and pre/post vectors, matched covariance
+FS-B03	BAO–BBN early-scale bridge	HTV05-18; HTS06-18	RETAINED_CONSTRAINT_BUDGET_NOT_NEW_PHYSICS	H0*r_d structure; ~6.8% r_d budget under frozen contract	Matched early-model likelihood/posterior/profile products
+FS-B04	CMB–DESI common direction	HTV32;48-50;99-103; HTS19-25	STRONG_DESCRIPTIVE_GEOMETRY_CAUSAL_ORIGIN_OPEN	Near-common Omega_m–h*r_d direction	Joint simulations, cross-CMB covariance, full posterior
+FS-B05	DESI mode influence atlas	HTV33-34;71-98; HTS26-34	CLOSED_WITH_SCOPE	MIDZ_COMMON_ISO high lever; LRG1_DM counter-anchor	New aligned robustness/release vectors plus covariance
+FS-B06	DESI raw robustness	HTV136 candidate	FROZEN_OPEN_EXTERNAL_PRODUCT	Pipeline/reconstruction/fiducial/weight/mock response not closed	Aligned variants and joint/cross-fit covariance
+FS-B07	ACT public-chain robustness	HTV55-70;102-104; HTS35-43 CORR1	TESTED_PUBLIC_VARIANTS_CLOSED_AS_DOMINANT_EXPLANATION	Official variants center-stable within correlated-source scope	New independent product or exact component likelihood
+FS-B08	Release 6D attribution	HTS51-66	CLOSED_WITH_SCOPE_SAME_ENDPOINT_DECOMPOSITION_EXHAUSTED	Invariant distance/block core retained; attribution convention-dependent	Externally justified physical parameterization or independent data
+FS-B09	HTS67 symmetric pooling	HTS67	CANONICAL_HOLD_EXTERNAL_REENTRY_ONLY	Pooling/metric convention sensitivity	External metric, joint likelihood, or component posterior
+FS-B10	TDCOSMO public-chain result	HTS68 CORR1	RETAINED_POSTHOC_EXPLORATORY_RESULT_WITH_SCOPE	Output-level chain structure and descriptive nested shifts	Alternate implementation and stronger source freeze
+FS-B11	TDCOSMO alternate implementation	Blind sentinel + Table 6 extension	COMPLETE_WITH_SCOPE	13/13 structure; 39/39 tolerance; 12/12 published precision	Reopen only under material new source/question
+FS-B12	GWTC posterior metric	HTV136 candidate	FROZEN_OPEN_LOCAL_POSTERIOR_FILES_MISSING	Release-contract change identified; exact metric not frozen	Official posterior files and matched contract
+FS-B13	MCP/CF4 joint-flow closure	HTV106-113; HTV136 candidate	HOLD_LIKELIHOOD_AND_COVARIANCE_PRODUCTS_MISSING	Single-galaxy dominance rejected; flow interface open	Joint covariance, distance samples, zero-point covariance, likelihood
+FS-B14	Lensed supernova continuation	HTV136 candidate	HOLD_NEW_OBSERVATION_OR_MODEL	Current products broad/descriptive	Updated photometry/lens models or new useful delay
+FS-B15	H0DN network and flow	HTV113-135	O1_FLOW_CLOSED_WITH_SCOPE; CORRELATED_PV_EXACT_REPRODUCTION_HOLD	Public baseline/covariance/flow response audited; no corrected H0	Source matrix/removal vector/author package or external re-entry
+FS-B16	Non-ladder synthesis	HTV106-112	DEPENDENCY_MAP_RETAINED_NO_NAIVE_COMBINATION	Core routes differ but shared assumptions/data prevent naive average	Compatible likelihood contracts and cross-route covariance

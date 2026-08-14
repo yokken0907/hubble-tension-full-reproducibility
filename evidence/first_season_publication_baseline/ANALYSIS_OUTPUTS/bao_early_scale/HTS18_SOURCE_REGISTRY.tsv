@@ -1,0 +1,6 @@
+source_id	role	authority	used_numerically
+PLANCK2018_VI_TABLE4_TABLE5	published marginal and conditional summaries	official collaboration paper	YES
+PLANCK_PR3_FULLGRID_BASE_NNU	official chain family identity	official IRSA product index	NO
+GITHUB_FIXED_COMMIT_CHAIN_MIRROR	parameter ordering and chain existence cross-check	public third-party byte mirror at fixed commit	NO
+DESI_DR2_BAO_VECTOR_COV	BAO likelihood	frozen HTS12/HTS17 input	YES
+SCHONEBERG2024_BBN_2D	omega_b--N_eff prior	DESI desilike frozen implementation	YES

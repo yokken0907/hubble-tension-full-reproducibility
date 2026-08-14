@@ -1,0 +1,25 @@
+check_id	description	observed	requirement	status
+H0-001	test-vector shapes	[[255,64],[255,255]]	[255x64,255x255]	PASS
+H0-002	rank preserved in all decompositions	[[183,183],[183,183],[183,183],[183,183]]	all 183/183	PASS
+H0-003	baseline H0	73.49875364360624	abs difference <=5e-9 from 73.49875364360662	PASS
+H0-004	scipy_pinv standardized-minus-original H0	-0.05244542261242202	abs difference <=5e-8 from -0.052445422611000936	PASS
+H0-005	svd_gesvd standardized-minus-original H0	-0.05244542261235097	abs difference <=5e-8 from -0.052445422611000936	PASS
+H0-006	eigh_evd standardized-minus-original H0	-0.052445422611967274	abs difference <=5e-8 from -0.052445422611000936	PASS
+H0-007	support_gelsy standardized-minus-original H0	-0.0524454226104325	abs difference <=5e-8 from -0.052445422611000936	PASS
+H0-008	cross-implementation delta spread	1.9895196601282805e-12	<=5e-8	PASS
+H0-009	80-digit original normal solve	1.5731667826648403e-12	<=5e-9	PASS
+H0-010	80-digit standardized normal solve	1.8259434520860798e-12	<=5e-9	PASS
+H0-011	dense orthogonal invariance	1.5084822280186927e-10	<=5e-8	PASS
+H0-012	non-orthogonal Moore-Penrose congruence defect	0.00038046837415446405	>1e-6	PASS
+H0-013	nullspace projected design norm	1.0381406186118376e-13	<=1e-10	PASS
+H0-014	nullspace projected data norm	0.18874908268972845	>1e-4	PASS
+H0-015	exact rational mechanism fixture	PASS	PASS	PASS
+SN-001	test-vector dimensions	[[277],[277,277]]	[277,277x277]	PASS
+SN-002	one-intercept estimate	0.7163834210954622	abs difference <=5e-13 from 0.7163834210954622	PASS
+SN-003	one-intercept standard error	0.0018926416391806472	abs difference <=5e-13 from 0.0018926416391806472	PASS
+SN-004	parameter-independent residual chi-square	206.7606364373241	abs difference <=5e-10 from 206.76063643732414	PASS
+SN-005	Cholesky/eigendecomposition alpha	2.220446049250313e-16	<=5e-10	PASS
+SN-006	Cholesky/eigendecomposition variance	1.2705494208814505e-21	<=5e-10	PASS
+SN-007	Cholesky/eigendecomposition chi-square	2.842170943040401e-14	<=5e-10	PASS
+SN-008	complete-square identity	3.410605131648481e-13	<=5e-9	PASS
+SN-009	same compression with different residual chi-square fixture	PASS	PASS	PASS

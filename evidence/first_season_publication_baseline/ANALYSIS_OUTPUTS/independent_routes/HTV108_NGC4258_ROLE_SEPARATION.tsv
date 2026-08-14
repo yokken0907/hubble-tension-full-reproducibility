@@ -1,0 +1,11 @@
+comparison	H0	avg_halfwidth	shift_from_reference	interpretation
+T1_fixed_250: MCP excluding NGC4258	73.6	3.05	-0.30000000000001137	same MCP likelihood family; removes shared maser distance from MCP H0 fit
+T2_fit_sigma_pec: MCP excluding NGC4258	74.2	4.1	-0.20000000000000284	same MCP likelihood family; removes shared maser distance from MCP H0 fit
+T3_group_velocity: MCP excluding NGC4258	72.8	2.75	-0.5	same MCP likelihood family; removes shared maser distance from MCP H0 fit
+T4_2Mpp: MCP excluding NGC4258	72.1	2.7	0.29999999999999716	same MCP likelihood family; removes shared maser distance from MCP H0 fit
+T5_CF3: MCP excluding NGC4258	72.0	2.7	0.20000000000000284	same MCP likelihood family; removes shared maser distance from MCP H0 fit
+T6_M2000: MCP excluding NGC4258	76.8	2.9	-0.10000000000000853	same MCP likelihood family; removes shared maser distance from MCP H0 fit
+MCP fiducial all six	73.9	3.0	0.0	NGC4258 enters as one low-redshift distance-velocity point
+MCP fiducial excluding NGC4258	73.6	3.05	-0.3	high-side MCP center persists; precision nearly unchanged
+2026 Distance Network baseline	73.5	0.81	0.0	NGC4258 enters as an anchor and also megamasers enter as tracers
+2026 Distance Network excluding NGC4258	73.084	0.92	-0.415	network high-H0 result persists without NGC4258 anchor

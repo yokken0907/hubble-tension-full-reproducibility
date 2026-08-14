@@ -1,0 +1,18 @@
+validation_id	target	input	method	key_result	status	independence_class	claim_effect
+V-001	Three top-level archives	Declared ZIP bytes	SHA256 plus ZIP CRC	All three exact	PASS	Artifact verification	Inputs accepted
+V-002	First-season master	Extracted master	Bundled verifier	manifest 36 and embedded CRC PASS	PASS	Package self-verification	Scientific authority intact
+V-003	Second-season master	Extracted master	Bundled verifier	32/32 PASS	PASS	Package self-verification	Scientific authority intact
+V-004	Cross-season package	Extracted package	Package verifier	56/56 PASS	PASS	Package self-verification	Review record intact
+V-005	Cross-season claims versus masters	Both master ZIPs	Direct source verifier	18/18 PASS	PASS	Project-internal direct recheck	Cross-season record retained subject to final refinement
+V-006	H0DN canonical audit	H0DN commit and canonical package	Live verifier	16/16 gates PASS	PASS	Canonical rerun	Existing result intact
+V-007	SN Phase0 canonical audit	H0DN commit and Phase0 package	Live verifier	OVERALL PASS	PASS	Canonical rerun	Existing sufficiency result intact
+V-008	H0DN non-invariance	255x64 A; 255 y; 255x255 C	SciPy pinv; gesvd; evd; support-gelsy	Delta spread 1.9895e-12 around -0.052445422611	PASS	Project-internal alternate linear algebra	Strongly reconfirmed
+V-009	H0DN final-solve precision	Two 64x64 normal systems	80-digit Decimal elimination	Delta -0.05244542261171722333	PASS	Project-internal high-precision final solve	Not a double normal-solve artifact
+V-010	H0DN orthogonal invariance	Frozen actual matrices	Four dense orthogonal transforms seed 20260809	Maximum abs delta H0 1.5085e-10	PASS	Project-internal coordinate check	Orthogonal/nonorthogonal distinction supported
+V-011	H0DN MP congruence	Frozen actual matrices	Mapped precision comparison	Relative Frobenius defect 3.8046837415e-4	PASS	Project-internal algebraic diagnostic	Mechanism supported
+V-012	H0DN support	Frozen actual matrices	Covariance nullspace projection	A norm 1.0381e-13; y norm 0.1887491	PASS_WITH_HOLD	Project-internal support diagnostic	Literal rounded-data support remains inconsistent
+V-013	H0DN exact mechanism	2x2 rational fixture	Exact Fraction arithmetic	1/2 to 1/5; orthogonal 1/2; rank 1	PASS	Exact synthetic mechanism	Floating-point-only explanation rejected
+V-014	SN one-intercept identity	277 row test vector	Independent parser; Cholesky; evd; profile identity	alpha 0.7163834210954622; chi2 206.7606364373241	PASS	Project-internal alternate implementation	Frozen-model result reconfirmed
+V-015	SN diagnostic loss	Exact synthetic vectors	Fraction arithmetic	Same compression; chi2 2 versus 8	PASS	Exact synthetic mechanism	Parameter and diagnostic sufficiency separated
+V-016	same-CID Phase1C	Frozen H0DN/PantheonPlus commits	Canonical live verifier	24/24 PASS	PASS	Canonical rerun	No new branch required
+V-017	same-CID independent calculation	Frozen H0DN/PantheonPlus commits	Separate parser/null-space/eigendecomposition verifier	PASS	PASS	Project-internal independent verifier	Basis robustness retained

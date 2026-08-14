@@ -1,0 +1,58 @@
+{
+  "classification_match": true,
+  "comparisons": [
+    {
+      "absolute_difference": 9.947598300641403e-14,
+      "baseline": "PHASE1A_FULL",
+      "recomputed_chi2": 11.209315063602816,
+      "reported_chi2": 11.209315063602716,
+      "status": "PASS",
+      "tolerance": 2e-08
+    },
+    {
+      "absolute_difference": 1.4210854715202004e-13,
+      "baseline": "STAT_SYS_NO_ROWWISE_VELOCITY",
+      "recomputed_chi2": 14.73423595058734,
+      "reported_chi2": 14.734235950587198,
+      "status": "PASS",
+      "tolerance": 2e-08
+    },
+    {
+      "absolute_difference": 8.171241461241152e-14,
+      "baseline": "STAT_ONLY",
+      "recomputed_chi2": 16.23344750859333,
+      "reported_chi2": 16.233447508593247,
+      "status": "PASS",
+      "tolerance": 2e-08
+    },
+    {
+      "absolute_difference": 9.414691248821327e-14,
+      "baseline": "STAT_SYS_DIAGONAL_ONLY",
+      "recomputed_chi2": 9.155414370678074,
+      "reported_chi2": 9.15541437067798,
+      "status": "PASS",
+      "tolerance": 2e-08
+    },
+    {
+      "absolute_difference": 9.414691248821327e-14,
+      "baseline": "STAT_ONLY_DIAGONAL_ONLY",
+      "recomputed_chi2": 9.937211599987238,
+      "reported_chi2": 9.937211599987144,
+      "status": "PASS",
+      "tolerance": 2e-08
+    }
+  ],
+  "contrast_basis_orthogonality_max_absolute_error": 1.7886926507849745e-16,
+  "contrast_basis_shape": [
+    39,
+    277
+  ],
+  "group_annihilation_max_absolute_error": 3.3306690738754696e-16,
+  "implementation": "independent_parser_null_space_eigendecomposition",
+  "independent_sensitivity_classification": "LOW_FLAG_PERSISTS_THROUGH_STATONLY",
+  "known_phase1a_absolute_difference": 6.394884621840902e-14,
+  "mapping_identity_check_count": 277,
+  "mapping_identity_pass_count": 277,
+  "reported_sensitivity_classification": "LOW_FLAG_PERSISTS_THROUGH_STATONLY",
+  "status": "PASS"
+}

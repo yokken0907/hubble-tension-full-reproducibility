@@ -1,0 +1,11 @@
+metric	value	status
+sentinel_input_files	3	PASS
+sentinel_structural_comparisons	3/3	PASS
+sentinel_quantile_comparisons	9/9 exact	PASS
+extension_input_files	13	PASS
+extension_structural_comparisons	13/13	PASS
+extension_quantiles_within_preregistered_tolerance	39/39	PASS
+extension_exact_binary64_after_tsv	32/39	PASS_WITH_ROUNDING_SCOPE
+maximum_absolute_delta	1.4210854715202004e-14	PASS
+table6_rows_at_published_precision	12/12	PASS
+branch_status	COMPLETE_WITH_SCOPE	CLOSED

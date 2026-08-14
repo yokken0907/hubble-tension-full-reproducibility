@@ -1,0 +1,6 @@
+evidence_id	source	pinned_locator	role	boundary
+PANTHEONPLUS_DISTANCE_README	Pantheon+SH0ES DataRelease	https://github.com/PantheonPlusSH0ES/DataRelease/blob/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/README	Numeric IDSURVEY labels	Does not provide raw-directory/header crosswalk
+PANTHEONPLUS_CATALOG	Pantheon+SH0ES DataRelease	https://github.com/PantheonPlusSH0ES/DataRelease/blob/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/Pantheon%2BSH0ES.dat	Target-excluded CID and IDSURVEY anchors	Only CID, IDSURVEY, and USED_IN_SH0ES_HF enter inference
+PANTHEONPLUS_PHOTOMETRY_TREE	Pantheon+SH0ES DataRelease	https://github.com/PantheonPlusSH0ES/DataRelease/tree/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/1_DATA/photometry	Active files and raw SNID/SURVEY headers	Exact string and frozen LIST/IGNORE rules only
+PANTHEONPLUS_PIPELINE_CONFIG	Pantheon+SH0ES DataRelease	https://github.com/PantheonPlusSH0ES/DataRelease/blob/c447f0fea703fcd0fff57de5000947b5ca81286b/Pantheon%2B_Data/7_PIPPIN/PPLUS.yml	Public directory participation context	Configuration context is not executed-run lineage
+PANTHEONPLUS_SAMPLE_PAPER	Scolnic et al.	https://arxiv.org/abs/2112.03863	Public sample and multiple-survey context	No numeric-to-raw mapping is inferred from prose alone

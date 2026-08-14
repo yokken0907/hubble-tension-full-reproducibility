@@ -1,0 +1,10 @@
+control_id	control	recorded_value	unit_or_scope	status	limitation
+FV-H0DN-FOUR-ROUTE	four project-internal solver paths		H0 delta spread km/s/Mpc	PASS	Project-internal implementation diversity; not external replication.
+FV-H0DN-80DIGIT	80-decimal-digit normal-system solve	-0.05244542261171722333057876035	standardized-minus-original H0 km/s/Mpc	PASS	Tests the final solve only; matrix construction remains frozen.
+FV-H0DN-ORTHOGONAL	four dense orthogonal controls	1.5084822280186927e-10	maximum absolute H0 change km/s/Mpc	PASS	Orthogonal controls do not select a physical representation.
+FV-H0DN-CONGRUENCE	non-orthogonal Moore-Penrose congruence defect	0.00038046837415446405	relative Frobenius norm	PASS	Algebraic mechanism diagnostic only.
+FV-H0DN-SUPPORT-A	covariance-nullspace projection of design	1.0381406186118376e-13	Frobenius norm	PASS	Fixed cutoff and rounded public formulation.
+FV-H0DN-SUPPORT-Y	covariance-nullspace projection of data	0.18874908268972845	mag L2 norm	PASS_WITH_HOLD	Unrounded inputs and latent generative model remain open.
+FV-SN-COMPLETE-SQUARE	one-intercept complete-square identity	3.410605131648481e-13	maximum absolute residual	PASS	Fixed SPD covariance and one-intercept linear Gaussian model.
+FV-SAMECID-CANONICAL	same-CID Phase 1C canonical verifier	24/24	gates	PASS	No new statistic or classification was introduced.
+FV-SAMECID-INDEPENDENT	separate parser/null-space/eigendecomposition verifier	PASS	project-internal verifier	PASS	Not external independent replication.

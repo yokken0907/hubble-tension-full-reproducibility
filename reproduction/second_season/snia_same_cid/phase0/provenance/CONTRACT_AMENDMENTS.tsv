@@ -1,0 +1,2 @@
+amendment_id	date_utc	changed_file	reason	results_seen	interpretation_impact
+A001	2026-07-29T17:58:05Z	requirements-lock.txt	Pin the two transitive packages observed in the first clean installation so future environments cannot resolve different pandas support versions.	true	none; no scientific code, input, grid, tolerance, status rule, or result changed

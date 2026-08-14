@@ -1,0 +1,24 @@
+{
+  "catalog": {
+    "column_count": 47,
+    "required_columns": [
+      "CID",
+      "IDSURVEY",
+      "USED_IN_SH0ES_HF"
+    ],
+    "row_count": 1701,
+    "status": "PASS"
+  },
+  "population": {
+    "excluded_multirow_CID_count": 30,
+    "phase1b_row_count": 277,
+    "phase1d_row_count": 69,
+    "status": "PASS",
+    "target_row_count": 31,
+    "target_rows_by_IDSURVEY": {
+      "51": 7,
+      "57": 16,
+      "65": 8
+    }
+  }
+}

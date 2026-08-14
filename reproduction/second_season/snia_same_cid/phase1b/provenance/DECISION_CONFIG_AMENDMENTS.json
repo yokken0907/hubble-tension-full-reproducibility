@@ -1,0 +1,12 @@
+{
+  "amendment_id": "AMEND-002",
+  "contract_id": "H0DN-SNIA-MULTIROW-PROVENANCE-PHASE1B-20260730-01",
+  "interpretation_affected": false,
+  "mapping_or_lineage_results_observed": false,
+  "official_full_covariance_symmetry": {
+    "action": "record_diagnostic_without_modifying_values",
+    "require_exact_symmetry": false
+  },
+  "reason": "The frozen official printed covariance has 778 elements unequal to their transpose partners, with maximum absolute difference 3.0000000000038676e-08. The primary extracted-submatrix comparison remains elementwise float64 exact with no tolerance and no symmetrization.",
+  "schema_diagnostic_observed": true
+}

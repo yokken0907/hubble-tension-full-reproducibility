@@ -1,0 +1,2 @@
+# Runtime: Python standard library only.
+# Tested with CPython 3.12.

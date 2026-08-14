@@ -1,0 +1,21 @@
+{
+  "copied_files": {
+    "provenance/PHASE1B_ROW_MAP.tsv": {
+      "bytes": 10690,
+      "sha256": "a3cd37e836d39f623dfedcea6c3c8a0ac0c0f80ae5647bd163610fdbd1bd9d69"
+    },
+    "provenance/PHASE1D_AUDIT_SUMMARY.json": {
+      "bytes": 2360,
+      "sha256": "cda451771dc08e8bb16313890729f81fb7622e0646d753322737565c72a7b167"
+    },
+    "provenance/PHASE1D_ROW_LINEAGE.tsv": {
+      "bytes": 12536,
+      "sha256": "c39890d89772f0df94a9789728a24195a7b3bfd45786d3bedb12db5d89d1b24a"
+    }
+  },
+  "phase1d_archive_actual_sha256": "3c201733aee688ee3535928029317f6b9e0bc012a4cca79cfb8c9145e54c7342",
+  "phase1d_archive_expected_sha256": "3c201733aee688ee3535928029317f6b9e0bc012a4cca79cfb8c9145e54c7342",
+  "phase1d_archive_name": "h0dn-snia-same-cid-measurement-lineage-audit_v0.1.0.zip",
+  "phase1d_archive_status": "PASS",
+  "upstream_bytes_redistributed": false
+}

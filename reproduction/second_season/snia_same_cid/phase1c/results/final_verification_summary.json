@@ -1,0 +1,131 @@
+{
+  "closure_disposition": "ACCEPT_COMPLETE_WITH_SCOPE",
+  "gate_count": 24,
+  "gates": [
+    {
+      "description": "active contract-02 freeze and chronology",
+      "gate": "GATE-P1C-01",
+      "status": "PASS"
+    },
+    {
+      "description": "preserved contract-01 pre-execution schema HOLD",
+      "gate": "GATE-P1C-02",
+      "status": "PASS"
+    },
+    {
+      "description": "two commits and thirteen source-lock files",
+      "gate": "GATE-P1C-03",
+      "status": "PASS"
+    },
+    {
+      "description": "canonical Phase 1A and Phase 1B ZIP SHA-256, sidecar, and CRC",
+      "gate": "GATE-P1C-03A",
+      "status": "PASS"
+    },
+    {
+      "description": "277 ordered one-to-one mapping rows",
+      "gate": "GATE-P1C-04",
+      "status": "PASS"
+    },
+    {
+      "description": "30 groups, 69 rows, 39 cross-survey modes",
+      "gate": "GATE-P1C-05",
+      "status": "PASS"
+    },
+    {
+      "description": "raw covariance dimensions, finiteness, and transpose bound",
+      "gate": "GATE-P1C-06",
+      "status": "PASS"
+    },
+    {
+      "description": "76,729 exact STAT+SYS versus H0DN elements",
+      "gate": "GATE-P1C-07",
+      "status": "PASS"
+    },
+    {
+      "description": "five positive-definite projected covariance matrices",
+      "gate": "GATE-P1C-08",
+      "status": "PASS"
+    },
+    {
+      "description": "known Phase 1A contrast value",
+      "gate": "GATE-P1C-09",
+      "status": "PASS"
+    },
+    {
+      "description": "Cholesky and eigendecomposition agreement",
+      "gate": "GATE-P1C-10",
+      "status": "PASS"
+    },
+    {
+      "description": "independent null-space basis agreement",
+      "gate": "GATE-P1C-11",
+      "status": "PASS"
+    },
+    {
+      "description": "32 orthogonal-coordinate trials across five baselines",
+      "gate": "GATE-P1C-12",
+      "status": "PASS"
+    },
+    {
+      "description": "CDF/gamma agreement, distinct thresholds, and classification",
+      "gate": "GATE-P1C-13",
+      "status": "PASS"
+    },
+    {
+      "description": "conditional Beta and marginal chi-square probabilities separated",
+      "gate": "GATE-P1C-13A",
+      "status": "PASS"
+    },
+    {
+      "description": "separate parser/null-space/eigendecomposition verifier",
+      "gate": "GATE-P1C-14",
+      "status": "PASS"
+    },
+    {
+      "description": "33 unit and adversarial tests",
+      "gate": "GATE-P1C-15",
+      "status": "PASS"
+    },
+    {
+      "description": "clean-copy byte identity for 22 main and post-hoc artifacts",
+      "gate": "GATE-P1C-16",
+      "status": "PASS"
+    },
+    {
+      "description": "formal status and 27 internal numerical checks",
+      "gate": "GATE-P1C-17",
+      "status": "PASS"
+    },
+    {
+      "description": "required documentation and explicit boundary marker",
+      "gate": "GATE-P1C-18",
+      "status": "PASS"
+    },
+    {
+      "description": "frozen high-precision diagnostic uses the same mapping and basis",
+      "gate": "GATE-P1C-19",
+      "status": "PASS"
+    },
+    {
+      "description": "high-precision contrast outputs are finite and post-hoc only",
+      "gate": "GATE-P1C-20",
+      "status": "PASS"
+    },
+    {
+      "description": "selected 277x277 asymmetry and upper/lower/symmetric sensitivity",
+      "gate": "GATE-P1C-21",
+      "status": "PASS"
+    },
+    {
+      "description": "verify_results is read-only for every existing manifest target",
+      "gate": "GATE-P1C-22",
+      "status": "PASS"
+    }
+  ],
+  "manifest_and_archive_checks": "performed externally after the manifested tree is fixed",
+  "pass_count": 24,
+  "read_only_manifest_target_count": 71,
+  "status": "PASS",
+  "verification_scope": "pre_manifest_scientific_and_package_closure"
+}

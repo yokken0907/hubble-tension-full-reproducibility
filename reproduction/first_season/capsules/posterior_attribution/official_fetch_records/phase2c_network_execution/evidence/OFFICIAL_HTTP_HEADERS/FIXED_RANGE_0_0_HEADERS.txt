@@ -1,0 +1,13 @@
+FINAL_URL: https://lambda.gsfc.nasa.gov/data/suborbital/SPT/spt_3g_d1/CMB_SPA_DESI_Fixed.zip
+STATUS: 206
+Accept-Ranges: bytes
+Connection: close
+Content-Length: 1
+Content-Range: bytes 0-0/828322572
+Content-Type: application/zip
+Date: Tue, 28 Jul 2026 12:29:44 GMT
+ETag: "315f330c-64fa88b808e46"
+Last-Modified: Fri, 17 Apr 2026 14:12:53 GMT
+Server: Apache
+Strict-Transport-Security: max-age=31536000; includeSubDomains;
+X-Frame-Options: SAMEORIGIN

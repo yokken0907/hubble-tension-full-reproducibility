@@ -1,0 +1,5 @@
+route	representative_contract	representative_H0	plus68	minus68	measurement_core	ladder_free_at_core	sound_horizon_free_at_core	current_direction_description	decisive_arbitration
+MCP	six-galaxy fiducial fixed-250-km/s peculiar velocity	73.9	3.0	3.0	maser disk angular/dynamical geometry plus recession velocity	YES	YES	clearest high-side non-ladder route	NO
+TDCOSMO	TDCOSMO-only plus Pantheon+ Omega_m shape information	71.6	3.9	3.3	time-delay distance plus imaging and stellar kinematics	YES	YES	intermediate; shifts upward with external lens-population information	NO
+GW standard sirens	GWTC-5 FullPop-4.0 plus DES-Y6 dark sirens and GW170817	71.0	9.0	7.1	GW luminosity distance plus statistical/bright redshift information	YES	YES	intermediate and broad	NO
+Lensed supernovae	latest representative centers across three cluster deflectors				supernova time delays plus cluster lens models	YES	YES	descriptively low-to-intermediate, approximately 66.0-69.3	NO

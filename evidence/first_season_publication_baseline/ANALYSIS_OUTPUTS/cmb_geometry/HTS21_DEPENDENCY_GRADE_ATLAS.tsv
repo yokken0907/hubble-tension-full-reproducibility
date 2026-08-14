@@ -1,0 +1,13 @@
+dependency_id	object	classification	evidence_grade	limitation
+ACT_PRIMARY_SPECTRA	ACT DR6 TT/TE/EE	INDEPENDENT_OF_PLANCK_PRIMARY_HIGH_ELL	HIGH	same-sky correlations/calibration lineage remain
+ACT_LOWELL_TAU	SRoll2 low-ell EE or Gaussian tau replacement	SHARED_PLANCK_LOWELL_INFORMATION	HIGH	official actlite/actlite-tau and actbase/actbase-tau pair contracts exist
+ACT_LOWELL_PAIRED_RESPONSE	H0 and Neff shift between SRoll2 and Gaussian tau	NOT_MATERIALIZED	LOW	official paired chains exist but bytes unavailable in runtime
+ACT_ABSOLUTE_CALIBRATION	Planck cross-calibrated ACT maps plus marginalized calibration parameters	PLANCK_LINKED	HIGH	released map factors and nuisance model documented
+ACT_LITE_VS_FULL	foreground/calibration compression response	PUBLISHED_SUB_0P1_SIGMA	MEDIUM	parameter shifts reported below 0.1 sigma; exact H0 delta not frozen
+SPT_PRIMARY_SPECTRA	SPT-3G TT/TE/EE	INDEPENDENT_OF_PLANCK_PRIMARY_HIGH_ELL	HIGH	primary spectra independent; calibration and tau external
+SPT_LOWELL_TAU	Planck-derived Gaussian tau prior	SHARED_PLANCK_LOWELL_INFORMATION	HIGH	baseline prior explicitly external
+SPT_ALT_TAU_RESPONSE	replacement by Natale et al. low-ell constraint	PUBLISHED_NO_SIGNIFICANT_CHANGE	MEDIUM	exact paired H0 vector not locally materialized
+SPT_CALIBRATION	Planck-linked absolute calibration with nuisance marginalization	PLANCK_LINKED	HIGH	temperature and polarization efficiency priors marginalized
+SPT_CALIBRATION_RESPONSE	H0 shift under removal/replacement of calibration priors	NOT_NUMERICALLY_ISOLATED	LOW	requires paired likelihood/chains
+CROSS_EXPERIMENT_LOW_H0	ACT and SPT fixed-LCDM central values	REPRODUCED_ACROSS_INDEPENDENT_PRIMARY_SPECTRA	MEDIUM	not a fully Planck-free statement because low-ell/calibration are shared
+SINGLE_SHARED_DEPENDENCY_EXPLANATION	low-ell tau or calibration alone explains all low H0	NOT_SUPPORTED_BY_AVAILABLE_ROBUSTNESS	MEDIUM	not formally excluded without paired posterior materialization

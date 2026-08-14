@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: >-
+  Please cite this independent software audit together with the H0 Distance
+  Network and Pantheon+ source publications, and identify both frozen
+  upstream commits.
+title: Independent audit of SN Ia multi-row provenance and covariance lineage in H0DN
+type: software
+version: 0.1.0
+date-released: 2026-07-30
+authors:
+  - family-names: Yoshimura
+    given-names: Keiji
+    affiliation: Independent Researcher
+license: MIT
+keywords:
+  - Hubble constant
+  - distance ladder
+  - Type Ia supernovae
+  - provenance
+  - covariance
+  - reproducibility

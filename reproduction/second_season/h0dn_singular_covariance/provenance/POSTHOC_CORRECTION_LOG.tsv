@@ -1,0 +1,2 @@
+timestamp_utc	file	correction	reason	prior_output_disposition
+2026-07-29T00:00:00Z	scripts/run_posthoc_diagnostics.py	use the public absolute cutoff when evaluating rank and feasibility of U0.T@A	the matrix is structurally zero at the public cutoff; a default relative least-squares rank treated eigensolver noise as information	overwritten before release

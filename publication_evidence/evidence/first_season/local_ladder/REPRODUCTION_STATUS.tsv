@@ -1,0 +1,3 @@
+item_id	object	status	directly_runnable	required_input	source_record	limitation
+LOCAL_LADDER-PACKAGE-TRACE	claim-level evidence and source locators	PASS	YES: python scripts/verify_package.py	none	FIRST_MASTER_v1.0.0	Verifies extraction and provenance, not the original scientific computation.
+LOCAL_LADDER-SCIENCE-STATUS	Local ladder and BBC downstream structure	RECORDED_DOWNSTREAM_ALGEBRAIC_RESULT; TRUTH_LEVEL_CLOSURE_HOLD	NO	Truth-level BiasCor, aligned truth/fitted and pre/post vectors, matched covariance	FS-B02	No new analysis or substituted external product is bundled.

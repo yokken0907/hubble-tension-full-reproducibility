@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "absolute_difference": 8.526512829121202e-14,
+      "check": "primary_vs_reference:chi2_total",
+      "status": "PASS",
+      "tolerance": 2e-08
+    },
+    {
+      "absolute_difference": 2.842170943040401e-14,
+      "check": "primary_vs_reference:chi2_duplicate_name_contrasts",
+      "status": "PASS",
+      "tolerance": 2e-08
+    },
+    {
+      "absolute_difference": 2.1884716261411086e-11,
+      "check": "primary_vs_reference:chi2_between_name_modes",
+      "status": "PASS",
+      "tolerance": 2e-08
+    },
+    {
+      "absolute_difference": 2.177102942368947e-11,
+      "check": "primary_partition_closure",
+      "status": "PASS",
+      "tolerance": 2e-09
+    },
+    {
+      "absolute_difference": 0,
+      "check": "degrees_of_freedom",
+      "status": "PASS",
+      "tolerance": 0
+    }
+  ],
+  "status": "PASS"
+}

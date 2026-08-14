@@ -1,0 +1,64 @@
+{
+  "alpha_covariance": {
+    "all_finite": true,
+    "condition_number": 35.21941440064872,
+    "diagonal_maximum": 0.0052981532410187535,
+    "diagonal_minimum": 0.00030872063790624563,
+    "eigenvalue_maximum": 0.00870603322181876,
+    "eigenvalue_minimum": 0.00024719415044159316,
+    "numerical_rank": 277,
+    "shape": [
+      277,
+      277
+    ],
+    "symmetry_max_absolute_error": 0.0
+  },
+  "checks": {
+    "all_numeric_values_finite": true,
+    "alpha_covariance_cholesky": true,
+    "alpha_covariance_spd": true,
+    "alpha_covariance_symmetric": true,
+    "covariance_sha256": true,
+    "covariance_shape": true,
+    "duplicate_name_contrast_df": true,
+    "duplicate_name_excess_row_count": true,
+    "group_row_sums": true,
+    "legacy_duplicate_name_row_count": true,
+    "magnitude_covariance_symmetric": true,
+    "multi_row_exact_name_group_count": true,
+    "object_count": true,
+    "rows_in_multi_row_exact_name_groups": true,
+    "table_sha256": true,
+    "unique_exact_name_count": true
+  },
+  "covariance_sha256": "db2b84f18bf8319b0c6d7da46d574e58dce08de913e38e911ea6e0f8aa8a8aa6",
+  "duplicate_name_contrast_df": 39,
+  "duplicate_name_excess_row_count": 39,
+  "legacy_duplicate_name_row_count": 39,
+  "legacy_field_note": "Historical name; value equals excess rows / contrast df, not all rows in multi-row groups",
+  "magnitude_covariance": {
+    "all_finite": true,
+    "condition_number": 40.71278700490806,
+    "diagonal_maximum": 0.13193358,
+    "diagonal_minimum": 0.00721241,
+    "eigenvalue_maximum": 0.21561464836811584,
+    "eigenvalue_minimum": 0.005295993328634621,
+    "numerical_rank": 277,
+    "shape": [
+      277,
+      277
+    ],
+    "symmetry_max_absolute_error": 0.0
+  },
+  "multi_row_exact_name_group_count": 30,
+  "multiplicity_histogram": {
+    "1": 208,
+    "2": 21,
+    "3": 9
+  },
+  "object_count": 277,
+  "rows_in_multi_row_exact_name_groups": 69,
+  "status": "PASS",
+  "table_sha256": "6b3dd6591cfaade2a6bf4bdb632fafc504f1449b9c07db4176a14e8e2366258f",
+  "unique_exact_name_count": 238
+}
