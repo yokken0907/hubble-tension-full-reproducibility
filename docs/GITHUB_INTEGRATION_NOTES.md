@@ -9,4 +9,4 @@ Recommended integration choices:
 
 Do not overwrite historical release assets. Do not claim a DOI until one is actually assigned. Once a public URL is final, add it to the manuscript Data and Code Availability section and to `CITATION.cff`, then regenerate `MANIFEST.tsv` and `SHA256SUMS.txt`.
 
-The current package deliberately uses `repository-code: TO_BE_ASSIGNED`.
+The public repository URL is now finalized as `https://github.com/yokken0907/hubble-tension-full-reproducibility` and is recorded in `CITATION.cff`.
