@@ -1,0 +1,10 @@
+{
+  "error_count": 0,
+  "expected_failure_count": 0,
+  "failure_count": 0,
+  "scope": "UNIT_AND_FIXED-SOURCE_INTEGRATION_TESTS",
+  "skipped_count": 0,
+  "status": "PASS",
+  "test_count": 50,
+  "unexpected_success_count": 0
+}

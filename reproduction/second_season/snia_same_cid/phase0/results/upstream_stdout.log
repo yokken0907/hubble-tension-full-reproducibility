@@ -1,0 +1,4 @@
+
+=== WARNING === Covariance matrix is rank-deficient: rank 183 < 255. Using pseudoinverse.
+=== WARNING === Degrees of freedom adjusted from 191 to 119 due to rank deficiency.
+H0=73.4988+/-0.8088 km/s/Mpc | Chi-squared=117.5597 | ndof=119 | Reduced Chi-squared=0.9879 | MB=-19.252+/-0.022

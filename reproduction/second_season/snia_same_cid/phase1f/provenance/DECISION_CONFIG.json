@@ -1,0 +1,138 @@
+{
+  "classification": {
+    "formal_complete": "AUDIT_COMPLETE_PUBLIC_INPUT_DEPENDENCY_CLASSIFIED",
+    "hold_operational": "HOLD_SOURCE_OR_SCHEMA_FAILURE"
+  },
+  "contract_id": "H0DN-SNIA-CROSS-SERIES-INPUT-DEPENDENCY-PHASE1F-20260809-01",
+  "expected_population": {
+    "candidate_row_count": 69,
+    "group_count": 30,
+    "pair_count": 48,
+    "phase1d_candidate_count": 38,
+    "phase1e_candidate_count": 31
+  },
+  "matching": {
+    "near_flux_relative_tolerance": "0.0001",
+    "near_mag_absolute_tolerance": "0.0005",
+    "near_magerr_absolute_tolerance": "0.0005",
+    "near_mjd_descriptor_days": "0.11",
+    "payload_fields": ["FLUXCAL", "FLUXCALERR", "MAG", "MAGERR"],
+    "required_observation_fields": ["MJD", "FLT", "FLUXCAL", "FLUXCALERR", "MAG", "MAGERR"]
+  },
+  "pantheonplus": {
+    "calibration_root": "Pantheon+_Data/2_CALIBRATION",
+    "calibration_tree_oid": "33ffec9491944f172e9a1358de56a281296068f0",
+    "commit": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+    "distance_readme_path": "Pantheon+_Data/4_DISTANCES_AND_COVAR/README",
+    "filters_root": "Pantheon+_Data/2_CALIBRATION/filters",
+    "photometry_root": "Pantheon+_Data/1_DATA/photometry",
+    "photometry_tree_oid": "3facbb99276c7589349d8eceaac218ccd2ad0726",
+    "pipeline_config_path": "Pantheon+_Data/7_PIPPIN/PPLUS.yml",
+    "repository": "https://github.com/PantheonPlusSH0ES/DataRelease.git",
+    "salt2_root": "Pantheon+_Data/3_SALT2",
+    "salt2_tree_oid": "31e12f7dbbb0c4ffc86bf0020bedeca3edbb2613"
+  },
+  "series": [
+    {
+      "data_prep_task": "DATACSPDR3",
+      "datawithsys_task": "CSPDR3FITdatawithsys",
+      "directory": "CSPDR3_anthony",
+      "kcor_alias": "cspkcor",
+      "kcor_input": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_CSPDR3.input",
+      "kcor_output": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_CSPDR3_v6_1.fits",
+      "lcfitting_base_basename": "CSPDR3.nml",
+      "readme_file": "CSPDR3_anthony.README",
+      "list_file": "CSPDR3_anthony.LIST",
+      "ignore_file": "CSPDR3_anthony.IGNORE"
+    },
+    {
+      "data_prep_task": "DATAADAMCSP",
+      "datawithsys_task": "ADAMdatawithsys",
+      "directory": "CSP_data2",
+      "kcor_alias": "cspkcor",
+      "kcor_input": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_CSPDR3.input",
+      "kcor_output": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_CSPDR3_v6_1.fits",
+      "lcfitting_base_basename": "CSP_data2.nml",
+      "readme_file": "CSP_data2.README",
+      "list_file": "CSP_data2.LIST",
+      "ignore_file": "CSP_data2.IGNORE"
+    },
+    {
+      "data_prep_task": "DATASWIFTNEW",
+      "datawithsys_task": "SWIFTNEWFITdatawithsys",
+      "directory": "SWIFT",
+      "kcor_alias": "swiftkcor",
+      "kcor_input": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_SWIFT.input",
+      "kcor_output": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_SWIFT_v6_1.fits",
+      "lcfitting_base_basename": "SWIFTNEW.nml",
+      "readme_file": "SWIFT.README",
+      "list_file": "SWIFT.LIST",
+      "ignore_file": "SWIFT.IGNORE"
+    },
+    {
+      "data_prep_task": "DATALOSS",
+      "datawithsys_task": "LOSSFITdatawithsys",
+      "directory": "LOSS",
+      "kcor_alias": "kaitkcor",
+      "kcor_input": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_KAIT_Stahl.input",
+      "kcor_output": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_KAIT_Stahl_v6_1.fits",
+      "lcfitting_base_basename": "LOSS.nml",
+      "readme_file": "LOSS.README",
+      "list_file": "LOSS.LIST",
+      "ignore_file": "LOSS.IGNORE"
+    },
+    {
+      "data_prep_task": "DATAKAITDS15",
+      "datawithsys_task": "KAITDS15FITdatawithsys",
+      "directory": "KAIT_DS15",
+      "kcor_alias": "kaitmokcor",
+      "kcor_input": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_KAIT_Mo.input",
+      "kcor_output": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_KAIT_Mo_v6_1.fits",
+      "lcfitting_base_basename": "KAIT_DS15.nml",
+      "readme_file": "KAIT_DS15.README",
+      "list_file": "KAIT_DS15.LIST",
+      "ignore_file": "KAIT_DS15.IGNORE"
+    },
+    {
+      "data_prep_task": "DATACfA3",
+      "datawithsys_task": "CfA3_DJ20FITdatawithsys",
+      "directory": "CfA3_DJ20",
+      "kcor_alias": "lowzkcor",
+      "kcor_input": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_PS1_CFA_COMBINED.input",
+      "kcor_output": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_PS1_CFA_COMBINED_v6_1.fits",
+      "lcfitting_base_basename": "CFA3_DJ20.nml",
+      "readme_file": "CfA3_DJ20.README",
+      "list_file": "CfA3_DJ20.LIST",
+      "ignore_file": "CfA3_DJ20.IGNORE"
+    },
+    {
+      "data_prep_task": "DATALOWZ",
+      "datawithsys_task": "LFITdatawithsys",
+      "directory": "PS1_LOWZ_COMBINED_TEXT_DS17",
+      "kcor_alias": "lowzkcor",
+      "kcor_input": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_PS1_CFA_COMBINED.input",
+      "kcor_output": "Pantheon+_Data/2_CALIBRATION/SNANA_kcor/kcor_PS1_CFA_COMBINED_v6_1.fits",
+      "lcfitting_base_basename": "LOWZ.nml",
+      "readme_file": "PS1_LOWZ_COMBINED_TEXT_DS17.README",
+      "list_file": "PS1_LOWZ_COMBINED_TEXT_DS17.LIST",
+      "ignore_file": "PS1_LOWZ_COMBINED_TEXT_DS17.IGNORE"
+    }
+  ],
+  "upstream": {
+    "phase1b_row_map_path": "provenance/PHASE1B_ROW_MAP.tsv",
+    "phase1b_row_map_sha256": "a3cd37e836d39f623dfedcea6c3c8a0ac0c0f80ae5647bd163610fdbd1bd9d69",
+    "phase1d_archive_sha256": "6792886b8f1a8ac6397e6305931bfc750fdf1f1211c5e92b1f07ea1e7f0609bd",
+    "phase1d_row_lineage_path": "provenance/PHASE1D_ACCEPTED_CORRECTED_ROW_LINEAGE.tsv",
+    "phase1d_row_lineage_sha256": "3298919e63cc62410bc9a37b0b86d798e2324d7b6ad1e3958a69a06691287809",
+    "phase1d_summary_path": "provenance/PHASE1D_ACCEPTED_CORRECTED_AUDIT_SUMMARY.json",
+    "phase1d_summary_sha256": "e36562a7f298fac9bbf7d6f96b6396625781fe426b78f8819c3e9c420992eabb",
+    "phase1e_archive_sha256": "0c86bd916e5b54f3e97b810b868c793e2fdd564abd94d4f1687fb4f632f73ed3",
+    "phase1e_candidate_evidence_path": "provenance/PHASE1E_TARGET_CANDIDATE_FILE_EVIDENCE.tsv",
+    "phase1e_candidate_evidence_sha256": "ac106e0a07f1641400f1d8e2f7e18db8f5cba5c2561ee0be34b7c8d7cf781877",
+    "phase1e_target_path": "provenance/PHASE1E_TARGET_ROW_APPLICATION.tsv",
+    "phase1e_target_sha256": "ec532a233c67ed97e4f396ea2207913afafc8e6e69491fcdd1e66bf227b33bf4",
+    "phase1e_summary_path": "provenance/PHASE1E_ACCEPTED_CORRECTED_AUDIT_SUMMARY.json",
+    "phase1e_summary_sha256": "d1c3223c2fa18ba131a838dd97d2000aabbb94108257ea8e9cc00c009b52ad40"
+  }
+}
+

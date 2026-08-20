@@ -1,0 +1,6 @@
+CHECK	OBSERVED	EXPECTED	STATUS
+cache_root_unique_mapping	5 rows; candidate_count=['1', '1', '1', '1', '1']	5 rows; all candidate_count=1; UNIQUE_TAIL_CANDIDATE	PASS
+selected_member_hash_semantics	51 rows; unique=51	51 rows exactly matching SELECTED_CHAIN_MANIFEST	PASS
+source_freeze_archive_hashes	HTS62_RESULTS=f51b60503ae20361c9fbcdff4d50b2bac74266b0a270545cb71fe60b582c7a18;HTS66_CORR_RESULTS=92556d7b755f4c7ff2bab1f4ab8cc568a384720cf860164c66810544cf89f54a	HTS62 and HTS66_CORR portable input hashes match actual files	PASS
+classification_and_publication_metrics	HOLD_SYMMETRIC_POOLING_CONVENTION_SENSITIVITY;N033=0.29004352344255213;N034=0.38014338117403096;N035=4/7	HOLD_SYMMETRIC_POOLING_CONVENTION_SENSITIVITY; historical N033=0.2900435234426087;N034=0.38014338117407437;N035=4/7	PASS
+N031_basis_sensitive_directed_comparisons	14/14	14/14	PASS

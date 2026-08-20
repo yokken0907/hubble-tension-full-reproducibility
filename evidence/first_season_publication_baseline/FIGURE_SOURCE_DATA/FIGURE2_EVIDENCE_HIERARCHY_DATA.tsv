@@ -1,0 +1,8 @@
+level	label	what_is_established	what_is_not_automatic	project_example
+1	File identity and provenance	hash, manifest, version, and byte identity	numerical correctness or scientific validity	package and archive checks
+2	Output-level numerical traceability	consistency with a designated stored artifact	regeneration from raw public data	46-row direct output check
+3	Re-execution from specified inputs	a stored result can be recalculated with an identified implementation	implementation independence or causality	DESI BAO Gaussian fit
+4	Robustness within one source	response across correlated public variants	validation using independent information	ACT robustness variants
+5	Descriptive agreement across sources	alignment or compatibility among source summaries	common cause or formal joint significance	CMB-DESI direction
+6	Implementation-diversity validation	recovery by a separately written implementation or genuinely separate workflow	external independent replication or causal identification	TDCOSMO 13-chain project-internal alternate implementation
+7	Causal attribution	alternative causes discriminated by a suitable test	global resolution without broader evidence	not established in this study

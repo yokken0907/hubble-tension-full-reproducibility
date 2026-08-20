@@ -1,0 +1,40 @@
+{
+  "component_diagnostics_observed_before_freeze": false,
+  "contract_id": "H0DN-SNIA-CONTRAST-COVARIANCE-PHASE1C-20260730-01",
+  "files": {
+    "AUDIT_CONTRACT.md": {
+      "bytes": 10756,
+      "sha256": "ed1b5404f87805463aa6adbe98823154fd7893a7859c12239238820b8d31f754"
+    },
+    "provenance/CONTRACT_AMENDMENTS.tsv": {
+      "bytes": 93,
+      "sha256": "bf6ab234275abfebea9dcaf497d277cf0259bc368aad7908218ca2cabfaac18e"
+    },
+    "provenance/DECISION_CONFIG.json": {
+      "bytes": 1337,
+      "sha256": "e3614c9eaffb7730df9cbef17b67e86977393af0cf9c62be484b5473efd85e93"
+    },
+    "provenance/PHASE1B_ROW_MAP.tsv": {
+      "bytes": 10690,
+      "sha256": "a3cd37e836d39f623dfedcea6c3c8a0ac0c0f80ae5647bd163610fdbd1bd9d69"
+    },
+    "provenance/SOURCE_LOCK.tsv": {
+      "bytes": 2255,
+      "sha256": "93381437a81d71eeb6f60de260bc68014e12d1417a7b10017a88c72b5dc4f524"
+    },
+    "provenance/UPSTREAM_AUDIT_DEPENDENCIES.json": {
+      "bytes": 849,
+      "sha256": "7e26de6f858b205443cf9d4fc81dd0465627fae1c3c55d0c59aa18838844a7b6"
+    },
+    "requirements-lock.txt": {
+      "bytes": 27,
+      "sha256": "1668a3152e33680d94637b13421c15e68bd97cd8701f7f555c691f5bc5c0b9f3"
+    }
+  },
+  "freeze_timestamp_utc": "2026-07-30T05:02:44Z",
+  "known_phase1a_baseline_observed_before_freeze": true,
+  "phase1b_mapping_observed_before_freeze": true,
+  "stat_sys_without_velocity_result_observed_before_freeze": false,
+  "statonly_contrast_result_observed_before_freeze": false,
+  "status": "FROZEN_BEFORE_PHASE1C_COMPONENT_EXECUTION"
+}

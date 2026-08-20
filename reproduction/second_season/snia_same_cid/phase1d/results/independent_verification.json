@@ -1,0 +1,29 @@
+{
+  "audit_id": "H0DN-SNIA-SAME-CID-MEASUREMENT-LINEAGE-PHASE1D-20260730-01",
+  "check_count": 15,
+  "checks": {
+    "amendment_register": true,
+    "asset_ledger": true,
+    "candidate_file_ledger": true,
+    "contract_freeze": true,
+    "crosswalk_evidence_ledger": true,
+    "group_ledger": true,
+    "pair_ledger": true,
+    "phase1b_map_hash": true,
+    "photometry_tree": true,
+    "pipeline_anchor_ledger": true,
+    "population": true,
+    "repository_commits": true,
+    "row_ledger": true,
+    "scan_summary": true,
+    "summary": true
+  },
+  "independent_external_replication": "NO",
+  "pass_count": 15,
+  "peer_review_or_expert_endorsement": "NO",
+  "recomputed_group_count": 30,
+  "recomputed_release_sufficiency_classification": "PUBLIC_RELEASE_PARTIAL_MEASUREMENT_LINEAGE",
+  "recomputed_unique_row_count": 38,
+  "status": "PASS",
+  "verification_type": "SECOND_IMPLEMENTATION_CROSS_CHECK"
+}

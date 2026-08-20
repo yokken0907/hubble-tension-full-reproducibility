@@ -1,0 +1,21 @@
+claim_id	status	statement	evidence_scope	boundary
+FS-C001	ESTABLISHED_WITH_SCOPE	1st season created a broad dependency and traceability map across local ladder, BAO, CMB, lensing, siren, and flow routes	All first-season evidence	Does not identify one cause
+FS-C002	ESTABLISHED_WITH_SCOPE	Public outputs and headline quantities were reproduced in multiple bounded branches	Branch-specific frozen contracts	Does not imply likelihood/pipeline reproduction
+FS-C003	ESTABLISHED_WITH_SCOPE	Local-ladder tension is not sufficiently attributed to one zero point, one SN, gray calibration, or survey mix in tested contracts	HTV02-31	Shared-systematic and truth-level closure remain open
+FS-C004	ESTABLISHED_WITH_SCOPE	BBC explicit contribution carries the recorded survey-fixed corrected-vector slope in HTV29 decomposition	HTV29	BBC truth-level validity not established
+FS-C005	ESTABLISHED_WITH_SCOPE	High local H0 under recorded BAO contract corresponds to about a 6.8% lower r_d budget	HTV/HTS BAO-BBN bridge	Not evidence for a specific early-universe model
+FS-C006	ESTABLISHED_WITH_SCOPE	DESI MIDZ common isotropic mode is a high-leverage response direction	HTV71-98	Not an outlier or causal systematic claim
+FS-C007	ESTABLISHED_WITH_SCOPE	Planck/SPT/ACT-to-DESI shifts share a descriptive Omega_m–h*r_d direction in Gaussian scope	CMB-DESI branch	Not proof of common physical cause
+FS-C008	ESTABLISHED_WITH_SCOPE	Tested ACT DR6 official variants do not provide a dominant center-shift explanation	HTS43 CORR1	Variant responses are correlated, not independent votes
+FS-C009	ESTABLISHED_WITH_SCOPE	Further arbitrary decomposition of the same five release endpoints is not new independent evidence	HTS51-67	External metric/new data can reopen
+FS-C010	ESTABLISHED_WITH_SCOPE	H0DN public baseline and frozen-representation numerical contract were reproduced	HTV114 CORR1	General representation invariance was not tested in 1st season
+FS-C011	ESTABLISHED_WITH_SCOPE	Implemented H0DN shared covariance materially prevents false precision	HTV114 CORR1	Ablations are not corrected likelihoods
+FS-C012	ESTABLISHED_WITH_SCOPE	TDCOSMO separate implementation recovered bounded Table 6 output quantities within frozen tolerance	TDCOSMO closeout	Not external replication or likelihood reproduction
+FS-C013	NOT_ESTABLISHED	A unique cause of the Hubble tension	All branches	Explicit nonclaim
+FS-C014	NOT_ESTABLISHED	A corrected or preferred H0 value from this season	All branches	Explicit nonclaim
+FS-C015	NOT_ESTABLISHED	New physics	All branches	Explicit nonclaim
+FS-C016	NOT_ESTABLISHED	BBC truth-level closure	Local ladder/BBC	Source incomplete
+FS-C017	NOT_ESTABLISHED	Exact H0DN correlated-PV reproduction	H0DN	Source products missing
+FS-C018	NOT_ESTABLISHED	Naive statistical independence of nominally separate branches	Dependency audit	Shared data and assumptions recorded
+FS-C019	PROHIBITED_INTERPRETATION	Treating covariance ablations as alternative scientific H0 estimates	H0DN	Diagnostic only
+FS-C020	PROHIBITED_INTERPRETATION	Counting coordinate/mode/coalition stages as independent observations	DESI and release geometry	Same endpoint/source re-expression

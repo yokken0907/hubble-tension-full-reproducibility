@@ -1,0 +1,19 @@
+{
+  "contract_id": "H0DN-SNIA-SAME-CID-MEASUREMENT-LINEAGE-PHASE1D-20260730-01",
+  "repositories": {
+    "h0dn": {
+      "commit": "cc0a4b9f36e65470d514f254a3c5cffa463fbd94",
+      "commit_object_sha1": "cc0a4b9f36e65470d514f254a3c5cffa463fbd94",
+      "locked_file_count": 6,
+      "repository": "https://github.com/StefCas789/H0DN.git"
+    },
+    "pantheonplus": {
+      "commit": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "commit_object_sha1": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "locked_file_count": 25,
+      "photometry_tree_oid": "3facbb99276c7589349d8eceaac218ccd2ad0726",
+      "photometry_tree_path": "Pantheon+_Data/1_DATA/photometry",
+      "repository": "https://github.com/PantheonPlusSH0ES/DataRelease.git"
+    }
+  }
+}

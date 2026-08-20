@@ -1,0 +1,823 @@
+{
+  "check_count": 117,
+  "checks": [
+    {
+      "actual": "PASS",
+      "expected": "PASS",
+      "name": "contract_verification_status",
+      "status": "PASS"
+    },
+    {
+      "actual": "3b1e1508d366151a0204f52d1d94e1e81e90454b1fb75fa085df3a17b44acd91",
+      "expected": "3b1e1508d366151a0204f52d1d94e1e81e90454b1fb75fa085df3a17b44acd91",
+      "name": "contract_freeze_sha256",
+      "status": "PASS"
+    },
+    {
+      "actual": "3b1e1508d366151a0204f52d1d94e1e81e90454b1fb75fa085df3a17b44acd91  CONTRACT_FREEZE.json\n",
+      "expected": "3b1e1508d366151a0204f52d1d94e1e81e90454b1fb75fa085df3a17b44acd91  CONTRACT_FREEZE.json\n",
+      "name": "contract_sidecar",
+      "status": "PASS"
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "contract_complete_pair_scan_preobserved",
+      "status": "PASS"
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "contract_complete_profile_preobserved",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "contract_limited_exposure_disclosed",
+      "status": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "expected": "PASS",
+      "name": "source_verification_status",
+      "status": "PASS"
+    },
+    {
+      "actual": 45,
+      "expected": 45,
+      "name": "source_lock_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 20,
+      "expected": 20,
+      "name": "tree_lock_count",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "source_repository_checks",
+      "status": "PASS"
+    },
+    {
+      "actual": "6792886b8f1a8ac6397e6305931bfc750fdf1f1211c5e92b1f07ea1e7f0609bd",
+      "expected": "6792886b8f1a8ac6397e6305931bfc750fdf1f1211c5e92b1f07ea1e7f0609bd",
+      "name": "upstream_phase1d_archive_sha256",
+      "status": "PASS"
+    },
+    {
+      "actual": "0c86bd916e5b54f3e97b810b868c793e2fdd564abd94d4f1687fb4f632f73ed3",
+      "expected": "0c86bd916e5b54f3e97b810b868c793e2fdd564abd94d4f1687fb4f632f73ed3",
+      "name": "upstream_phase1e_archive_sha256",
+      "status": "PASS"
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "upstream_raw_bytes_redistributed",
+      "status": "PASS"
+    },
+    {
+      "actual": "AUDIT_COMPLETE_PUBLIC_INPUT_DEPENDENCY_CLASSIFIED",
+      "expected": "AUDIT_COMPLETE_PUBLIC_INPUT_DEPENDENCY_CLASSIFIED",
+      "name": "execution_status",
+      "status": "PASS"
+    },
+    {
+      "actual": "PUBLIC_INPUT_DEPENDENCIES_CLASSIFIED_REPEATED_PAYLOAD_PAIRS_0_OF_48_SINGLE_PAYLOAD_PAIRS_4_OF_48_FILTER_RECORDS_MAPPED_434_OF_434_CONFIG_SERIES_PASS_7_OF_7",
+      "expected": "PUBLIC_INPUT_DEPENDENCIES_CLASSIFIED_REPEATED_PAYLOAD_PAIRS_0_OF_48_SINGLE_PAYLOAD_PAIRS_4_OF_48_FILTER_RECORDS_MAPPED_434_OF_434_CONFIG_SERIES_PASS_7_OF_7",
+      "name": "execution_scientific_classification",
+      "status": "PASS"
+    },
+    {
+      "actual": "PUBLIC_RELEASE_SUPPORTS_BOUNDED_INPUT_DEPENDENCY_CLASSIFICATION_EXECUTED_RUN_TO_FINAL_CATALOG_LINEAGE_NOT_ESTABLISHED",
+      "expected": "PUBLIC_RELEASE_SUPPORTS_BOUNDED_INPUT_DEPENDENCY_CLASSIFICATION_EXECUTED_RUN_TO_FINAL_CATALOG_LINEAGE_NOT_ESTABLISHED",
+      "name": "execution_release_classification",
+      "status": "PASS"
+    },
+    {
+      "actual": "AUDIT_COMPLETE_PUBLIC_INPUT_DEPENDENCY_CLASSIFIED",
+      "expected": "AUDIT_COMPLETE_PUBLIC_INPUT_DEPENDENCY_CLASSIFIED",
+      "name": "summary_status",
+      "status": "PASS"
+    },
+    {
+      "actual": "PUBLIC_INPUT_DEPENDENCIES_CLASSIFIED_REPEATED_PAYLOAD_PAIRS_0_OF_48_SINGLE_PAYLOAD_PAIRS_4_OF_48_FILTER_RECORDS_MAPPED_434_OF_434_CONFIG_SERIES_PASS_7_OF_7",
+      "expected": "PUBLIC_INPUT_DEPENDENCIES_CLASSIFIED_REPEATED_PAYLOAD_PAIRS_0_OF_48_SINGLE_PAYLOAD_PAIRS_4_OF_48_FILTER_RECORDS_MAPPED_434_OF_434_CONFIG_SERIES_PASS_7_OF_7",
+      "name": "summary_scientific_classification",
+      "status": "PASS"
+    },
+    {
+      "actual": "PUBLIC_RELEASE_SUPPORTS_BOUNDED_INPUT_DEPENDENCY_CLASSIFICATION_EXECUTED_RUN_TO_FINAL_CATALOG_LINEAGE_NOT_ESTABLISHED",
+      "expected": "PUBLIC_RELEASE_SUPPORTS_BOUNDED_INPUT_DEPENDENCY_CLASSIFICATION_EXECUTED_RUN_TO_FINAL_CATALOG_LINEAGE_NOT_ESTABLISHED",
+      "name": "summary_release_classification",
+      "status": "PASS"
+    },
+    {
+      "actual": "PARTIALLY_RESULT_BLIND_LIMITED_EXAMPLES_AND_UPSTREAM_RESULTS_DISCLOSED",
+      "expected": "PARTIALLY_RESULT_BLIND_LIMITED_EXAMPLES_AND_UPSTREAM_RESULTS_DISCLOSED",
+      "name": "summary_partially_result_blind",
+      "status": "PASS"
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "phase1d_main_unchanged",
+      "status": "PASS"
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "phase1e_main_unchanged",
+      "status": "PASS"
+    },
+    {
+      "actual": 69,
+      "expected": 69,
+      "name": "candidate_row_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 69,
+      "expected": 69,
+      "name": "candidate_inventory_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 30,
+      "expected": 30,
+      "name": "same_CID_group_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 48,
+      "expected": 48,
+      "name": "within_group_pair_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 38,
+      "expected": 38,
+      "name": "phase1d_candidate_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 31,
+      "expected": 31,
+      "name": "phase1e_candidate_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 69,
+      "expected": 69,
+      "name": "distinct_candidate_paths",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "FROZEN_PUBLIC_INPUT_CANDIDATE_NOT_FINAL_MEASUREMENT_ANCESTRY"
+      ],
+      "expected": [
+        "FROZEN_PUBLIC_INPUT_CANDIDATE_NOT_FINAL_MEASUREMENT_ANCESTRY"
+      ],
+      "name": "candidate_labels_bounded",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "NOT_ESTABLISHED"
+      ],
+      "expected": [
+        "NOT_ESTABLISHED"
+      ],
+      "name": "candidate_final_ancestry_unestablished",
+      "status": "PASS"
+    },
+    {
+      "actual": 69,
+      "expected": 69,
+      "name": "profile_row_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 69,
+      "expected": 69,
+      "name": "profile_distinct_blob_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 6744,
+      "expected": 6744,
+      "name": "profile_observation_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 6,
+      "expected": 6,
+      "name": "candidate_series_present_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 48,
+      "expected": 48,
+      "name": "pair_row_count",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "NO_MUTUAL_UNIQUE_ROUNDING_COMPATIBLE_PAYLOAD": 44,
+        "SINGLE_MUTUAL_UNIQUE_ROUNDING_COMPATIBLE_PAYLOAD": 4
+      },
+      "expected": {
+        "NO_MUTUAL_UNIQUE_ROUNDING_COMPATIBLE_PAYLOAD": 44,
+        "SINGLE_MUTUAL_UNIQUE_ROUNDING_COMPATIBLE_PAYLOAD": 4
+      },
+      "name": "pair_class_counts",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "byte_exact_positive_pair_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 4,
+      "expected": 4,
+      "name": "rounding_compatible_edge_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 4,
+      "expected": 4,
+      "name": "mutual_unique_rounding_match_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "ambiguous_rounding_edge_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "repeated_payload_positive_pair_count",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "NOT_ESTABLISHED"
+      ],
+      "expected": [
+        "NOT_ESTABLISHED"
+      ],
+      "name": "all_pair_exposure_identity_unestablished",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "NOT_ESTABLISHED"
+      ],
+      "expected": [
+        "NOT_ESTABLISHED"
+      ],
+      "name": "all_pair_statistical_independence_unestablished",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "NOT_ESTABLISHED"
+      ],
+      "expected": [
+        "NOT_ESTABLISHED"
+      ],
+      "name": "all_pair_final_ancestry_unestablished",
+      "status": "PASS"
+    },
+    {
+      "actual": 4,
+      "expected": 4,
+      "name": "match_evidence_count",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "2004as",
+        "2005hc",
+        "2007co",
+        "2007qe"
+      ],
+      "expected": [
+        "2004as",
+        "2005hc",
+        "2007co",
+        "2007qe"
+      ],
+      "name": "matched_CIDs",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        [
+          "109",
+          "110"
+        ],
+        [
+          "172",
+          "173"
+        ],
+        [
+          "5",
+          "6"
+        ],
+        [
+          "50",
+          "52"
+        ]
+      ],
+      "expected": [
+        [
+          "109",
+          "110"
+        ],
+        [
+          "172",
+          "173"
+        ],
+        [
+          "5",
+          "6"
+        ],
+        [
+          "50",
+          "52"
+        ]
+      ],
+      "name": "matched_row_pairs",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "name": "match_within_0p11_day_count",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "2007qe"
+      ],
+      "expected": [
+        "2007qe"
+      ],
+      "name": "match_within_0p11_day_CID",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "match_mjd_interval_overlap_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "match_equal_filter_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "match_same_transmission_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "match_same_kcor_definition_count",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "PUBLISHED_NUMERIC_PAYLOAD_REUSE_OR_AGREEMENT_NOT_PHYSICAL_EXPOSURE_IDENTITY"
+      ],
+      "expected": [
+        "PUBLISHED_NUMERIC_PAYLOAD_REUSE_OR_AGREEMENT_NOT_PHYSICAL_EXPOSURE_IDENTITY"
+      ],
+      "name": "match_evidence_boundary",
+      "status": "PASS"
+    },
+    {
+      "actual": 434,
+      "expected": 434,
+      "name": "filter_mapping_row_count",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "PUBLIC_KCOR_TEXT_AND_TRANSMISSION_ASSET_MAPPED"
+      ],
+      "expected": [
+        "PUBLIC_KCOR_TEXT_AND_TRANSMISSION_ASSET_MAPPED"
+      ],
+      "name": "filter_mapping_classes",
+      "status": "PASS"
+    },
+    {
+      "actual": 6744,
+      "expected": 6744,
+      "name": "filter_mapping_observation_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 5,
+      "expected": 5,
+      "name": "filter_mapping_kcor_input_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 50,
+      "expected": 50,
+      "name": "filter_mapping_transmission_blob_count",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "1"
+      ],
+      "expected": [
+        "1"
+      ],
+      "name": "filter_mapping_definition_unique",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "NOT_ESTABLISHED"
+      ],
+      "expected": [
+        "NOT_ESTABLISHED"
+      ],
+      "name": "filter_executed_run_unestablished",
+      "status": "PASS"
+    },
+    {
+      "actual": 7,
+      "expected": 7,
+      "name": "configuration_series_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 7,
+      "expected": 7,
+      "name": "configuration_series_pass_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 7,
+      "expected": 7,
+      "name": "configuration_aggregate_membership_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "name": "configuration_zero_candidate_series_count",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "CSP_data2"
+      ],
+      "expected": [
+        "CSP_data2"
+      ],
+      "name": "configuration_zero_candidate_series",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "NOT_ESTABLISHED"
+      ],
+      "expected": [
+        "NOT_ESTABLISHED"
+      ],
+      "name": "configuration_execution_lineage_unestablished",
+      "status": "PASS"
+    },
+    {
+      "actual": 16,
+      "expected": 16,
+      "name": "asset_record_count",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "NOT_TRACKED_IN_FIXED_RELEASE_BY_BASENAME": 8,
+        "TRACKED_PUBLIC_BASENAME_CANDIDATE_NO_EXECUTION_IDENTITY": 8
+      },
+      "expected": {
+        "NOT_TRACKED_IN_FIXED_RELEASE_BY_BASENAME": 8,
+        "TRACKED_PUBLIC_BASENAME_CANDIDATE_NO_EXECUTION_IDENTITY": 8
+      },
+      "name": "asset_class_counts",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "NOT_ESTABLISHED"
+      ],
+      "expected": [
+        "NOT_ESTABLISHED"
+      ],
+      "name": "asset_execution_identity_unestablished",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "dependency_ledger_nonempty",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "NOT_ESTABLISHED"
+      ],
+      "expected": [
+        "NOT_ESTABLISHED"
+      ],
+      "name": "dependency_execution_lineage_unestablished",
+      "status": "PASS"
+    },
+    {
+      "actual": "27f49229cafb42d3252bc57dd932e5c865fa37c65b65e779827e5e61962d6bc6",
+      "expected": "27f49229cafb42d3252bc57dd932e5c865fa37c65b65e779827e5e61962d6bc6",
+      "name": "posthoc_freeze_sha256",
+      "status": "PASS"
+    },
+    {
+      "actual": "27f49229cafb42d3252bc57dd932e5c865fa37c65b65e779827e5e61962d6bc6  POSTHOC_PAYLOAD_COLLISION_NEGATIVE_CONTROL_FREEZE.json\n",
+      "expected": "27f49229cafb42d3252bc57dd932e5c865fa37c65b65e779827e5e61962d6bc6  POSTHOC_PAYLOAD_COLLISION_NEGATIVE_CONTROL_FREEZE.json\n",
+      "name": "posthoc_freeze_sidecar",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "posthoc_main_observed_before_freeze",
+      "status": "PASS"
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "posthoc_result_observed_before_freeze",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "posthoc_protected_main_hashes",
+      "status": "PASS"
+    },
+    {
+      "actual": "POSTHOC_NEGATIVE_CONTROL_COMPLETE",
+      "expected": "POSTHOC_NEGATIVE_CONTROL_COMPLETE",
+      "name": "posthoc_status",
+      "status": "PASS"
+    },
+    {
+      "actual": "DESIGNED_AND_FROZEN_AFTER_MAIN_RESULT",
+      "expected": "DESIGNED_AND_FROZEN_AFTER_MAIN_RESULT",
+      "name": "posthoc_chronology",
+      "status": "PASS"
+    },
+    {
+      "actual": 1523,
+      "expected": 1523,
+      "name": "posthoc_pair_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 14670999,
+      "expected": 14670999,
+      "name": "posthoc_opportunity_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 24,
+      "expected": 24,
+      "name": "posthoc_positive_pair_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 24,
+      "expected": 24,
+      "name": "posthoc_mutual_match_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 11,
+      "expected": 11,
+      "name": "posthoc_stratum_count",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "posthoc_summary_main_unchanged_before",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "posthoc_summary_main_unchanged_after",
+      "status": "PASS"
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "posthoc_no_pvalue_field",
+      "status": "PASS"
+    },
+    {
+      "actual": "NONEXCHANGEABLE_DESCRIPTIVE_COLLISION_SCREEN_NO_P_VALUE_NO_CAUSAL_INFERENCE_NO_MAIN_RESULT_CHANGE",
+      "expected": "NONEXCHANGEABLE_DESCRIPTIVE_COLLISION_SCREEN_NO_P_VALUE_NO_CAUSAL_INFERENCE_NO_MAIN_RESULT_CHANGE",
+      "name": "posthoc_descriptive_boundary",
+      "status": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "expected": "PASS",
+      "name": "independent_verification_status",
+      "status": "PASS"
+    },
+    {
+      "actual": 31,
+      "expected": 31,
+      "name": "independent_check_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 31,
+      "expected": 31,
+      "name": "independent_pass_count",
+      "status": "PASS"
+    },
+    {
+      "actual": "WITHIN_PROJECT_SECOND_IMPLEMENTATION_NOT_EXTERNAL_REPLICATION",
+      "expected": "WITHIN_PROJECT_SECOND_IMPLEMENTATION_NOT_EXTERNAL_REPLICATION",
+      "name": "independent_scope",
+      "status": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "expected": "PASS",
+      "name": "unit_test_status",
+      "status": "PASS"
+    },
+    {
+      "actual": 50,
+      "expected": 50,
+      "name": "unit_test_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "unit_test_failures_and_errors",
+      "status": "PASS"
+    },
+    {
+      "actual": 50,
+      "expected": 50,
+      "name": "unit_test_log_count",
+      "status": "PASS"
+    },
+    {
+      "actual": "PASS",
+      "expected": "PASS",
+      "name": "clean_reproduction_status",
+      "status": "PASS"
+    },
+    {
+      "actual": 20,
+      "expected": 20,
+      "name": "clean_generated_output_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 20,
+      "expected": 20,
+      "name": "clean_byte_identical_count",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "clean_all_output_records_pass",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "clean_all_commands_pass",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "name": "implementation_correction_count",
+      "status": "PASS"
+    },
+    {
+      "actual": "IMPL-001",
+      "expected": "IMPL-001",
+      "name": "implementation_correction_id",
+      "status": "PASS"
+    },
+    {
+      "actual": "NO",
+      "expected": "NO",
+      "name": "implementation_correction_no_contract_change",
+      "status": "PASS"
+    },
+    {
+      "actual": "NO",
+      "expected": "NO",
+      "name": "implementation_correction_before_main_result",
+      "status": "PASS"
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "main_tables_no_prohibited_scientific_fields",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "reader_docs_exposure_boundary",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "reader_docs_final_ancestry_boundary",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "reader_docs_posthoc_chronology",
+      "status": "PASS"
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "reader_docs_no_H0_correction_claim",
+      "status": "PASS"
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "reader_docs_no_tension_resolution_claim",
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "expected": [],
+      "name": "raw_upstream_files_absent",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "packaged_symlink_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "packaged_bytecode_outside_cache_count",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "scratch_absolute_path_leak_count",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "python_scripts_compile",
+      "status": "PASS"
+    }
+  ],
+  "closure": "ACCEPT_COMPLETE_WITH_SCOPE",
+  "pass_count": 117,
+  "status": "PASS",
+  "verification_type": "STRICT_READ_ONLY_SCIENTIFIC_AND_REPRODUCIBILITY_CLOSURE"
+}

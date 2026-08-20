@@ -1,0 +1,41 @@
+test_01_sha256_known (test_auditlib.AuditLibraryTests.test_01_sha256_known) ... ok
+test_02_normalize_repository (test_auditlib.AuditLibraryTests.test_02_normalize_repository) ... ok
+test_03_normalize_survey (test_auditlib.AuditLibraryTests.test_03_normalize_survey) ... ok
+test_04_active_list_comments (test_auditlib.AuditLibraryTests.test_04_active_list_comments) ... ok
+test_05_active_list_duplicate_count (test_auditlib.AuditLibraryTests.test_05_active_list_duplicate_count) ... ok
+test_06_parse_valid_without_nobs (test_auditlib.AuditLibraryTests.test_06_parse_valid_without_nobs) ... ok
+test_07_parse_valid_with_nobs (test_auditlib.AuditLibraryTests.test_07_parse_valid_with_nobs) ... ok
+test_08_parse_nobs_mismatch (test_auditlib.AuditLibraryTests.test_08_parse_nobs_mismatch) ... ok
+test_09_parse_duplicate_snid (test_auditlib.AuditLibraryTests.test_09_parse_duplicate_snid) ... ok
+test_10_parse_duplicate_survey (test_auditlib.AuditLibraryTests.test_10_parse_duplicate_survey) ... ok
+test_11_write_read_tsv_roundtrip (test_auditlib.AuditLibraryTests.test_11_write_read_tsv_roundtrip) ... ok
+test_12_official_labels_smart_quotes (test_auditlib.AuditLibraryTests.test_12_official_labels_smart_quotes) ... ok
+test_13_label_header_mismatch (test_auditlib.AuditLibraryTests.test_13_label_header_mismatch) ... ok
+test_14_label_header_consistent (test_auditlib.AuditLibraryTests.test_14_label_header_consistent) ... ok
+test_15_inference_supported (test_auditlib.AuditLibraryTests.test_15_inference_supported) ... ok
+test_16_inference_insufficient (test_auditlib.AuditLibraryTests.test_16_inference_insufficient) ... ok
+test_17_inference_conflicting (test_auditlib.AuditLibraryTests.test_17_inference_conflicting) ... ok
+test_18_excluded_CID_never_anchor (test_auditlib.AuditLibraryTests.test_18_excluded_CID_never_anchor) ... ok
+test_19_apply_unique (test_auditlib.AuditLibraryTests.test_19_apply_unique) ... ok
+test_20_apply_wrong_directory_unresolved (test_auditlib.AuditLibraryTests.test_20_apply_wrong_directory_unresolved) ... ok
+test_21_contract_freeze_passes (test_auditlib.AuditLibraryTests.test_21_contract_freeze_passes) ... ok
+test_22_phase_population_passes (test_auditlib.AuditLibraryTests.test_22_phase_population_passes) ... ok
+test_23_frozen_directory_universe_exact (test_auditlib.AuditLibraryTests.test_23_frozen_directory_universe_exact) ... ok
+test_24_audit_summary_universe_exact (test_auditlib.AuditLibraryTests.test_24_audit_summary_universe_exact) ... ok
+test_25_broader_uniqueness_claims_false (test_auditlib.AuditLibraryTests.test_25_broader_uniqueness_claims_false) ... ok
+test_26_status_semantics_preferred_candidate_label (test_auditlib.AuditLibraryTests.test_26_status_semantics_preferred_candidate_label) ... ok
+test_27_status_semantics_disclaims_ancestry (test_auditlib.AuditLibraryTests.test_27_status_semantics_disclaims_ancestry) ... ok
+test_28_interpretive_scope_false_boundaries (test_auditlib.AuditLibraryTests.test_28_interpretive_scope_false_boundaries) ... ok
+test_29_original_frozen_record_hashes_unchanged (test_auditlib.AuditLibraryTests.test_29_original_frozen_record_hashes_unchanged) ... ok
+test_30_corrected_phase1d_preserves_original_columns (test_auditlib.AuditLibraryTests.test_30_corrected_phase1d_preserves_original_columns) ... ok
+test_31_target_driving_31_rows_identical (test_auditlib.AuditLibraryTests.test_31_target_driving_31_rows_identical) ... ok
+test_32_supersession_is_nonretroactive_and_pass (test_auditlib.AuditLibraryTests.test_32_supersession_is_nonretroactive_and_pass) ... ok
+test_33_protected_primary_result_hashes_unchanged (test_auditlib.AuditLibraryTests.test_33_protected_primary_result_hashes_unchanged) ... ok
+test_34_scientific_counts_unchanged (test_auditlib.AuditLibraryTests.test_34_scientific_counts_unchanged) ... ok
+test_35_code65_remains_descriptive_metadata_tension (test_auditlib.AuditLibraryTests.test_35_code65_remains_descriptive_metadata_tension) ... ok
+test_36_reader_documents_state_bounded_candidate_scope (test_auditlib.AuditLibraryTests.test_36_reader_documents_state_bounded_candidate_scope) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 0.005s
+
+OK

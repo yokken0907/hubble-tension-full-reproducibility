@@ -1,0 +1,2 @@
+python run_fit.py --mean /path/to/desi_gaussian_bao_ALL_GCcomb_mean.txt --cov /path/to/desi_gaussian_bao_ALL_GCcomb_cov.txt --output actual_output.json
+python verify_expected_output.py --actual actual_output.json

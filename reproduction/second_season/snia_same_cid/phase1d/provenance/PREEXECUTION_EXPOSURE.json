@@ -1,0 +1,24 @@
+{
+  "contract_id": "H0DN-SNIA-SAME-CID-MEASUREMENT-LINEAGE-PHASE1D-20260730-01",
+  "freeze_timestamp_utc": "2026-07-30T07:26:17Z",
+  "partial_result_blindness": true,
+  "observed_before_freeze": [
+    "Phase 1B 277-row mapping and 30-group MULTI_SURVEY_ONLY result",
+    "Phase 1C LOW_FLAG_PERSISTS_THROUGH_STATONLY result",
+    "Pantheon+SH0ES final-table schema and the first two illustrative 2011fe rows",
+    "global unique SURVEY header vocabulary across the photometry tree",
+    "representative 2005M CSP and CfA3K photometry-file syntax and content",
+    "PPLUS.yml joint REALDATABS20NOM, iflag_duplicate, DUP_SIGINT, and NOSYS configuration anchors",
+    "absence of a tracked path named v6_9_duplicate_cid.cov in the DataRelease tree"
+  ],
+  "not_observed_before_freeze": [
+    "complete 69-row active photometry candidate ledger",
+    "row-level unique, absent, ambiguous, or parse-failure counts",
+    "complete 30-group file-distinctness classifications",
+    "complete observation-line intersection diagnostics",
+    "complete referenced-asset availability ledger",
+    "independent verifier output",
+    "release-sufficiency classification produced by the frozen implementation"
+  ],
+  "integrity_statement": "The row and group rules were frozen before the complete scan, but the audit does not claim complete result blindness because one in-scope example and one global asset-availability fact were known."
+}

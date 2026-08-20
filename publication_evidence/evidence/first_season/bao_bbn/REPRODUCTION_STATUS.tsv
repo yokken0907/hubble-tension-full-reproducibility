@@ -1,0 +1,3 @@
+item_id	object	status	directly_runnable	required_input	source_record	limitation
+BAO_BBN-PACKAGE-TRACE	claim-level evidence and source locators	PASS	YES: python scripts/verify_package.py	none	FIRST_MASTER_v1.0.0	Verifies extraction and provenance, not the original scientific computation.
+BAO_BBN-SCIENCE-STATUS	BAO-BBN and early-scale bridge	RECORDED_CONSTRAINT_BUDGET_WITHIN_FROZEN_CONTRACT	NO	Matched early-model likelihood/posterior/profile products	FS-B03	No new analysis or substituted external product is bundled.

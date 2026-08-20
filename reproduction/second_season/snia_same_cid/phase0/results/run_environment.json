@@ -1,0 +1,16 @@
+{
+  "contract_id": "H0DN-SNIA-COMP-PHASE0-CONTRACT-20260730-01",
+  "generated_at_utc": "2026-07-29T17:50:53Z",
+  "machine": "x86_64",
+  "numpy": "2.4.2",
+  "official_pinv_atol": 1e-10,
+  "official_pinv_rtol": 0.0,
+  "pandas": "3.0.0",
+  "permutation_count": 16,
+  "permutation_seed": 20260730,
+  "platform": "Linux-6.12.13-x86_64-with-glibc2.39",
+  "python": "3.12.13",
+  "python_implementation": "CPython",
+  "scipy": "1.17.0",
+  "upstream_commit": "cc0a4b9f36e65470d514f254a3c5cffa463fbd94"
+}

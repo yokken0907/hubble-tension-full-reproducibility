@@ -1,0 +1,16 @@
+{
+  "branch": "TDCOSMO_ALTERNATE_IMPLEMENTATION",
+  "status": "COMPLETE_WITH_SCOPE",
+  "implementation_sha256": "6360c803c584cc29e939445001fa6508cd875d16b4cdba5caba8be8b031368f7",
+  "source_commit": "d7f38db341f68be1df0d9ac1fc528c45113f94cf",
+  "input_file_count": 13,
+  "quantile_method": "equal_weight_type7_linear_n_minus_1",
+  "comparison_tolerance": {
+    "absolute": 1e-10,
+    "relative": 1e-12,
+    "rule": "abs(delta) <= absolute OR abs(delta) <= relative * max(abs(a), abs(b))"
+  },
+  "paper_version_for_master_refreeze": "arXiv:2506.03023v4",
+  "frozen_paper_pdf_sha256": "e94a728864f3afe9cc7672b97918ff366863a55df183ba116c3ceff526a7f5c7",
+  "note": "Paper-version identity was established separately by full-file SHA256 equality and is recorded here as a master-refreeze action."
+}

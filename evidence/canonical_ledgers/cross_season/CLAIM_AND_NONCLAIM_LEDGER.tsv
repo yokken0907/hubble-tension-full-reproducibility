@@ -1,0 +1,20 @@
+claim_id	status	statement	evidence_scope	boundary
+CS-C001	ESTABLISHED_WITH_SCOPE	The first-season dependency and traceability map remains structurally valid after the second season.	Both season masters	Not every first-season branch was retested.
+CS-C002	ESTABLISHED	The H0DN public baseline is reproduced consistently across HTV114 and B03A.	HTV114 and B03A	Physical correctness and general invariance are not implied.
+CS-C003	ESTABLISHED	The tested singular H0DN Moore-Penrose solution is not invariant under the exact non-orthogonal row scaling used in B03A.	B03A frozen primary audit	No corrected H0 or physical cause.
+CS-C004	ESTABLISHED_WITH_NUMERICAL_TOLERANCE	The literal public rounded-y singular-Gaussian formulation has a nullspace support inconsistency under the B03A contract.	B03A posthoc support diagnostic	Unrounded upstream values and the generative origin remain open.
+CS-C005	ESTABLISHED_WITHIN_FROZEN_MODEL	SN scalar compression is exactly sufficient for H0 inference and insufficient for residual diagnostics.	B03B Phase 0	Does not establish a better covariance or model.
+CS-C006	ESTABLISHED_WITHIN_FROZEN_MODEL	The low SN residual is disproportionately localized to 39 same-name contrast degrees of freedom and persists through STATONLY.	B03B Phase 1A and 1C	No cause, correction, or row action.
+CS-C007	ESTABLISHED_WITH_SCOPE	The 277-row provenance and covariance mapping is exact numerically, while executed photometry-to-final-row lineage remains unclosed.	B03B Phase 1B through 1F	Input candidates are not direct final-row ancestry.
+CS-C008	ESTABLISHED_WITH_SCOPE	GWTC headline output traceability passes while the published 25.7 percent old-side posterior provenance remains non-unique.	B01	The 28.547849 percent diagnostic is not the published metric reproduction.
+CS-C009	ESTABLISHED_SOURCE_READINESS_RESULT	A unique public BBC truth-fit-prepost-covariance closure bundle is not specified at the fixed public state.	B02	Does not imply BBC error or nonexistence of internal files.
+CS-C010	ESTABLISHED_AS_METHOD_STRUCTURE	The combined records require separate axes for identity, output, mathematical equivalence, diagnostic sufficiency, executed lineage, and generative closure.	Cross-case synthesis	Bounded to the audited records; not a universal frequency claim.
+CS-NC001	NOT_ESTABLISHED	A corrected or preferred H0 follows from the combined seasons.	All records	Explicit nonclaim.
+CS-NC002	NOT_ESTABLISHED	The Hubble tension is resolved or significantly reduced.	All records	Explicit nonclaim.
+CS-NC003	NOT_ESTABLISHED	A unique pipeline, survey, calibration, flow model, SN, anchor, or covariance component causes the tension.	All records	Explicit nonclaim.
+CS-NC004	NOT_ESTABLISHED	BBC overcorrection has been demonstrated.	HTV29 plus B02/B03B	Algebraic localization is not truth-level validity.
+CS-NC005	NOT_ESTABLISHED	The public H0DN value or covariance is wrong.	B03A/B03B	Representation and support diagnostics do not identify a corrected model.
+CS-NC006	NOT_ESTABLISHED	Low same-CID residuals justify row deletion, averaging, reweighting, or covariance shrinkage.	B03B	No supported alternative generative model.
+CS-NC007	NOT_ESTABLISHED	Internal AI-assisted reimplementations are external independent replication.	All packages	Explicit independence boundary.
+CS-NC008	NOT_ESTABLISHED	The recurring lineage gaps have a single common cause.	Cross-case pattern	Descriptive recurrence only.
+CS-NC009	NOT_ESTABLISHED	New physics is supported.	All records	Explicit nonclaim.

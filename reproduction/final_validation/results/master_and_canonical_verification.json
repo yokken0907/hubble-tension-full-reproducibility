@@ -1,0 +1,41 @@
+{
+  "canonical_reruns": {
+    "h0dn_singular_covariance": {
+      "gate_count": 16,
+      "pass_count": 16,
+      "status": "PASS"
+    },
+    "same_cid_phase1c": {
+      "canonical_gate_count": 24,
+      "canonical_pass_count": 24,
+      "closure_disposition": "ACCEPT_COMPLETE_WITH_SCOPE",
+      "independent_verifier": "PASS",
+      "status": "PASS"
+    },
+    "sn_compression_phase0": {
+      "status": "OVERALL_PASS"
+    }
+  },
+  "cross_season": {
+    "direct_master_checks": 18,
+    "direct_master_pass": 18,
+    "package_checks": 56,
+    "package_pass": 56,
+    "status": "PASS"
+  },
+  "first_master": {
+    "embedded_zip_crc": "PASS",
+    "manifest_rows": 36,
+    "sha256": "3e6df9f557485de1bb21c54bb129af78943e8e5d08da036e648d251dd952663c",
+    "status": "PASS",
+    "zip_crc": "PASS"
+  },
+  "second_master": {
+    "checks": 32,
+    "pass": 32,
+    "sha256": "cc15c96a45865f22fcd13c2ef03c8cccc39af8fa6dcace4a25f229d07e964940",
+    "status": "PASS",
+    "zip_crc": "PASS"
+  },
+  "status": "PASS"
+}

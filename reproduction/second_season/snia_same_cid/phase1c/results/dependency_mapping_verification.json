@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "dependency_classes_expected": true,
+    "h0dn_source_order": true,
+    "identifiers_agree": true,
+    "official_hubble_flow_flag": true,
+    "official_targets_unique": true,
+    "row_count_277": true,
+    "survey_codes_agree": true
+  },
+  "dependency_class_counts": {
+    "CATALOG_ONLY_UNIQUE": 275,
+    "COVARIANCE_DIAGONAL_REQUIRED": 2
+  },
+  "mapping_sha256": "a3cd37e836d39f623dfedcea6c3c8a0ac0c0f80ae5647bd163610fdbd1bd9d69",
+  "row_count": 277,
+  "status": "PASS",
+  "unique_official_target_count": 277
+}

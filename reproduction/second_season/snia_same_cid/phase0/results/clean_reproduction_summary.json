@@ -1,0 +1,139 @@
+{
+  "clean_workspace_policy": "retained outside the delivered project for inspection",
+  "comparison_status": "PASS",
+  "comparisons": [
+    {
+      "absolute_difference": 0,
+      "clean": "PASS_EXACT_SUFFICIENCY_FOR_FROZEN_LINEAR_MODEL",
+      "quantity": "status",
+      "reference": "PASS_EXACT_SUFFICIENCY_FOR_FROZEN_LINEAR_MODEL",
+      "status": "PASS",
+      "tolerance": 0
+    },
+    {
+      "absolute_difference": 0,
+      "clean": 277,
+      "quantity": "object_count",
+      "reference": 277,
+      "status": "PASS",
+      "tolerance": 0
+    },
+    {
+      "absolute_difference": 0,
+      "clean": 276,
+      "quantity": "hubble_flow_ndof",
+      "reference": 276,
+      "status": "PASS",
+      "tolerance": 0
+    },
+    {
+      "absolute_difference": 0,
+      "clean": "FROZEN_MODEL_ONLY_NO_CORRECTED_H0_NO_TENSION_RESOLUTION",
+      "quantity": "boundary_marker",
+      "reference": "FROZEN_MODEL_ONLY_NO_CORRECTED_H0_NO_TENSION_RESOLUTION",
+      "status": "PASS",
+      "tolerance": 0
+    },
+    {
+      "absolute_difference": 0.0,
+      "clean": 0.7163834210954622,
+      "quantity": "alpha",
+      "reference": 0.7163834210954622,
+      "status": "PASS",
+      "tolerance": 2e-12
+    },
+    {
+      "absolute_difference": 0.0,
+      "clean": 0.0018926416391806472,
+      "quantity": "alpha_error",
+      "reference": 0.0018926416391806472,
+      "status": "PASS",
+      "tolerance": 2e-12
+    },
+    {
+      "absolute_difference": 0.0,
+      "clean": 73.49875364360662,
+      "quantity": "baseline_h0_value",
+      "reference": 73.49875364360662,
+      "status": "PASS",
+      "tolerance": 2e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "clean": 0.8088000253378453,
+      "quantity": "baseline_h0_error",
+      "reference": 0.8088000253378453,
+      "status": "PASS",
+      "tolerance": 2e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "clean": 73.49875364360496,
+      "quantity": "expanded_h0_value",
+      "reference": 73.49875364360496,
+      "status": "PASS",
+      "tolerance": 2e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "clean": 0.8088000253378453,
+      "quantity": "expanded_h0_error",
+      "reference": 0.8088000253378453,
+      "status": "PASS",
+      "tolerance": 2e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "clean": 206.7606364373241,
+      "quantity": "hubble_flow_minimum_chi2",
+      "reference": 206.7606364373241,
+      "status": "PASS",
+      "tolerance": 2e-09
+    },
+    {
+      "absolute_difference": 0.0,
+      "clean": 206.76063643732414,
+      "quantity": "chi2_constant_omitted_by_scalar_network",
+      "reference": 206.76063643732414,
+      "status": "PASS",
+      "tolerance": 2e-09
+    },
+    {
+      "absolute_difference": 0.0,
+      "clean": 3.552713678800501e-13,
+      "quantity": "profile_identity_max_absolute_residual",
+      "reference": 3.552713678800501e-13,
+      "status": "PASS",
+      "tolerance": 2e-09
+    },
+    {
+      "absolute_difference": 0.0,
+      "clean": 7.815970093361102e-14,
+      "quantity": "expanded_vs_scalar_max_abs_parameter_difference",
+      "reference": 7.815970093361102e-14,
+      "status": "PASS",
+      "tolerance": 2e-09
+    },
+    {
+      "absolute_difference": 0.0,
+      "clean": 1.1492543028346347e-17,
+      "quantity": "expanded_vs_scalar_max_abs_parameter_covariance_difference",
+      "reference": 1.1492543028346347e-17,
+      "status": "PASS",
+      "tolerance": 2e-09
+    },
+    {
+      "absolute_difference": 0.0,
+      "clean": 3.907985046680551e-12,
+      "quantity": "permutation_maximum_tested_difference",
+      "reference": 3.907985046680551e-12,
+      "status": "PASS",
+      "tolerance": 2e-09
+    }
+  ],
+  "environment_versions": "2.4.2 1.17.0 3.0.0",
+  "scientific_status": "PASS_EXACT_SUFFICIENCY_FOR_FROZEN_LINEAR_MODEL",
+  "status": "PASS",
+  "unit_test_count": 8,
+  "upstream_commit": "cc0a4b9f36e65470d514f254a3c5cffa463fbd94"
+}

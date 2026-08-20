@@ -1,0 +1,9 @@
+requirement	why_required	public_availability	HTV30_result
+Known simulation truth for every fitted SN	Measure recovered-minus-true distance and slope	PARTIAL_PHOTOMETRY_METADATA_ONLY	BLOCKED
+Nominal fitted simulation FITRES	Apply exact Hubble-flow cuts and HTV-29 estimator	NOT_FIXED_AS_MACHINE_READABLE_PRODUCT	BLOCKED
+Nominal BBC Biascor map	Reproduce explicit biasCor_m_b term	APPROX_2GB_CONTACT_REQUIRED	BLOCKED
+Corrected simulation distance vector	Test zero residual slope after correction	NOT_LOCATED	BLOCKED
+Uncorrected simulation distance vector	Test whether correction removes known latent bias	NOT_LOCATED	BLOCKED
+Matched nuisance parameters and covariance	Avoid HTV-29 partial-removal counterfactual	CONFIG_PUBLIC_RESULTS_INCOMPLETE	BLOCKED
+Alternate population/scatter ensembles	Measure model dependence of correction slope	ARCHITECTURE_AND_PUBLISHED_PROPAGATION_AVAILABLE	PARTIAL_PASS
+End-to-end H0 likelihood	Translate closure differences to endpoint impact	NOT_EXECUTED	OUT_OF_SCOPE

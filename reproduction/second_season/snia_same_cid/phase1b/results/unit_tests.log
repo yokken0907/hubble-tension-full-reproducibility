@@ -1,0 +1,23 @@
+test_active_matching_config_records_amend_004 (test_auditlib.AuditLibraryTests.test_active_matching_config_records_amend_004) ... ok
+test_all_three_group_classifications (test_auditlib.AuditLibraryTests.test_all_three_group_classifications) ... ok
+test_ambiguity_after_all_rules_remains_a_hold (test_auditlib.AuditLibraryTests.test_ambiguity_after_all_rules_remains_a_hold) ... ok
+test_asymmetric_covariance_requires_explicit_permission (test_auditlib.AuditLibraryTests.test_asymmetric_covariance_requires_explicit_permission) ... ok
+test_candidate_permutation_does_not_change_resolution (test_auditlib.AuditLibraryTests.test_candidate_permutation_does_not_change_resolution) ... ok
+test_catalog_only_ambiguity_is_explicit (test_auditlib.AuditLibraryTests.test_catalog_only_ambiguity_is_explicit) ... ok
+test_catalog_only_unique_ignores_error_fields (test_auditlib.AuditLibraryTests.test_catalog_only_unique_ignores_error_fields) ... ok
+test_covariance_diagonal_perturbation_changes_resolution (test_auditlib.AuditLibraryTests.test_covariance_diagonal_perturbation_changes_resolution) ... ok
+test_covariance_diagonal_resolves_only_ambiguous_rows (test_auditlib.AuditLibraryTests.test_covariance_diagonal_resolves_only_ambiguous_rows) ... ok
+test_covariance_lineage_stops_on_mapping_hold (test_auditlib.AuditLibraryTests.test_covariance_lineage_stops_on_mapping_hold) ... ok
+test_covariance_parser_and_symmetry (test_auditlib.AuditLibraryTests.test_covariance_parser_and_symmetry) ... ok
+test_dependency_ledger_records_both_stages (test_auditlib.AuditLibraryTests.test_dependency_ledger_records_both_stages) ... ok
+test_error_field_discrepancy_is_recomputable (test_auditlib.AuditLibraryTests.test_error_field_discrepancy_is_recomputable) ... ok
+test_exact_covariance_lineage_pass_and_fail (test_auditlib.AuditLibraryTests.test_exact_covariance_lineage_pass_and_fail) ... ok
+test_frozen_contract_integrity (test_auditlib.AuditLibraryTests.test_frozen_contract_integrity) ... ok
+test_parse_h0dn_table (test_auditlib.AuditLibraryTests.test_parse_h0dn_table) ... ok
+test_parse_official_table (test_auditlib.AuditLibraryTests.test_parse_official_table) ... ok
+test_unmatched_classes_are_explicit (test_auditlib.AuditLibraryTests.test_unmatched_classes_are_explicit) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.005s
+
+OK

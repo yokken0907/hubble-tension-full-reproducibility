@@ -1,0 +1,9 @@
+CHECK	COMMAND	OBSERVED	STATUS	TIMESTAMP_UTC
+checkpoint_verification	bash VERIFY_PHASE2C_BUNDLE.sh	PASS; repository_tree_sha256=fa3ce398f881f1f50e0520dca0fb5af0d866edb4e3f9f7491782677f7b78beca	PASS	2026-07-28T12:29:42Z
+python_version	python3 runtime inspection	3.12.3 Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39	PASS	2026-07-28T12:29:43Z
+proxy_environment	environment proxy variables	none	PASS	2026-07-28T12:29:43Z
+free_disk_bytes	df -PB1 /home/kei	927042940928	PASS	2026-07-28T12:29:43Z
+existing_cache_absent	recursive file counts	cache=0 work=0 outputs=0	PASS	2026-07-28T12:29:43Z
+dns_resolution	socket.getaddrinfo official host	{'lambda.gsfc.nasa.gov': ['129.164.179.68', '2001:4d0:2310:150::68']}	PASS	2026-07-28T12:29:45Z
+https_head_or_metadata	TLS-verified Range probes	original and fixed endpoints reachable	PASS	2026-07-28T12:29:45Z
+http_range_support	Range bytes=0-0 on original archive	HTTP 206 with Content-Range	PASS	2026-07-28T12:29:45Z

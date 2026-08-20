@@ -1,0 +1,3 @@
+item_id	object	status	directly_runnable	required_input	source_record	limitation
+TDCOSMO-PACKAGE-TRACE	claim-level evidence and source locators	PASS	YES: python scripts/verify_package.py	none	FIRST_MASTER_v1.0.0	Verifies extraction and provenance, not the original scientific computation.
+TDCOSMO-SCIENCE-STATUS	TDCOSMO output-level traceability	COMPLETE_WITH_SCOPE_AT_OUTPUT_LEVEL	NO	Alternate implementation and stronger source freeze | Reopen only under material new source/question	FS-B10;FS-B11	No new analysis or substituted external product is bundled.

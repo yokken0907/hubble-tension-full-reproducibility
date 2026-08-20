@@ -1,0 +1,169 @@
+{
+  "check_count": 27,
+  "checks": [
+    {
+      "actual": 0.0002857742766353577,
+      "check": "PHASE1A_FULL:projected_minimum_eigenvalue",
+      "requirement": "> 1e-14",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "check": "PHASE1A_FULL:cholesky",
+      "requirement": "True",
+      "status": "PASS"
+    },
+    {
+      "actual": 8.881784197001252e-15,
+      "check": "PHASE1A_FULL:reference_chi2",
+      "requirement": "<= 2e-09",
+      "status": "PASS"
+    },
+    {
+      "actual": 0.0,
+      "check": "PHASE1A_FULL:probability_implementation",
+      "requirement": "<= 2e-14",
+      "status": "PASS"
+    },
+    {
+      "actual": 0.00022034139772316631,
+      "check": "STAT_SYS_NO_ROWWISE_VELOCITY:projected_minimum_eigenvalue",
+      "requirement": "> 1e-14",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "check": "STAT_SYS_NO_ROWWISE_VELOCITY:cholesky",
+      "requirement": "True",
+      "status": "PASS"
+    },
+    {
+      "actual": 1.4210854715202004e-14,
+      "check": "STAT_SYS_NO_ROWWISE_VELOCITY:reference_chi2",
+      "requirement": "<= 2e-09",
+      "status": "PASS"
+    },
+    {
+      "actual": 0.0,
+      "check": "STAT_SYS_NO_ROWWISE_VELOCITY:probability_implementation",
+      "requirement": "<= 2e-14",
+      "status": "PASS"
+    },
+    {
+      "actual": 0.00020826979999999994,
+      "check": "STAT_ONLY:projected_minimum_eigenvalue",
+      "requirement": "> 1e-14",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "check": "STAT_ONLY:cholesky",
+      "requirement": "True",
+      "status": "PASS"
+    },
+    {
+      "actual": 7.105427357601002e-15,
+      "check": "STAT_ONLY:reference_chi2",
+      "requirement": "<= 2e-09",
+      "status": "PASS"
+    },
+    {
+      "actual": 0.0,
+      "check": "STAT_ONLY:probability_implementation",
+      "requirement": "<= 2e-14",
+      "status": "PASS"
+    },
+    {
+      "actual": 0.0003948217999999999,
+      "check": "STAT_SYS_DIAGONAL_ONLY:projected_minimum_eigenvalue",
+      "requirement": "> 1e-14",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "check": "STAT_SYS_DIAGONAL_ONLY:cholesky",
+      "requirement": "True",
+      "status": "PASS"
+    },
+    {
+      "actual": 0.0,
+      "check": "STAT_SYS_DIAGONAL_ONLY:reference_chi2",
+      "requirement": "<= 2e-09",
+      "status": "PASS"
+    },
+    {
+      "actual": 0.0,
+      "check": "STAT_SYS_DIAGONAL_ONLY:probability_implementation",
+      "requirement": "<= 2e-14",
+      "status": "PASS"
+    },
+    {
+      "actual": 0.00035686819999999995,
+      "check": "STAT_ONLY_DIAGONAL_ONLY:projected_minimum_eigenvalue",
+      "requirement": "> 1e-14",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "check": "STAT_ONLY_DIAGONAL_ONLY:cholesky",
+      "requirement": "True",
+      "status": "PASS"
+    },
+    {
+      "actual": 1.7763568394002505e-15,
+      "check": "STAT_ONLY_DIAGONAL_ONLY:reference_chi2",
+      "requirement": "<= 2e-09",
+      "status": "PASS"
+    },
+    {
+      "actual": 0.0,
+      "check": "STAT_ONLY_DIAGONAL_ONLY:probability_implementation",
+      "requirement": "<= 2e-14",
+      "status": "PASS"
+    },
+    {
+      "actual": 9.947598300641403e-14,
+      "check": "PHASE1A_FULL:alternative_basis",
+      "requirement": "<= 2e-08",
+      "status": "PASS"
+    },
+    {
+      "actual": 1.4210854715202004e-13,
+      "check": "STAT_SYS_NO_ROWWISE_VELOCITY:alternative_basis",
+      "requirement": "<= 2e-08",
+      "status": "PASS"
+    },
+    {
+      "actual": 8.171241461241152e-14,
+      "check": "STAT_ONLY:alternative_basis",
+      "requirement": "<= 2e-08",
+      "status": "PASS"
+    },
+    {
+      "actual": 9.414691248821327e-14,
+      "check": "STAT_SYS_DIAGONAL_ONLY:alternative_basis",
+      "requirement": "<= 2e-08",
+      "status": "PASS"
+    },
+    {
+      "actual": 9.414691248821327e-14,
+      "check": "STAT_ONLY_DIAGONAL_ONLY:alternative_basis",
+      "requirement": "<= 2e-08",
+      "status": "PASS"
+    },
+    {
+      "actual": 3.552713678800501e-14,
+      "check": "known_phase1a_reproduction",
+      "requirement": "<= 2e-08",
+      "status": "PASS"
+    },
+    {
+      "actual": 1.2434497875801753e-14,
+      "check": "orthogonal_invariance",
+      "requirement": "<= 2e-09",
+      "status": "PASS"
+    }
+  ],
+  "pass_count": 27,
+  "status": "PASS"
+}

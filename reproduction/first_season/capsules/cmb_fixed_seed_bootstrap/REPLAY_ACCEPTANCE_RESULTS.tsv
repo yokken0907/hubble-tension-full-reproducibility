@@ -1,0 +1,3 @@
+ITEM_ID	quantity	expected	observed	absolute_difference	tolerance	status
+N025	ACT-versus-Planck+SPT bootstrap equivalent	2.054	2.0541617413081066	0.00016174130810675535	display rounding	PASS
+N026	omnibus amplitude-difference bootstrap equivalent	1.594	1.5942095381823194	0.0002095381823192799	display rounding	PASS

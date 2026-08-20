@@ -1,0 +1,206 @@
+{
+  "baseline_h0": 73.49875364360662,
+  "cepheid_interaction_decomposition": {
+    "anchor_count": 3,
+    "anchors": [
+      "N4258",
+      "LMC",
+      "MW"
+    ],
+    "cell_count": 111,
+    "duplicate_cell_count": 0,
+    "host_count": 37,
+    "interaction_l2_norm": 0.1887490826897389,
+    "interaction_rms": 0.017915270102591523,
+    "maximum_absolute_interaction": 0.09484684684685618,
+    "maximum_cell": {
+      "absolute_interaction": 0.09484684684685618,
+      "anchor": "N4258",
+      "equation_index": 17,
+      "host": "N3147",
+      "interaction": 0.09484684684685618,
+      "interaction_minus_projection": -1.7763568394002505e-15,
+      "mu_error": 0.168,
+      "mu_host": 33.173,
+      "nullspace_projected_data": 0.09484684684685796
+    },
+    "projection_closure_l2_norm": 3.039387560759591e-13,
+    "projection_closure_max_absolute_error": 1.0658141036401503e-13,
+    "status": "PASS",
+    "top_cells_by_absolute_interaction": [
+      {
+        "absolute_interaction": 0.09484684684685618,
+        "anchor": "N4258",
+        "equation_index": 17,
+        "host": "N3147",
+        "interaction": 0.09484684684685618,
+        "interaction_minus_projection": -1.7763568394002505e-15,
+        "mu_error": 0.168,
+        "mu_host": 33.173,
+        "nullspace_projected_data": 0.09484684684685796
+      },
+      {
+        "absolute_interaction": 0.07951351351352542,
+        "anchor": "N4258",
+        "equation_index": 32,
+        "host": "M1337",
+        "interaction": 0.07951351351352542,
+        "interaction_minus_projection": -2.6645352591003757e-14,
+        "mu_error": 0.124,
+        "mu_host": 33.06,
+        "nullspace_projected_data": 0.07951351351355207
+      },
+      {
+        "absolute_interaction": 0.07218018018018313,
+        "anchor": "N4258",
+        "equation_index": 21,
+        "host": "N1015",
+        "interaction": 0.07218018018018313,
+        "interaction_minus_projection": 1.0658141036401503e-14,
+        "mu_error": 0.078,
+        "mu_host": 32.691,
+        "nullspace_projected_data": 0.07218018018017247
+      },
+      {
+        "absolute_interaction": 0.04761261261261751,
+        "anchor": "MW",
+        "equation_index": 91,
+        "host": "N3147",
+        "interaction": -0.04761261261261751,
+        "interaction_minus_projection": -2.1316282072803006e-14,
+        "mu_error": 0.168,
+        "mu_host": 33.014,
+        "nullspace_projected_data": -0.047612612612596195
+      },
+      {
+        "absolute_interaction": 0.04723423423423867,
+        "anchor": "LMC",
+        "equation_index": 54,
+        "host": "N3147",
+        "interaction": -0.04723423423423867,
+        "interaction_minus_projection": -1.0658141036401503e-14,
+        "mu_error": 0.168,
+        "mu_host": 32.997,
+        "nullspace_projected_data": -0.04723423423422801
+      },
+      {
+        "absolute_interaction": 0.03994594594595213,
+        "anchor": "MW",
+        "equation_index": 106,
+        "host": "M1337",
+        "interaction": -0.03994594594595213,
+        "interaction_minus_projection": -3.552713678800501e-15,
+        "mu_error": 0.124,
+        "mu_host": 32.924,
+        "nullspace_projected_data": -0.03994594594594858
+      },
+      {
+        "absolute_interaction": 0.03956756756757329,
+        "anchor": "LMC",
+        "equation_index": 69,
+        "host": "M1337",
+        "interaction": -0.03956756756757329,
+        "interaction_minus_projection": 1.4210854715202004e-14,
+        "mu_error": 0.124,
+        "mu_host": 32.907,
+        "nullspace_projected_data": -0.0395675675675875
+      },
+      {
+        "absolute_interaction": 0.039153153153151266,
+        "anchor": "N4258",
+        "equation_index": 8,
+        "host": "N1365",
+        "interaction": -0.039153153153151266,
+        "interaction_minus_projection": 2.842170943040401e-14,
+        "mu_error": 0.056,
+        "mu_host": 31.378,
+        "nullspace_projected_data": -0.03915315315317969
+      },
+      {
+        "absolute_interaction": 0.03627927927929164,
+        "anchor": "MW",
+        "equation_index": 95,
+        "host": "N1015",
+        "interaction": -0.03627927927929164,
+        "interaction_minus_projection": -3.019806626980426e-14,
+        "mu_error": 0.078,
+        "mu_host": 32.566,
+        "nullspace_projected_data": -0.036279279279261445
+      },
+      {
+        "absolute_interaction": 0.0359009009009128,
+        "anchor": "LMC",
+        "equation_index": 58,
+        "host": "N1015",
+        "interaction": -0.0359009009009128,
+        "interaction_minus_projection": -3.197442310920451e-14,
+        "mu_error": 0.078,
+        "mu_host": 32.549,
+        "nullspace_projected_data": -0.03590090090088083
+      }
+    ]
+  },
+  "delta_h0": -0.052445422611000936,
+  "moore_penrose_congruence": {
+    "absolute_frobenius_defect": 113.33502129283092,
+    "max_absolute_defect": 33.977163724550834,
+    "relative_frobenius_defect": 0.00038046837415446405
+  },
+  "nullspace": {
+    "dimension": 72,
+    "eigenvalue_cutoff": 1e-10,
+    "eigenvector_vs_pinv_projector_relative_frobenius_difference": 7.08497040026141e-15,
+    "projected_data_l2_norm": 0.1887490826897459,
+    "projected_data_max_absolute": 0.09484684684685796,
+    "projected_design_frobenius_norm": 1.8762168274468944e-14,
+    "projected_design_max_absolute": 2.2036922981994495e-15,
+    "range_dimension": 183
+  },
+  "row_standardized_h0": 73.44630822099562,
+  "status": "DIAGNOSED",
+  "support_constraint": {
+    "augmented_matrix_largest_singular_value": 0.18874908268975077,
+    "augmented_rank": 1,
+    "constraint_matrix_frobenius_norm": 1.854325313826987e-14,
+    "constraint_matrix_largest_singular_value": 9.007702067558467e-15,
+    "constraint_matrix_max_absolute": 2.527492104498208e-15,
+    "constraint_rank": 0,
+    "constraint_rank_cutoff": 1e-10,
+    "constraint_shape": [
+      72,
+      64
+    ],
+    "constraint_target_l2_norm": 0.1887490826897508,
+    "feasibility_tolerance": 1e-10,
+    "least_squares_feasibility_residual_l2_norm": 0.1887490826897508,
+    "message": "No parameter vector satisfies the covariance-nullspace support equations at the frozen tolerance.",
+    "status": "HOLD_INCONSISTENT_SUPPORT"
+  },
+  "support_residuals": {
+    "public_solution": {
+      "nullspace_coordinate_l2_norm": 0.18874908268973764,
+      "nullspace_projection_l2_norm": 0.1887490826897376,
+      "nullspace_projection_max_absolute": 0.09484684684684719,
+      "relative_nullspace_projection": 0.13516718316816467,
+      "residual_l2_norm": 1.3964120451848911
+    },
+    "row_standardized_mp_solution": {
+      "nullspace_coordinate_l2_norm": 0.18874908268973759,
+      "nullspace_projection_l2_norm": 0.18874908268973764,
+      "nullspace_projection_max_absolute": 0.09484684684684719,
+      "relative_nullspace_projection": 0.1353639630654687,
+      "residual_l2_norm": 1.3943820675407477
+    }
+  },
+  "transformation_checks": {
+    "coefficient_transform_max_absolute_error": 0.0,
+    "covariance_transform_max_absolute_error": 0.0,
+    "data_transform_max_absolute_error": 0.0,
+    "original_rank": 183,
+    "scaling_finite": 1,
+    "scaling_max": 528.3620413386418,
+    "scaling_min": 3.9329256411728135,
+    "scaling_nonzero": 1,
+    "transformed_rank": 183
+  }
+}

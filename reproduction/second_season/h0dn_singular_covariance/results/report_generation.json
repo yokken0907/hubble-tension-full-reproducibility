@@ -1,0 +1,8 @@
+{
+  "contains_required_classification_phrase": 1,
+  "generator": "scripts/run_audit.py",
+  "report": "REPORT.md",
+  "required_classification_phrase": "PSEUDOINVERSE_DISCARDED_CONSTRAINT",
+  "sha256": "ffdc26bb45504c3bc9bc988116117cda61750c1d6f94989191be9a5b32a7cd63",
+  "status": "PASS"
+}

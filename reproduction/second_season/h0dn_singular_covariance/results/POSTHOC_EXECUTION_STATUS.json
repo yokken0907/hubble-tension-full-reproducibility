@@ -1,0 +1,15 @@
+{
+  "diagnosis": "HOLD_INCONSISTENT_SUPPORT",
+  "moore_penrose_relative_congruence_defect": 0.00038046837415446405,
+  "numeric_scaling_h0_range": [
+    71.76693327507698,
+    73.52647030424535
+  ],
+  "public_support_residual_l2_norm": 0.1887490826897376,
+  "row_standardized_delta_h0": -0.052445422611000936,
+  "same_rank_scaling_h0_range": [
+    73.41815459790728,
+    73.52647030424535
+  ],
+  "status": "PASS"
+}

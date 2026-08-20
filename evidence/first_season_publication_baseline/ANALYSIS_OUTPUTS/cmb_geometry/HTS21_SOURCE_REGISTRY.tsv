@@ -1,0 +1,12 @@
+source_id	title	location	authority	use
+ACT_CHAIN_README	ACT DR6 posterior chain README	https://portal.nersc.gov/project/act/dr6.02/chains/README_chains.html	OFFICIAL_DATA_REPOSITORY	actlite/actlite-tau; actbase/actbase-tau contracts and burn-in metadata
+ACT_LCDM_PAPER	ACT DR6 power spectra, likelihoods and LCDM	https://arxiv.org/abs/2503.14452	PRIMARY_PAPER	H0 results; lite/full robustness; calibration model
+ACT_LITE_REPO	ACT DR6 CMB-only likelihood	https://github.com/ACTCollaboration/DR6-ACT-lite	OFFICIAL_CODE_REPOSITORY	foreground/calibration marginalization contract
+ACT_MAPS	ACT DR6.02 map products	https://lambda.gsfc.nasa.gov/product/act/act_dr6.02/act_dr6.02_maps_info.html	OFFICIAL_DATA_REPOSITORY	released map lineage
+SROLL2_TAU	Pagano/SRoll2 tau summary	https://academic.oup.com/mnras/article/507/1/1072/6348120	PRIMARY_ANALYSIS	tau=0.0566 asymmetric uncertainty
+SPT2018_PAPER	SPT-3G 2018 TT/TE/EE cosmology	https://arxiv.org/abs/2212.05642	PRIMARY_PAPER	H0; tau/calibration robustness and nuisance model
+SPT2018_PRODUCTS	SPT-3G v2 likelihood data	https://lambda.gsfc.nasa.gov/product/spt/spt3g_likelihood_v2_info.html	OFFICIAL_DATA_REPOSITORY	calibration covariance included in public likelihood
+ELICA2026	Cross-satellite low-ell polarization likelihood	https://arxiv.org/abs/2603.22454	PRIMARY_PAPER	tau=0.0575 asymmetric current crosscheck
+SPT_D1_PAPER	SPT-3G D1 primary spectra and cosmology	https://arxiv.org/abs/2506.20707	PRIMARY_PAPER	latest SPT H0 context
+HTS19_INPUT	HTS19 cross-experiment authority atlas	../HTS19_NON_PLANCK_CMB_NEFF_CROSSCHECK_AUTHORITY/HTS19_CROSS_EXPERIMENT_AUTHORITY_ATLAS.tsv	INTERNAL_PREDECESSOR	frozen ACT/SPT H0 and Neff inputs
+HTS20_INPUT	HTS20 ACT execution gate	../HTS20_ACT_DR6_NEFF_EXECUTION_GATE/HTS20_NUMERICAL_RESULTS.json	INTERNAL_PREDECESSOR	chain materialization limit

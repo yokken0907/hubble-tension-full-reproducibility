@@ -1,0 +1,37 @@
+{
+  "audit_source_commit": "632efb99b17dd96d5bcc9eefdeafe57656d01cc0",
+  "clean_project": "/workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/work",
+  "clean_upstream": "/workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction/H0DN_CLEAN",
+  "clean_workspace": "/workspace/scratch/e688ee23bbb8/h0dn-full-clean-reproduction",
+  "created_utc": "2026-07-29T16:42:23.188328+00:00",
+  "existing_results_used": false,
+  "expected_upstream_commit": "cc0a4b9f36e65470d514f254a3c5cffa463fbd94",
+  "fixed_values": {
+    "baseline_h0": 73.49875364360662,
+    "baseline_h0_error": 0.8088000253378453,
+    "covariance_nullity": 72,
+    "covariance_rank": 183,
+    "equation_count": 255,
+    "exploratory_conditional_delta_h0": -0.0044276724767229325,
+    "interaction_dimensions": [
+      37,
+      3,
+      111
+    ],
+    "interaction_maximum_closure_error": 1.0658141036401503e-13,
+    "nullspace_projection_norm": 0.1887490826897508,
+    "parameter_count": 64,
+    "permutation_maximum_absolute_delta_h0": 4.794742380909156e-11,
+    "permutation_pass_count": 32,
+    "reml_tau": 0.02224361888241836,
+    "row_standardization_delta_h0": -0.052445422611000936,
+    "row_standardization_status": "FAIL",
+    "sn1a_link_covariance_rank": 182,
+    "sn1a_link_interpretation_status": "PSEUDOINVERSE_DISCARDED_CONSTRAINT",
+    "sn1a_link_leave_one_out_match": "PASS",
+    "support_status": "HOLD_INCONSISTENT_SUPPORT"
+  },
+  "message": "Fresh upstream, worktree, environment, and empty results reproduced all fixed scientific values and verification gates.",
+  "source_project": "/workspace/scratch/e688ee23bbb8/h0dn-covariance-influence-audit",
+  "status": "PASS"
+}

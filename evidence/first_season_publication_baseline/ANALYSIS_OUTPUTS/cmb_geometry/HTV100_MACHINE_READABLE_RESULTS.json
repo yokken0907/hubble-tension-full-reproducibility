@@ -1,0 +1,10 @@
+{
+  "classification": {
+    "HTV99": "ACCEPT_WITH_SCOPE_AND_COMMON_DIRECTION_ACT_AMPLITUDE_CAUTION",
+    "HTV100": "COMPLETE_WITH_SCOPE"
+  },
+  "common_axis_p": 0.8987186669531246,
+  "minimum_capture_fraction": 0.9724187853393912,
+  "maximum_orthogonal_sigma": 0.4450861208343068,
+  "next": "CMB_COMMON_AXIS_PROFILED_AMPLITUDE_HIERARCHY_AUDIT"
+}

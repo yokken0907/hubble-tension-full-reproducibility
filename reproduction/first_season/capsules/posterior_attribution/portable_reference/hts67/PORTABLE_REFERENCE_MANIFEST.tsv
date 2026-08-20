@@ -1,0 +1,2 @@
+PATH	BYTE_SIZE	SHA256	ROLE	HISTORICAL_COMPARISON_ROLE	NOTES
+portable_reference/hts67/HTS67_PORTABLE_REFERENCE_RESULTS.zip	61889	51902ca22f7152473eace2ee16b7c029ad513e62848d0f30ec7711c4f9d83da8	PORTABLE_REFERENCE_OUTPUT	NONE	Stored portable reference output; not an exact historical archive and not used as the HTS67 historical comparator.

@@ -1,0 +1,12 @@
+{
+  "compared_element_count": 76729,
+  "elementwise_float64_exact": true,
+  "exact_equal_element_count": 76729,
+  "mapped_shape": [
+    277,
+    277
+  ],
+  "maximum_absolute_difference": 0.0,
+  "status": "PASS",
+  "unequal_element_count": 0
+}

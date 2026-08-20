@@ -1,0 +1,159 @@
+{
+  "failure_count": 0,
+  "failures": [],
+  "repositories": {
+    "h0dn": {
+      "actual_commit": "cc0a4b9f36e65470d514f254a3c5cffa463fbd94",
+      "expected_commit": "cc0a4b9f36e65470d514f254a3c5cffa463fbd94",
+      "files": [
+        {
+          "actual_bytes": 800,
+          "actual_git_blob_sha1": "50338e05509a7d9b1c2a3436687dbf4174052a9a",
+          "actual_sha256": "95548335b70ee0c23b49d6ab66eb2e9e8648db72e719ca03cd3480203fb5101e",
+          "expected_bytes": 800,
+          "expected_git_blob_sha1": "50338e05509a7d9b1c2a3436687dbf4174052a9a",
+          "expected_sha256": "95548335b70ee0c23b49d6ab66eb2e9e8648db72e719ca03cd3480203fb5101e",
+          "path": "README.md",
+          "status": "PASS"
+        },
+        {
+          "actual_bytes": 3607,
+          "actual_git_blob_sha1": "6b5c2c3cc120c1fc148f3fa09d18e666cbde59f2",
+          "actual_sha256": "6b187a669429b8024ac974d3f14ed9c15225083f259ac8d5dfe94bbba40784a4",
+          "expected_bytes": 3607,
+          "expected_git_blob_sha1": "6b5c2c3cc120c1fc148f3fa09d18e666cbde59f2",
+          "expected_sha256": "6b187a669429b8024ac974d3f14ed9c15225083f259ac8d5dfe94bbba40784a4",
+          "path": "data/README.md",
+          "status": "PASS"
+        },
+        {
+          "actual_bytes": 22112,
+          "actual_git_blob_sha1": "65b8fe1cec2d7353c4fd134c663580b2dc48d8dc",
+          "actual_sha256": "6b3dd6591cfaade2a6bf4bdb632fafc504f1449b9c07db4176a14e8e2366258f",
+          "expected_bytes": 22112,
+          "expected_git_blob_sha1": "65b8fe1cec2d7353c4fd134c663580b2dc48d8dc",
+          "expected_sha256": "6b3dd6591cfaade2a6bf4bdb632fafc504f1449b9c07db4176a14e8e2366258f",
+          "path": "data/sn1a_hf_pp.dat",
+          "status": "PASS"
+        },
+        {
+          "actual_bytes": 1953968,
+          "actual_git_blob_sha1": "9d6fd16af1ce4a5457be2cac1464680f86166243",
+          "actual_sha256": "db2b84f18bf8319b0c6d7da46d574e58dce08de913e38e911ea6e0f8aa8a8aa6",
+          "expected_bytes": 1953968,
+          "expected_git_blob_sha1": "9d6fd16af1ce4a5457be2cac1464680f86166243",
+          "expected_sha256": "db2b84f18bf8319b0c6d7da46d574e58dce08de913e38e911ea6e0f8aa8a8aa6",
+          "path": "data/sn1a_covar_pp.dat",
+          "status": "PASS"
+        },
+        {
+          "actual_bytes": 10314,
+          "actual_git_blob_sha1": "d697aa8797e1bdf95ab1c5b587cc71b2f6b95069",
+          "actual_sha256": "c8746e9777a345fbc4e73f996d9b611c557f12623a9d2aafd7456bb3676c3c0b",
+          "expected_bytes": 10314,
+          "expected_git_blob_sha1": "d697aa8797e1bdf95ab1c5b587cc71b2f6b95069",
+          "expected_sha256": "c8746e9777a345fbc4e73f996d9b611c557f12623a9d2aafd7456bb3676c3c0b",
+          "path": "h0_constrainer/configs/config.ini",
+          "status": "PASS"
+        },
+        {
+          "actual_bytes": 9781,
+          "actual_git_blob_sha1": "01d1c08c4a38a7222305a8df3051cdcca807d50f",
+          "actual_sha256": "fa98f8364cf7571498d4f3338c705e06696a8f25fd859a7b0dc61bf81c14d97c",
+          "expected_bytes": 9781,
+          "expected_git_blob_sha1": "01d1c08c4a38a7222305a8df3051cdcca807d50f",
+          "expected_sha256": "fa98f8364cf7571498d4f3338c705e06696a8f25fd859a7b0dc61bf81c14d97c",
+          "path": "h0_constrainer/h0_constrainer/intercept.py",
+          "status": "PASS"
+        },
+        {
+          "actual_bytes": 33465,
+          "actual_git_blob_sha1": "722f58fa5750ac89687dbf35105dabc655abd712",
+          "actual_sha256": "1bf0ca486536fb29aed6f2e99c36ca898188481caa82bd198902578de7e3c397",
+          "expected_bytes": 33465,
+          "expected_git_blob_sha1": "722f58fa5750ac89687dbf35105dabc655abd712",
+          "expected_sha256": "1bf0ca486536fb29aed6f2e99c36ca898188481caa82bd198902578de7e3c397",
+          "path": "h0_constrainer/h0_constrainer/main.py",
+          "status": "PASS"
+        },
+        {
+          "actual_bytes": 40100,
+          "actual_git_blob_sha1": "31a4314333c75e36ea4909fd118f50d99128e9a6",
+          "actual_sha256": "0fe032b09dcba71bd6f602dabd7e3873a369fc09f8cf340b01584b9b31bf7c04",
+          "expected_bytes": 40100,
+          "expected_git_blob_sha1": "31a4314333c75e36ea4909fd118f50d99128e9a6",
+          "expected_sha256": "0fe032b09dcba71bd6f602dabd7e3873a369fc09f8cf340b01584b9b31bf7c04",
+          "path": "h0_constrainer/h0_constrainer/data_loader.py",
+          "status": "PASS"
+        }
+      ],
+      "locked_file_count": 8,
+      "origin_match": true,
+      "repository": "https://github.com/StefCas789/H0DN.git",
+      "status": "PASS",
+      "working_tree_clean": true
+    },
+    "pantheonplus": {
+      "actual_commit": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "expected_commit": "c447f0fea703fcd0fff57de5000947b5ca81286b",
+      "files": [
+        {
+          "actual_bytes": 148,
+          "actual_git_blob_sha1": "d3f1562c1d2575c3c412af026940117b65091d1a",
+          "actual_sha256": "aebbe5d60292a548f008173b122073622f1f1c113af65ee988d29c53f51aa677",
+          "expected_bytes": 148,
+          "expected_git_blob_sha1": "d3f1562c1d2575c3c412af026940117b65091d1a",
+          "expected_sha256": "aebbe5d60292a548f008173b122073622f1f1c113af65ee988d29c53f51aa677",
+          "path": "README.md",
+          "status": "PASS"
+        },
+        {
+          "actual_bytes": 4056,
+          "actual_git_blob_sha1": "8d2d0b9af0633573b4d1c190e44adcd135bbec85",
+          "actual_sha256": "e2b0d262757f01c1794a938c78d32600a21e289b2a0320e5c660c4c6fc9aa87e",
+          "expected_bytes": 4056,
+          "expected_git_blob_sha1": "8d2d0b9af0633573b4d1c190e44adcd135bbec85",
+          "expected_sha256": "e2b0d262757f01c1794a938c78d32600a21e289b2a0320e5c660c4c6fc9aa87e",
+          "path": "Pantheon+_Data/4_DISTANCES_AND_COVAR/README",
+          "status": "PASS"
+        },
+        {
+          "actual_bytes": 579283,
+          "actual_git_blob_sha1": "cce857db0c15e9ce7a0e0ce77452b6ff62af969a",
+          "actual_sha256": "1cb0fc379ef066afdc2ffd1857681cc478024570d8a3eba284fb645775198cf8",
+          "expected_bytes": 579283,
+          "expected_git_blob_sha1": "cce857db0c15e9ce7a0e0ce77452b6ff62af969a",
+          "expected_sha256": "1cb0fc379ef066afdc2ffd1857681cc478024570d8a3eba284fb645775198cf8",
+          "path": "Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES.dat",
+          "status": "PASS"
+        },
+        {
+          "actual_bytes": 33284960,
+          "actual_git_blob_sha1": "d1a1498154e7ba826df14bdbef35ebcb7f5efba1",
+          "actual_sha256": "abf806d966485e64afdb359c87bffc0ecc00d05eff0a31ced66f247385df0fdc",
+          "expected_bytes": 33284960,
+          "expected_git_blob_sha1": "d1a1498154e7ba826df14bdbef35ebcb7f5efba1",
+          "expected_sha256": "abf806d966485e64afdb359c87bffc0ecc00d05eff0a31ced66f247385df0fdc",
+          "path": "Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES_STAT+SYS.cov",
+          "status": "PASS"
+        },
+        {
+          "actual_bytes": 31827416,
+          "actual_git_blob_sha1": "bd0fef3f25150a3aee5100b3f35c895cbdf63235",
+          "actual_sha256": "9f177129a332735d3637affd20054080d5260815f3ca0809120c05b2c902297f",
+          "expected_bytes": 31827416,
+          "expected_git_blob_sha1": "bd0fef3f25150a3aee5100b3f35c895cbdf63235",
+          "expected_sha256": "9f177129a332735d3637affd20054080d5260815f3ca0809120c05b2c902297f",
+          "path": "Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES_STATONLY.cov",
+          "status": "PASS"
+        }
+      ],
+      "locked_file_count": 5,
+      "origin_match": true,
+      "repository": "https://github.com/PantheonPlusSH0ES/DataRelease.git",
+      "status": "PASS",
+      "working_tree_clean": true
+    }
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,14 @@
+id	scope	status	location_or_runner	boundary
+R00	Repository integrity and claim coverage	OFFLINE_EXACT	tools/verify_repository.py	No external inputs
+R01	Publication evidence archive and exact fixtures	OFFLINE_EXACT	publication_evidence/scripts/verify_package.py; publication_evidence/scripts/verify_synthetic_fixtures.py	No external inputs
+R02	Publication table and figure-source regeneration	OFFLINE_EXACT	tools/verify_manuscript_assets.py	No external inputs
+R03	Broad-survey fixed-input CMB bootstrap	OFFLINE_FIXED_INPUT_REEXECUTION	reproduction/first_season/capsules/cmb_fixed_seed_bootstrap	Begins from fixed Gaussian moments
+R04	DESI BAO Gaussian fit	PUBLIC_INPUT_REEXECUTION	reproduction/first_season/capsules/desi_bao_gaussian_fit	Requires exact public mean/covariance
+R05	HTS59-67 posterior-attribution replay	PUBLIC_INPUT_REEXECUTION	reproduction/first_season/capsules/posterior_attribution	Requires selected official posterior exports; original likelihood/samplers excluded
+R06	TDCOSMO alternate implementation	PUBLIC_INPUT_OUTPUT_REEXECUTION	publication_evidence/scripts/reproduce_tdcosmo_outputs.py	13 pinned HDF5 chains; output-level scope only
+R07	GWTC-4/5 headline posterior quantiles	PUBLIC_INPUT_REEXECUTION	publication_evidence/scripts/reproduce_gwtc_quantiles.py	Two pinned Zenodo JSON posterior files
+R08	Pantheon+ BBC public-source completeness	DETERMINISTIC_EVIDENCE_REPLAY	tools/replay_evidence_claims.py	Reproduces the documented incompleteness; no invented truth-level bundle
+R09	H0DN singular covariance and mechanism checks	PUBLIC_INPUT_REEXECUTION	publication_evidence/scripts/rebuild_test_vectors_from_h0dn.py; publication_evidence/scripts/run_internal_validations.py	Pinned H0DN commit
+R10	SN compression and same-name covariance diagnostics	PUBLIC_INPUT_REEXECUTION	publication_evidence/scripts/independent_verify_same_cid.py	Pinned H0DN and Pantheon+ commits
+R11	Same-name public candidate provenance analysis	BOUNDED_TRACEABILITY_REPLAY	reproduction/second_season/snia_same_cid/phase1d..phase1f	Candidate/filter/configuration mapping; exact executed final-row provenance remains unresolved
+R12	Cross-analysis consistency, seven-dimension evidence framework, and nonclaims	DETERMINISTIC_EVIDENCE_REPLAY	tools/replay_evidence_claims.py	No external inputs

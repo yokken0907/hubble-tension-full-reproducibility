@@ -1,0 +1,13 @@
+claim_id	status	statement	boundary_note
+B01-C01	ESTABLISHED_WITHIN_FROZEN_OUTPUTS	GWTC-4/5 frozen headline posterior quantiles reproduce the official one-decimal summaries.	No likelihood/sampler/event-level reproduction.
+B01-C02	HOLD_NOT_UNIQUE	The published 25.7% metric code/arithmetic path is traceable, but the exact old-side posterior pair provenance is not unique.	28.547849% headline-pair diagnostic is not the 25.7% reproduction.
+B02-C01	ESTABLISHED_SOURCE_READINESS_RESULT	At the fixed public state, a unique matched BBC truth-level closure bundle is not publicly specified.	Does not imply BBC is incorrect.
+B03A-C01	ESTABLISHED_WITHIN_FROZEN_IMPLEMENTATION	Public H0DN baseline is reproducible under the frozen representation and solver policy.	Does not certify representation-invariant inference.
+B03A-C02	ESTABLISHED	The singular covariance/MP solution exhibits non-invariance under an exact non-orthogonal row scaling; support inconsistency is detected in the covariance nullspace.	No corrected H0 or identified physical/systematic cause.
+B03B-C01	ESTABLISHED_WITHIN_FROZEN_MODEL	Scalar SN intercept compression is exactly sufficient for H0 in the frozen one-intercept fixed-covariance model while discarding residual goodness-of-fit information.	Does not validate the residual/covariance generative model.
+B03B-C02	ESTABLISHED_LOCALIZATION_ONLY	Residual deficit localizes to 39 same-CID/same-name contrasts and persists through STATONLY.	No covariance rescale, row deletion, or causal attribution.
+B03B-C03	ESTABLISHED_PUBLIC_LINEAGE_WITH_SCOPE	69/69 rows are connected to compatible public input candidates and Phase1F finds 0/48 byte-exact OBS pair reuse.	Exact executed-run to final-row ancestry remains unestablished.
+N-01	NOT_ESTABLISHED	A corrected or preferred H0 value follows from 2nd season.	Explicit nonclaim.
+N-02	NOT_ESTABLISHED	The Hubble tension is resolved or significantly reduced.	Explicit nonclaim.
+N-03	NOT_ESTABLISHED	A unique observational/systematic cause has been identified.	Explicit nonclaim.
+N-04	NOT_ESTABLISHED	New physics is supported by these audits.	Explicit nonclaim.

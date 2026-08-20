@@ -1,0 +1,3 @@
+item_id	object	status	directly_runnable	required_input	source_record	limitation
+ACT_ROBUSTNESS-PACKAGE-TRACE	claim-level evidence and source locators	PASS	YES: python scripts/verify_package.py	none	FIRST_MASTER_v1.0.0	Verifies extraction and provenance, not the original scientific computation.
+ACT_ROBUSTNESS-SCIENCE-STATUS	ACT public-chain robustness	TESTED_PUBLIC_VARIANTS_COMPLETE_WITH_CORRELATED_SOURCE_SCOPE	NO	New independent product or exact component likelihood	FS-B07	No new analysis or substituted external product is bundled.

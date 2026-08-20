@@ -1,0 +1,40 @@
+{
+  "byte_identical_result_count": 15,
+  "checks": {
+    "EXECUTION_STATUS.json": true,
+    "audit_summary.json": true,
+    "catalog_and_target_inventory.json": true,
+    "contract_verification.json": true,
+    "holdout_anchor_evidence.tsv": true,
+    "holdout_candidate_rows.tsv": true,
+    "independent_verification.json": true,
+    "inferred_crosswalk.tsv": true,
+    "label_header_diagnostic.tsv": true,
+    "photometry_scan_summary.json": true,
+    "run_environment.json": true,
+    "source_verification.json": true,
+    "status_semantics.json": true,
+    "target_candidate_file_evidence.tsv": true,
+    "target_row_application.tsv": true
+  },
+  "protected_result_count": 15,
+  "regenerated_sha256": {
+    "EXECUTION_STATUS.json": "af6969b71d872308ef5895e7120cacabd9069728cf196c190e62b83343c9037d",
+    "audit_summary.json": "d1c3223c2fa18ba131a838dd97d2000aabbb94108257ea8e9cc00c009b52ad40",
+    "catalog_and_target_inventory.json": "fec3c6eff7f84e4af3c0c15bb84f6fc9ed0ddf779accf12a005c995322f54241",
+    "contract_verification.json": "f6849e9085f7350b6b0f05321d8984f77dfd1fdf4d55d5e830043b857578c7ec",
+    "holdout_anchor_evidence.tsv": "c557d7375e24fb99afee4886d5754b24438558863669cbdd8500575b0a07de0b",
+    "holdout_candidate_rows.tsv": "b98bafa56b1be230453001b60fbc977811c5c0a400923ae290c186b90ebd3d07",
+    "independent_verification.json": "3125d2a4423aeabdab1c882591ff0ebbf6ceff4fc5c94cbeffeaf7c4badf24fc",
+    "inferred_crosswalk.tsv": "69b0fb90531157fd33de84779090c8abbc29e4f44573a724907a28f6633a7497",
+    "label_header_diagnostic.tsv": "81e03556ba0309be43e2ab03e0b6a28bed1db690c445e58b034bf21a54e26ad1",
+    "photometry_scan_summary.json": "5ca48421d7026155215cef6eb8abc09639b6f7e02c9b8378337ef9ada0e1ac5d",
+    "run_environment.json": "70a99de4318cc3c62bccecf0d0e4507df875ba5fe6fe3245f0c6a97eb8e944da",
+    "source_verification.json": "e0923a254373214f34be6d5d7dd789a435a8fba06b97b09ad7b67439bd6c1873",
+    "status_semantics.json": "3fce9ab350610de57061d370591295545c0c074d76a22b4c1b5197c59b023f3d",
+    "target_candidate_file_evidence.tsv": "ac106e0a07f1641400f1d8e2f7e18db8f5cba5c2561ee0be34b7c8d7cf781877",
+    "target_row_application.tsv": "ec532a233c67ed97e4f396ea2207913afafc8e6e69491fcdd1e66bf227b33bf4"
+  },
+  "status": "PASS",
+  "unit_tests_pass": true
+}

@@ -1,0 +1,15 @@
+{
+  "compared_element_count": 76729,
+  "comparison_performed": true,
+  "comparison_rule": "elementwise_float64_exact",
+  "dependency_disclosure": "JOINT_CATALOG_AND_COVARIANCE_LINEAGE_WHERE_DIAGONAL_AMBIGUITY_RESOLUTION_WAS_REQUIRED",
+  "evidentiary_limit": "Exact equality is numerical evidence against loss, transcription, additional rounding, or ordering mismatch in the mapped submatrix; it does not by itself establish how the H0DN covariance was constructed.",
+  "exact_equal_element_count": 76729,
+  "first_mismatch": null,
+  "h0dn_dimension": 277,
+  "maximum_absolute_difference": 0.0,
+  "mismatch_count": 0,
+  "official_dimension": 1701,
+  "official_index_sequence_sha256": "ea3761cead887b4d1d262bf535a02a27ce9b76937398e197a71d6a42157b38ff",
+  "status": "PASS"
+}

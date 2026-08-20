@@ -1,0 +1,3 @@
+item_id	object	status	directly_runnable	required_input	source_record	limitation
+CMB_DESI-PACKAGE-TRACE	claim-level evidence and source locators	PASS	YES: python scripts/verify_package.py	none	FIRST_MASTER_v1.0.0	Verifies extraction and provenance, not the original scientific computation.
+CMB_DESI-SCIENCE-STATUS	CMB-DESI geometry	RECORDED_DESCRIPTIVE_GAUSSIAN_GEOMETRY	NO	Joint simulations, cross-CMB covariance, full posterior	FS-B04	No new analysis or substituted external product is bundled.

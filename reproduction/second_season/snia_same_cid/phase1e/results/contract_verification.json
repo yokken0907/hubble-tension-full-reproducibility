@@ -1,0 +1,81 @@
+{
+  "checks": [
+    {
+      "actual_bytes": 6150,
+      "actual_sha256": "18f1a9cd5032daaa12fcc235f622c6ba55bd278ba3ff5168e46be7ce8b5da017",
+      "expected_bytes": 6150,
+      "expected_sha256": "18f1a9cd5032daaa12fcc235f622c6ba55bd278ba3ff5168e46be7ce8b5da017",
+      "path": "AUDIT_CONTRACT.md",
+      "status": "PASS"
+    },
+    {
+      "actual_bytes": 4118,
+      "actual_sha256": "b7d5779c2a6fb26f9553fca9d4c2ca09d0619998a2e7938d4ddd8b3457706fd9",
+      "expected_bytes": 4118,
+      "expected_sha256": "b7d5779c2a6fb26f9553fca9d4c2ca09d0619998a2e7938d4ddd8b3457706fd9",
+      "path": "provenance/DECISION_CONFIG.json",
+      "status": "PASS"
+    },
+    {
+      "actual_bytes": 10690,
+      "actual_sha256": "a3cd37e836d39f623dfedcea6c3c8a0ac0c0f80ae5647bd163610fdbd1bd9d69",
+      "expected_bytes": 10690,
+      "expected_sha256": "a3cd37e836d39f623dfedcea6c3c8a0ac0c0f80ae5647bd163610fdbd1bd9d69",
+      "path": "provenance/PHASE1B_ROW_MAP.tsv",
+      "status": "PASS"
+    },
+    {
+      "actual_bytes": 2360,
+      "actual_sha256": "cda451771dc08e8bb16313890729f81fb7622e0646d753322737565c72a7b167",
+      "expected_bytes": 2360,
+      "expected_sha256": "cda451771dc08e8bb16313890729f81fb7622e0646d753322737565c72a7b167",
+      "path": "provenance/PHASE1D_AUDIT_SUMMARY.json",
+      "status": "PASS"
+    },
+    {
+      "actual_bytes": 12536,
+      "actual_sha256": "c39890d89772f0df94a9789728a24195a7b3bfd45786d3bedb12db5d89d1b24a",
+      "expected_bytes": 12536,
+      "expected_sha256": "c39890d89772f0df94a9789728a24195a7b3bfd45786d3bedb12db5d89d1b24a",
+      "path": "provenance/PHASE1D_ROW_LINEAGE.tsv",
+      "status": "PASS"
+    },
+    {
+      "actual_bytes": 1069,
+      "actual_sha256": "4e2507b63a2ce652f9f7c1ee9ac2410796d17df267f7c0f9405443ba373d7415",
+      "expected_bytes": 1069,
+      "expected_sha256": "4e2507b63a2ce652f9f7c1ee9ac2410796d17df267f7c0f9405443ba373d7415",
+      "path": "provenance/PREEXECUTION_EXPOSURE.json",
+      "status": "PASS"
+    },
+    {
+      "actual_bytes": 366,
+      "actual_sha256": "81e21bcb0c26689482c86dec2642ab0116c4db5b60a5d13fe7554e0d6bdcc06c",
+      "expected_bytes": 366,
+      "expected_sha256": "81e21bcb0c26689482c86dec2642ab0116c4db5b60a5d13fe7554e0d6bdcc06c",
+      "path": "provenance/REPOSITORY_LOCK.json",
+      "status": "PASS"
+    },
+    {
+      "actual_bytes": 6728,
+      "actual_sha256": "74aee2a592f7200bf46148797e323ac70d341a320e25a01e20b52f692fd2734f",
+      "expected_bytes": 6728,
+      "expected_sha256": "74aee2a592f7200bf46148797e323ac70d341a320e25a01e20b52f692fd2734f",
+      "path": "provenance/SOURCE_LOCK.tsv",
+      "status": "PASS"
+    },
+    {
+      "actual_bytes": 863,
+      "actual_sha256": "b54c5b401004e4a095ed18e9ab62a8358bd9370658e6ddb53cfd51e33f4fdf87",
+      "expected_bytes": 863,
+      "expected_sha256": "b54c5b401004e4a095ed18e9ab62a8358bd9370658e6ddb53cfd51e33f4fdf87",
+      "path": "provenance/UPSTREAM_AUDIT_DEPENDENCIES.json",
+      "status": "PASS"
+    }
+  ],
+  "chronology_status": "PASS",
+  "contract_freeze_sha256": "b514495dd64beec5a3963bebb9bff8b8321957d55dba7812027c251c23d7753d",
+  "contract_id": "H0DN-SNIA-SURVEY-CODE-CROSSWALK-PHASE1E-20260802-01",
+  "result_blindness": "NOT_BLIND_POSTHOC_HYPOTHESES_FULLY_DISCLOSED",
+  "status": "PASS"
+}

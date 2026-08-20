@@ -1,0 +1,18 @@
+{
+  "amendment_id": "AMEND-001",
+  "contract_id": "H0DN-SNIA-SAME-CID-MEASUREMENT-LINEAGE-PHASE1D-20260730-01",
+  "crosswalk_evidence_classification_by_IDSURVEY": {
+    "5": "COMPOSITE_INFERENCE",
+    "51": "UNRESOLVED_BRIDGE",
+    "56": "COMPOSITE_INFERENCE",
+    "57": "UNRESOLVED_BRIDGE",
+    "62": "COMPOSITE_INFERENCE",
+    "63": "COMPOSITE_INFERENCE",
+    "64": "COMPOSITE_INFERENCE",
+    "65": "UNRESOLVED_BRIDGE"
+  },
+  "crosswalk_evidence_excerpt_spec": "CANONICAL_JSON_V1_OFFICIAL_LEGEND_FROZEN_CONFIG_PPLUS_ANCHORS_MAIN_CANDIDATE_HEADERS",
+  "direct_final_measurement_ancestry": "NOT_ESTABLISHED",
+  "executed_run_boundary_marker": "NO_EXECUTED_RUN_TO_FINAL_CATALOG_LINEAGE_PROOF",
+  "shared_dependency_boundary_marker": "CONFIGURATION_LEVEL_SHARED_DEPENDENCY_EVIDENCE_ONLY"
+}

@@ -1,0 +1,16 @@
+{
+  "package_name": "HUBBLE_TENSION_FIRST_SEASON_MASTER_REFERENCE_PACKAGE_v1.0.0",
+  "version": "1.0.0",
+  "status": "MASTER_REFERENCE_PACKAGE_COMPLETE_WITH_SCOPE",
+  "manifest_targets": 36,
+  "embedded_canonical_zip_count": 5,
+  "science_scope_files_indexed": 1090,
+  "science_scope_zip_crc": "365/365 PASS",
+  "science_scope_sidecars": "442/443 PASS; 1 visible mismatch",
+  "new_scientific_calculation": false,
+  "canonical_classification_changed": false,
+  "publication_material_included": false,
+  "repository_material_included": false,
+  "automatic_execution_authorized": false,
+  "claim_boundary": "FIRST_SEASON_SCIENTIFIC_AUDIT_STATE_ONLY_NO_CORRECTED_H0_NO_NEW_PHYSICS_NO_TENSION_RESOLUTION"
+}

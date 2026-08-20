@@ -1,0 +1,12 @@
+{
+  "contract_id": "H0DN-SNIA-COMP-PHASE0-CONTRACT-20260730-01",
+  "contract_path": "PHASE0_CONTRACT.md",
+  "contract_sha256": "bf49b620dd08a2c4a3f3dfdc33965914df83fdb460290e7a7bcf6b64e6597820",
+  "freeze_time_utc": "2026-07-29T17:42:00Z",
+  "freeze_time_asia_tokyo": "2026-07-30T02:42:00+09:00",
+  "results_observed_before_freeze": false,
+  "source_commit": "cc0a4b9f36e65470d514f254a3c5cffa463fbd94",
+  "source_lock_path": "provenance/SOURCE_LOCK.tsv",
+  "source_lock_sha256": "136602b45fef7629e920628cbd53a6135532ef8f174421d2db49ac21a79eb502",
+  "status": "FROZEN"
+}

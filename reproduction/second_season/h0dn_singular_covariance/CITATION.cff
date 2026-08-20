@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: >-
+  Please cite this independent software audit together with the H0 Distance
+  Network paper and identify the frozen upstream commit.
+title: Independent audit of H0DN covariance-block influence and numerical stability
+type: software
+version: 0.1.0
+authors:
+  - family-names: Yoshimura
+    given-names: Keiji
+    affiliation: Independent Researcher
+license: MIT
+keywords:
+  - Hubble constant
+  - distance ladder
+  - covariance
+  - reproducibility
+  - numerical stability

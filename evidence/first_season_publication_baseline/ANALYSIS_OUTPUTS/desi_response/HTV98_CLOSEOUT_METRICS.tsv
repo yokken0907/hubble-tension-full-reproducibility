@@ -1,0 +1,7 @@
+metric	value
+remaining_mode_count	11
+minimum_remaining_predictive_p	0.17197432647634514
+absolute_influence_effective_mode_count	4.073920191769459
+leading_secondary_mode	LRG1::DH_over_rs
+leading_secondary_ACT_sigma	3.1983110538067923
+branch_status	CLOSED_WITH_SCOPE_NO_ITERATIVE_PEELING

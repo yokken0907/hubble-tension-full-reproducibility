@@ -1,0 +1,9 @@
+required_input	uniqueness_requirements
+BiasCor simulation truth	survey; scatter model; realization/seed; event ID; truth fields; complete bytes
+Truth-matched fitted output	same event IDs; fit-failure mask; SNANA/SALT2 version; fit settings
+Pre/post correction vectors	same sample/order/mask; correction definition and units
+Statistical/systematic covariance	vector mapping; dimension; row order; systematic composition; generation settings
+Sample selection	survey composition; cuts; duplicates; calibrators; redshift range; scatter model
+Configuration	PIPPIN; SNANA; SALT2; BBC versions/commits; resolved paths; all options
+Provenance	record/version; bytes; official checksum; generation time; command; log
+Cross-file mapping	truth -> fit -> pre/post -> covariance by event ID and run ID

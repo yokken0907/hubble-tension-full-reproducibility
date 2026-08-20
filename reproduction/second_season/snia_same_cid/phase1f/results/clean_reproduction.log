@@ -1,0 +1,63 @@
+[main_audit] returncode=0
+{"scientific_classification": "PUBLIC_INPUT_DEPENDENCIES_CLASSIFIED_REPEATED_PAYLOAD_PAIRS_0_OF_48_SINGLE_PAYLOAD_PAIRS_4_OF_48_FILTER_RECORDS_MAPPED_434_OF_434_CONFIG_SERIES_PASS_7_OF_7", "status": "AUDIT_COMPLETE_PUBLIC_INPUT_DEPENDENCY_CLASSIFIED"}
+[posthoc_negative_control] returncode=0
+{"chronology": "DESIGNED_AND_FROZEN_AFTER_MAIN_RESULT", "cross_CID_candidate_file_pair_count": 1523, "cross_CID_mutual_unique_rounding_match_count": 24, "cross_CID_observation_pair_opportunity_count": 14670999, "cross_CID_positive_candidate_file_pair_count": 24, "directory_pair_stratum_count": 11, "interpretive_boundary": "NONEXCHANGEABLE_DESCRIPTIVE_COLLISION_SCREEN_NO_P_VALUE_NO_CAUSAL_INFERENCE_NO_MAIN_RESULT_CHANGE", "main_same_CID_candidate_file_pair_count": 48, "main_same_CID_positive_candidate_file_pair_count": 4, "protected_main_results_unchanged_after_diagnostic": true, "protected_main_results_unchanged_before_diagnostic": true, "status": "POSTHOC_NEGATIVE_CONTROL_COMPLETE"}
+[second_implementation] returncode=0
+{"check_count": 31, "pass_count": 31, "status": "PASS"}
+[unit_tests] returncode=0
+test_01_sha256_bytes (test_auditlib.Phase1FAuditTests.test_01_sha256_bytes) ... ok
+test_02_decimal_plain_value (test_auditlib.Phase1FAuditTests.test_02_decimal_plain_value) ... ok
+test_03_decimal_plain_half_ulp (test_auditlib.Phase1FAuditTests.test_03_decimal_plain_half_ulp) ... ok
+test_04_decimal_trailing_zero_precision (test_auditlib.Phase1FAuditTests.test_04_decimal_trailing_zero_precision) ... ok
+test_05_decimal_scientific_precision (test_auditlib.Phase1FAuditTests.test_05_decimal_scientific_precision) ... ok
+test_06_interval_overlap_true (test_auditlib.Phase1FAuditTests.test_06_interval_overlap_true) ... ok
+test_07_interval_overlap_false (test_auditlib.Phase1FAuditTests.test_07_interval_overlap_false) ... ok
+test_08_relative_difference_zero (test_auditlib.Phase1FAuditTests.test_08_relative_difference_zero) ... ok
+test_09_relative_difference_floor (test_auditlib.Phase1FAuditTests.test_09_relative_difference_floor) ... ok
+test_10_mutual_unique_simple (test_auditlib.Phase1FAuditTests.test_10_mutual_unique_simple) ... ok
+test_11_mutual_unique_ambiguous (test_auditlib.Phase1FAuditTests.test_11_mutual_unique_ambiguous) ... ok
+test_12_config_contract_identifier (test_auditlib.Phase1FAuditTests.test_12_config_contract_identifier) ... ok
+test_13_contract_freeze_hash_constant (test_auditlib.Phase1FAuditTests.test_13_contract_freeze_hash_constant) ... ok
+test_14_contract_verification (test_auditlib.Phase1FAuditTests.test_14_contract_verification) ... ok
+test_15_source_verification (test_auditlib.Phase1FAuditTests.test_15_source_verification) ... ok
+test_16_source_lock_count (test_auditlib.Phase1FAuditTests.test_16_source_lock_count) ... ok
+test_17_tree_lock_count (test_auditlib.Phase1FAuditTests.test_17_tree_lock_count) ... ok
+test_18_candidate_count (test_auditlib.Phase1FAuditTests.test_18_candidate_count) ... ok
+test_19_group_count (test_auditlib.Phase1FAuditTests.test_19_group_count) ... ok
+test_20_pair_count (test_auditlib.Phase1FAuditTests.test_20_pair_count) ... ok
+test_21_phase1d_candidate_count (test_auditlib.Phase1FAuditTests.test_21_phase1d_candidate_count) ... ok
+test_22_phase1e_candidate_count (test_auditlib.Phase1FAuditTests.test_22_phase1e_candidate_count) ... ok
+test_23_distinct_candidate_paths (test_auditlib.Phase1FAuditTests.test_23_distinct_candidate_paths) ... ok
+test_24_profile_count (test_auditlib.Phase1FAuditTests.test_24_profile_count) ... ok
+test_25_total_observation_count (test_auditlib.Phase1FAuditTests.test_25_total_observation_count) ... ok
+test_26_distinct_profile_blobs (test_auditlib.Phase1FAuditTests.test_26_distinct_profile_blobs) ... ok
+test_27_candidate_series_count (test_auditlib.Phase1FAuditTests.test_27_candidate_series_count) ... ok
+test_28_configured_series_count (test_auditlib.Phase1FAuditTests.test_28_configured_series_count) ... ok
+test_29_filter_record_count (test_auditlib.Phase1FAuditTests.test_29_filter_record_count) ... ok
+test_30_filter_all_mapped (test_auditlib.Phase1FAuditTests.test_30_filter_all_mapped) ... ok
+test_31_filter_mapped_observation_count (test_auditlib.Phase1FAuditTests.test_31_filter_mapped_observation_count) ... ok
+test_32_kcor_input_count (test_auditlib.Phase1FAuditTests.test_32_kcor_input_count) ... ok
+test_33_transmission_blob_count (test_auditlib.Phase1FAuditTests.test_33_transmission_blob_count) ... ok
+test_34_no_byte_exact_positive_pair (test_auditlib.Phase1FAuditTests.test_34_no_byte_exact_positive_pair) ... ok
+test_35_single_payload_pair_count (test_auditlib.Phase1FAuditTests.test_35_single_payload_pair_count) ... ok
+test_36_repeated_payload_pair_count (test_auditlib.Phase1FAuditTests.test_36_repeated_payload_pair_count) ... ok
+test_37_match_evidence_count (test_auditlib.Phase1FAuditTests.test_37_match_evidence_count) ... ok
+test_38_only_one_main_match_within_point11_day (test_auditlib.Phase1FAuditTests.test_38_only_one_main_match_within_point11_day) ... ok
+test_39_no_main_match_same_transmission_blob (test_auditlib.Phase1FAuditTests.test_39_no_main_match_same_transmission_blob) ... ok
+test_40_summary_status (test_auditlib.Phase1FAuditTests.test_40_summary_status) ... ok
+test_41_summary_no_exposure_identity (test_auditlib.Phase1FAuditTests.test_41_summary_no_exposure_identity) ... ok
+test_42_summary_no_execution_lineage (test_auditlib.Phase1FAuditTests.test_42_summary_no_execution_lineage) ... ok
+test_43_posthoc_pair_count (test_auditlib.Phase1FAuditTests.test_43_posthoc_pair_count) ... ok
+test_44_posthoc_positive_pair_count (test_auditlib.Phase1FAuditTests.test_44_posthoc_positive_pair_count) ... ok
+test_45_posthoc_opportunity_count (test_auditlib.Phase1FAuditTests.test_45_posthoc_opportunity_count) ... ok
+test_46_posthoc_main_unchanged (test_auditlib.Phase1FAuditTests.test_46_posthoc_main_unchanged) ... ok
+test_47_second_implementation (test_auditlib.Phase1FAuditTests.test_47_second_implementation) ... ok
+test_48_candidate_map_has_no_residual_field (test_auditlib.Phase1FAuditTests.test_48_candidate_map_has_no_residual_field) ... ok
+test_49_pair_map_has_no_h0_value_field (test_auditlib.Phase1FAuditTests.test_49_pair_map_has_no_h0_value_field) ... ok
+test_50_parse_minimal_lightcurve (test_auditlib.Phase1FAuditTests.test_50_parse_minimal_lightcurve) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 1.985s
+
+OK
+{"error_count": 0, "expected_failure_count": 0, "failure_count": 0, "scope": "UNIT_AND_FIXED-SOURCE_INTEGRATION_TESTS", "skipped_count": 0, "status": "PASS", "test_count": 50, "unexpected_success_count": 0}

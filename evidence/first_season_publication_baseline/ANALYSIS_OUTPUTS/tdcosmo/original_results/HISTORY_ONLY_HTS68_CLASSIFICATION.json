@@ -1,0 +1,27 @@
+{
+  "phase": "HTS68",
+  "stage": "TDCOSMO2025_PUBLIC_CHAIN_CONTRACT_AND_DEPENDENCY_AUDIT",
+  "classification": "PASS_TDCOSMO2025_PUBLIC_CHAIN_DEPENDENCY_RECONSTRUCTION_WITH_SCOPE",
+  "source_reentry_gate": "PASS_TDCOSMO_PUBLIC_HDF5_TRIGGER_MET",
+  "source_commit": "d7f38db341f68be1df0d9ac1fc528c45113f94cf",
+  "source_commit_date": "2026-01-21T12:15:12+01:00",
+  "chain_count": 28,
+  "expected_chain_set_match": true,
+  "chain_contract_pass": true,
+  "paper_table6_h0_reproduction_pass": true,
+  "paper_table6_h0_reproduction_count": 12,
+  "paper_table6_h0_expected_count": 12,
+  "combined_external_lens_h0_and_lambda_direction_consistent": true,
+  "slacs_shift_exceeds_sl2s_shift_in_all_comparable_contexts": true,
+  "identifier_crosswalk_required": true,
+  "exact_mcmc_convergence_independently_rerun": false,
+  "exact_likelihood_reexecution": false,
+  "branch_decision": "KEEP_TDCOSMO_BRANCH_OPEN_FOR_PORTABLE_LIKELIHOOD_AND_SYSTEMATICS_AUDIT",
+  "claim_boundary": {
+    "hubble_tension_resolved": false,
+    "new_physics_established": false,
+    "corrected_h0_constructed": false,
+    "independent_tension_significance_computed": false,
+    "causal_component_attribution": false
+  }
+}

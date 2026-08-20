@@ -1,0 +1,3 @@
+item_id	object	status	directly_runnable	required_input	source_record	limitation
+LOCAL_FLOW-PACKAGE-TRACE	claim-level evidence and source locators	PASS	YES: python scripts/verify_package.py	none	FIRST_MASTER_v1.0.0	Verifies extraction and provenance, not the original scientific computation.
+LOCAL_FLOW-SCIENCE-STATUS	Local flow and MCP-CF4 interface	INTERFACE_MAPPED; JOINT_LIKELIHOOD_AND_COVARIANCE_HOLD	NO	Joint covariance, distance samples, zero-point covariance, likelihood	FS-B13	No new analysis or substituted external product is bundled.

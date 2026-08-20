@@ -1,0 +1,47 @@
+{
+  "copied_compact_ledgers": {
+    "provenance/PHASE1B_ROW_MAP.tsv": {
+      "bytes": 10690,
+      "expected_sha256": "a3cd37e836d39f623dfedcea6c3c8a0ac0c0f80ae5647bd163610fdbd1bd9d69",
+      "sha256": "a3cd37e836d39f623dfedcea6c3c8a0ac0c0f80ae5647bd163610fdbd1bd9d69"
+    },
+    "provenance/PHASE1D_ACCEPTED_CORRECTED_AUDIT_SUMMARY.json": {
+      "bytes": 4309,
+      "expected_sha256": "e36562a7f298fac9bbf7d6f96b6396625781fe426b78f8819c3e9c420992eabb",
+      "sha256": "e36562a7f298fac9bbf7d6f96b6396625781fe426b78f8819c3e9c420992eabb"
+    },
+    "provenance/PHASE1D_ACCEPTED_CORRECTED_ROW_LINEAGE.tsv": {
+      "bytes": 22601,
+      "expected_sha256": "3298919e63cc62410bc9a37b0b86d798e2324d7b6ad1e3958a69a06691287809",
+      "sha256": "3298919e63cc62410bc9a37b0b86d798e2324d7b6ad1e3958a69a06691287809"
+    },
+    "provenance/PHASE1E_ACCEPTED_CORRECTED_AUDIT_SUMMARY.json": {
+      "bytes": 3826,
+      "expected_sha256": "d1c3223c2fa18ba131a838dd97d2000aabbb94108257ea8e9cc00c009b52ad40",
+      "sha256": "d1c3223c2fa18ba131a838dd97d2000aabbb94108257ea8e9cc00c009b52ad40"
+    },
+    "provenance/PHASE1E_TARGET_CANDIDATE_FILE_EVIDENCE.tsv": {
+      "bytes": 6948,
+      "expected_sha256": "ac106e0a07f1641400f1d8e2f7e18db8f5cba5c2561ee0be34b7c8d7cf781877",
+      "sha256": "ac106e0a07f1641400f1d8e2f7e18db8f5cba5c2561ee0be34b7c8d7cf781877"
+    },
+    "provenance/PHASE1E_TARGET_ROW_APPLICATION.tsv": {
+      "bytes": 5807,
+      "expected_sha256": "ec532a233c67ed97e4f396ea2207913afafc8e6e69491fcdd1e66bf227b33bf4",
+      "sha256": "ec532a233c67ed97e4f396ea2207913afafc8e6e69491fcdd1e66bf227b33bf4"
+    }
+  },
+  "phase1d": {
+    "actual_sha256": "6792886b8f1a8ac6397e6305931bfc750fdf1f1211c5e92b1f07ea1e7f0609bd",
+    "archive_name": "h0dn-snia-same-cid-measurement-lineage-audit_v0.1.0.zip",
+    "expected_sha256": "6792886b8f1a8ac6397e6305931bfc750fdf1f1211c5e92b1f07ea1e7f0609bd",
+    "sidecar_status": "PASS"
+  },
+  "phase1e": {
+    "actual_sha256": "0c86bd916e5b54f3e97b810b868c793e2fdd564abd94d4f1687fb4f632f73ed3",
+    "archive_name": "h0dn-snia-survey-code-crosswalk-audit_v0.1.0.zip",
+    "expected_sha256": "0c86bd916e5b54f3e97b810b868c793e2fdd564abd94d4f1687fb4f632f73ed3",
+    "sidecar_status": "PASS"
+  },
+  "raw_upstream_bytes_redistributed": false
+}

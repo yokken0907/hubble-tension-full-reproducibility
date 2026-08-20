@@ -1,0 +1,6 @@
+id	title	location	use	authority
+PLANCK2018_PARAMETERS	Planck 2018 results VI	https://doi.org/10.1051/0004-6361/201833910	Table 1/Table 2 and Eq. 10 acoustic invariant	PRIMARY_PUBLISHED
+EISENSTEIN_HU1998	Baryonic Features in the Matter Transfer Function	https://arxiv.org/abs/astro-ph/9709112	standard fitting-form lineage	PRIMARY_PUBLISHED
+HTS10	Frozen Planck posterior authority	local package	parameter subset values	FROZEN_LOCAL
+HTS23	CMB-DESI common axis	local package	axis and endpoints	FROZEN_LOCAL
+HTS24	primary-vs-lensing decomposition	local package	endpoint contracts	FROZEN_LOCAL

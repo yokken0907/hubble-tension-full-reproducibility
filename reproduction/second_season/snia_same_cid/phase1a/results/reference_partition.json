@@ -1,0 +1,12 @@
+{
+  "alpha": 0.7163834210954623,
+  "alpha_error": 0.0018926416391806472,
+  "chi2_between_name_modes": 195.55132137372135,
+  "chi2_duplicate_name_contrasts": 11.209315063602723,
+  "chi2_total": 206.76063643732408,
+  "global_normal_condition_number": 1.0,
+  "global_normal_rank": 1,
+  "group_normal_condition_number": 28.482722520097404,
+  "group_normal_rank": 238,
+  "policy": "direct_gls_normal_systems"
+}

@@ -1,0 +1,17 @@
+{
+  "NO_ACTIVE_PUBLIC_PHOTOMETRY_FILE": {
+    "meaning": "Legacy Phase 1D status under its frozen vocabulary; it does not mean that no public photometry file exists.",
+    "preferred_label": "NO_COMPATIBLE_CANDIDATE_UNDER_PHASE1D_FROZEN_CROSSWALK"
+  },
+  "UNIQUE_ACTIVE_FILE_UNDER_INFERRED_CROSSWALK": {
+    "does_not_establish": [
+      "direct ancestry to the final m_b_corr row",
+      "identity of the exact light-curve fit output or FITRES row",
+      "identity of the bias-correction run",
+      "executed-run-to-final-catalog lineage",
+      "statistical independence"
+    ],
+    "meaning": "Exactly one active public photometry input candidate matched the exact CID, inferred source directory, and accepted raw SURVEY vocabulary within the frozen seven-directory universe.",
+    "preferred_label": "UNIQUE_FROZEN_CROSSWALK_COMPATIBLE_PUBLIC_INPUT_CANDIDATE"
+  }
+}

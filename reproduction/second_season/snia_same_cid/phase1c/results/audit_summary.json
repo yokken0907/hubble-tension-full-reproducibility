@@ -1,0 +1,69 @@
+{
+  "all_multirow_groups_cross_survey": true,
+  "boundary_marker": "CALIBRATION_DIAGNOSTIC_ONLY_NO_COVARIANCE_RESCALE_NO_CORRECTED_H0_NO_TENSION_RESOLUTION",
+  "classification_thresholds": {
+    "all_three_main_baselines_meet_ordered_sensitivity_flag": true,
+    "all_three_main_baselines_meet_strong_low_label": true,
+    "ordered_sensitivity_flag_alpha": 0.01,
+    "strong_low_dispersion_label_alpha": 0.001,
+    "thresholds_are_distinct": true
+  },
+  "contract_id": "H0DN-SNIA-CONTRAST-COVARIANCE-PHASE1C-20260730-02",
+  "contrast_degrees_of_freedom": 39,
+  "covariance_lineage_status": "PASS",
+  "dependency_mapping_status": "PASS",
+  "input_status": "PASS",
+  "known_phase1a_reproduction_status": "PASS",
+  "multirow_exact_name_group_count": 30,
+  "nonclaims": [
+    "NO_COVARIANCE_CORRECTION_OR_RESCALE",
+    "NO_OBJECT_OR_SURVEY_RANKING",
+    "NO_CORRECTED_A_B_M_B_OR_H0",
+    "NO_HUBBLE_TENSION_RECALCULATION",
+    "NO_PHYSICAL_CAUSE_ASSIGNMENT"
+  ],
+  "numerical_crosscheck_status": "PASS",
+  "ordered_baseline_results": {
+    "PHASE1A_FULL": {
+      "chi2": 11.209315063602716,
+      "degrees_of_freedom": 39,
+      "dispersion_label": "STRONG_LOW_DISPERSION_RELATIVE_TO_BASELINE",
+      "low_flag_at_alpha_0_01": true,
+      "lower_tail_probability": 3.6795245876638087e-06
+    },
+    "STAT_ONLY": {
+      "chi2": 16.233447508593247,
+      "degrees_of_freedom": 39,
+      "dispersion_label": "STRONG_LOW_DISPERSION_RELATIVE_TO_BASELINE",
+      "low_flag_at_alpha_0_01": true,
+      "lower_tail_probability": 0.0004856832550848106
+    },
+    "STAT_SYS_NO_ROWWISE_VELOCITY": {
+      "chi2": 14.734235950587198,
+      "degrees_of_freedom": 39,
+      "dispersion_label": "STRONG_LOW_DISPERSION_RELATIVE_TO_BASELINE",
+      "low_flag_at_alpha_0_01": true,
+      "lower_tail_probability": 0.00014711328968576817
+    }
+  },
+  "probability_reference_questions": {
+    "phase1a_conditional_beta_probability": {
+      "display_value": 9.3683622e-05,
+      "reference_distribution": "conditional_beta_given_the_phase1a_partition_setup",
+      "reference_question": "Phase 1A conditional partition probability",
+      "source_artifact": "Phase 1A results/statistical_interpretation.json",
+      "value": 9.368362232281232e-05
+    },
+    "phase1c_marginal_chi2_39_lower_tail_probability": {
+      "reference_distribution": "marginal_chi_square_df_39",
+      "reference_question": "Phase 1C marginal lower-tail probability for the fixed 39-dimensional contrast vector",
+      "value": 3.6795245876638087e-06
+    },
+    "relationship": "DISTINCT_REFERENCE_QUESTIONS_NOT_A_NUMERICAL_INCONSISTENCY"
+  },
+  "rows_in_multirow_groups": 69,
+  "sensitivity_classification": "LOW_FLAG_PERSISTS_THROUGH_STATONLY",
+  "source_status": "PASS",
+  "status": "AUDIT_COMPLETE_CONTRAST_COVARIANCE_CALIBRATION_DIAGNOSTIC",
+  "upstream_audit_dependency_status": "PASS"
+}

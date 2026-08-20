@@ -1,0 +1,4 @@
+variant	chi2_display	chi2_raw	df	interpretation
+Full fixed covariance	11.209315063602716	11.209315063602716	39	Low; primary result
+No rowwise velocity term	14.734236	14.734235950587198	39	Low statistic persists
+Pantheon+ statistical-only (STATONLY) covariance	16.233447508593247	16.233447508593247	39	p=4.856832550848106e-4 under specified tail calculation

@@ -1,0 +1,6 @@
+order	node	role
+1	Initial broad survey	Dependency and public-product traceability map
+2	Focused public-product analyses	GWTC, Pantheon+ BBC, H0DN covariance, and supernova diagnostics
+3	Consistency review	Align claims, source products, numerical specifications, quantities, and versions
+4	Final validation	Retest the numerical and logical mechanisms most relevant to the publication
+5	Publication synthesis	Report supported conclusions and evidential limits without introducing a new scientific analysis

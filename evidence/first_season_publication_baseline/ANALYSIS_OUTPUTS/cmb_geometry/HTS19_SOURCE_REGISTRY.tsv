@@ -1,0 +1,7 @@
+source_id	title	url	authority_class	use
+ACT_DR6_CHAINS	NASA LAMBDA ACT DR6.02 chains	https://lambda.gsfc.nasa.gov/product/act/act_dr6.02/act_dr6.02_chains_info.html	OFFICIAL_DATA_REPOSITORY	Cobaya chain contracts, burn-in metadata, data-tag definitions
+ACT_DR6_NEFF_CHAINS	NASA LAMBDA NEFF downloads	https://lambda.gsfc.nasa.gov/product/act/act_dr6.02/act_dr6.02_chains_neff_get.html	OFFICIAL_DATA_REPOSITORY	actlite/actbase/P-ACT/Planck Neff tarballs and sizes
+ACT_DR6_EXTENDED	Calabrese, Hill et al. 2025	https://arxiv.org/abs/2503.14454	PRIMARY_PAPER	Neff=2.86±0.13; P-ACT-LB H0=67.00±0.91
+ACT_DR6_LCDM	Louis et al. 2025	https://doi.org/10.1088/1475-7516/2025/11/062	PRIMARY_PAPER	ACT/WMAP/P-ACT/P-ACT-LB base-LCDM H0 table
+SPT3G_TTTEEE	Balkenhol et al. 2023	https://arxiv.org/abs/2212.05642	PRIMARY_PAPER	Table V: SPT and SPT+Planck LambdaCDM+Neff
+SPT_PUBLIC_LIKELIHOOD	SPT public data	https://pole.uchicago.edu/public/data/balkenhol22/	OFFICIAL_DATA_REPOSITORY	public likelihood and data products
