@@ -1,2 +1,0 @@
-filename	bytes	sha256	zip_crc	zip_entries	included_as_bytes	note
-01_GWTC45_STANDARD_SIREN_POSTERIOR_TRACEABILITY.zip	19338053	1f3dd9f4eaa88815602a3d3f88a31991e505473ecf2c836389d6b440591d8ca0	PASS	7	NO	Substantive inner files are preserved individually; wrapper omission avoids duplicate storage.

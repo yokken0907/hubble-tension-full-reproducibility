@@ -1,3 +1,0 @@
-PATH_TYPE	ARCHIVAL_OR_HISTORICAL_PREFIX	PUBLIC_PACKAGE_PREFIX	RULE	NOTE
-ARTIFACT_PREFIX	EVIDENCE_FREEZE/artifacts/	ANALYSIS_OUTPUTS/	replace_prefix	All 84 indexed author-generated outputs follow this rule.
-LOCAL_CREATION_PATH	<HISTORICAL_BUILD_RUNTIME>/		historical_only	Creation-time paths are retained only in an explicitly labelled historical-location column; they are not reader-accessible package paths.

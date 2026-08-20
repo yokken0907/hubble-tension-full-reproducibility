@@ -1,7 +1,0 @@
-route_pair	direct_data_overlap	external_data_overlap	methodological_overlap	covariance_classification	combination_status
-MCP vs TDCOSMO	NONE_IDENTIFIED	low-redshift cosmology assumptions only; no core catalog overlap identified	LOW	LOW_BUT_NOT_ZERO	NOT_LICENSED_WITHOUT_LIKELIHOODS
-MCP vs GW standard sirens	NONE_IDENTIFIED	both require low-redshift velocity/redshift interpretation but use different data	LOW	LOW_BUT_NOT_ZERO	NOT_LICENSED_WITHOUT_LIKELIHOODS
-MCP vs lensed supernovae	NONE_IDENTIFIED	no core external dataset overlap identified	LOW	LOW	NOT_LICENSED_WITHOUT_LIKELIHOODS
-TDCOSMO vs GW standard sirens	NONE_IDENTIFIED	cosmology priors may use external large-scale-survey information	LOW	LOW_BUT_NOT_ZERO	NOT_LICENSED_WITHOUT_LIKELIHOODS
-TDCOSMO vs lensed supernovae	DISTINCT_DEFLECTORS	line-of-sight, spectroscopy and lens-population resources partly analogous	HIGHER_THAN_OTHER_PAIRS	METHODOLOGICAL_COVARIANCE_PLAUSIBLE	NOT_LICENSED
-GW standard sirens vs lensed supernovae	NONE_IDENTIFIED	no core external dataset overlap identified	LOW	LOW	NOT_LICENSED_WITHOUT_LIKELIHOODS

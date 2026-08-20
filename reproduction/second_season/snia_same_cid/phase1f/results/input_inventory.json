@@ -1,9 +1,0 @@
-{
-  "candidate_row_count": 69,
-  "distinct_candidate_path_count": 69,
-  "phase1d_candidate_count": 38,
-  "phase1e_candidate_count": 31,
-  "same_CID_group_count": 30,
-  "status": "PASS",
-  "within_group_pair_count": 48
-}

@@ -1,3 +1,0 @@
-paper_model_id	paper_dataset	correct_release_model_id	same_named_release_file	same_named_release_dataset	risk	resolution
-ΛCDM2b	TDCOSMO + DES-SN5YR + SLACS + SL2S	LambdaCDM2d	LambdaCDM2b.h5	TDCOSMO + DES-SN5YR + SLACS	PAPER_RELEASE_IDENTIFIER_COLLISION	Use HDF5 dataset attribute; do not select by paper ID alone.
-not listed in Table 6		LambdaCDM2c		TDCOSMO + DES-SN5YR + SL2S	RELEASE_ONLY_INTERMEDIATE_LAYER	Treat as an additional public posterior, not a paper Table 6 row.

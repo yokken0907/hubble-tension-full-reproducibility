@@ -1,7 +1,0 @@
-{
-  "absolute_difference": 3.552713678800501e-14,
-  "actual": 11.209315063602716,
-  "expected": 11.209315063602752,
-  "status": "PASS",
-  "tolerance": 2e-08
-}

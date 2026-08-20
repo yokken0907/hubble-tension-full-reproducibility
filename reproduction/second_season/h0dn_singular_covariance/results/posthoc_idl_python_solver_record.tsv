@@ -1,4 +1,0 @@
-source_file	sha256	finding	threshold_rule
-idlcode/mpinv.pro	92d64afbf60aa7e96102fe78ade4866646c43ca5c670705a87dd406fb38fc33f	Implements the Moore-Penrose inverse by SVD.	Default tol = max(singular_values) * max(m,n) * machine_epsilon.
-idlcode/org_v3p9.pro	49a4cf6cfcb3805a103f7060c10137431f3285c5d74144445de56a821052e501	Calls mpinv(covar, rank=rank) for the network precision.	Uses mpinv default unless tol is supplied; none is supplied.
-h0_constrainer/h0_constrainer/solver.py	d44ac2d7d2f8b0ec8d2b33ebdc7102397010efe7135bc3ec30ba014d8ccf0136	Calls scipy.linalg.pinv on the network covariance.	atol=1e-10 and rtol=0.0.

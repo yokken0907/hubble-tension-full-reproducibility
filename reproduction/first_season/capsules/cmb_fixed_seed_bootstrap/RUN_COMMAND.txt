@@ -1,2 +1,0 @@
-python run_analysis.py --moments inputs/FROZEN_GAUSSIAN_MOMENTS.tsv --out _outputs --bootstrap-draws 1000 --seed 10199
-python verify_output.py --output-dir _outputs

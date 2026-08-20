@@ -1,5 +1,0 @@
-amendment_id	timestamp_utc	changed_file	reason	new_results_observed	interpretation_affected
-
-CORR-P1C-001	2026-07-30T06:33:01Z	provenance/SOURCE_LOCK.tsv	Append four H0DN implementation files required by bounded review while preserving the original 2255-byte Contract 02 prefix	YES	NO
-CORR-P1C-002	2026-07-30T06:33:01Z	provenance/UPSTREAM_AUDIT_DEPENDENCIES.json	Add the verified Phase 1A canonical archive SHA-256; preserve the original Contract 02 bytes in UPSTREAM_AUDIT_DEPENDENCIES_CONTRACT02_FROZEN.json	YES	NO
-CORR-P1C-003	2026-07-30T06:33:01Z	POSTHOC_PRECISION_AND_ASYMMETRY_DIAGNOSTIC_CONTRACT.md	Add an internally result-blind post-hoc precision and mapped-asymmetry diagnostic requested by bounded review; main Phase 1C results were already observed but the new diagnostic values were not observed before this contract freeze	YES	NO

@@ -1,3 +1,0 @@
-item_id	object	status	directly_runnable	required_input	source_record	limitation
-CROSS_ROUTE-PACKAGE-TRACE	claim-level evidence and source locators	PASS	YES: python scripts/verify_package.py	none	FIRST_MASTER_v1.0.0	Verifies extraction and provenance, not the original scientific computation.
-CROSS_ROUTE-SCIENCE-STATUS	Cross-route dependency synthesis	DEPENDENCY_MAP_RETAINED; NAIVE_COMBINATION_PROHIBITED	NO	Compatible likelihood contracts and cross-route covariance	FS-B16	No new analysis or substituted external product is bundled.

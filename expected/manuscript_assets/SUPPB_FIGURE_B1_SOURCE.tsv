@@ -1,6 +1,0 @@
-item	value	meaning
-frozen_intercept	0.7163834210954622	center of fixed one-intercept likelihood
-frozen_standard_error	0.0018926416391806472	curvature scale
-omitted_residual_chi2	206.7606364373241	parameter-independent residual term
-fixture_residual_chi2_first	2	same compression, residual pattern A
-fixture_residual_chi2_second	8	same compression, residual pattern B

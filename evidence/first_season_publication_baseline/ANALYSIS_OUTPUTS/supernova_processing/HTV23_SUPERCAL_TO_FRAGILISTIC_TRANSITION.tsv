@@ -1,7 +1,0 @@
-component	delta_w
-surface_only_difference	0.0020000000000000018
-zeropoint_only_difference	0.034
-interaction_difference	0.020999999999999998
-combined_difference	0.057
-closure	0.057
-closure_error	0.0

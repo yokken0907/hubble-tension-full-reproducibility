@@ -1,9 +1,0 @@
-{
-  "byteorder": "little",
-  "implementation": "CPython",
-  "machine": "x86_64",
-  "numpy_version": "2.3.5",
-  "platform": "Linux-6.12.13-x86_64-with-glibc2.39",
-  "python_version": "3.12.13",
-  "scipy_version": "1.17.0"
-}

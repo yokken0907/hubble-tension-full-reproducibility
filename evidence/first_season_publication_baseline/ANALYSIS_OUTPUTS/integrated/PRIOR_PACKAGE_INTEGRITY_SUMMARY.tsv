@@ -1,6 +1,0 @@
-metric	value	scope	interpretation_boundary
-files_in_prior_integrated_archive	1070	prior two-volume integrated project archive	inventory count only
-uncompressed_bytes	687328185	prior two-volume integrated project archive	storage volume is not evidence strength
-zip_crc_pass	354/354	ZIP members checked in the prior integration audit	CRC verifies packaging, not science
-standard_sidecar_matches	351/351	standard checksum sidecars present in the prior audit	identity checks do not validate claims
-integrated_audit_package_sha256	cce2802c97119ca419c28c11e700aa6187749145831ab7c16305c4e5117e0bf2	HTV_HTS_INTEGRATED_STATUS_AUDIT_PACKAGE.zip	locator for the prior audit package

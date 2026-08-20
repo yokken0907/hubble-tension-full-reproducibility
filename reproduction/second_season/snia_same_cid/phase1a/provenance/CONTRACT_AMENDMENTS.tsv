@@ -1,2 +1,0 @@
-amendment_id	timestamp_utc	changed_file	reason	results_observed	interpretation_affected
-AMEND-001	2026-07-30T02:41:50Z	reader-facing terminology and generated output schema	Clarify that 39 is the excess-row count and duplicate-name contrast degrees of freedom; 30 multi-row groups contain 69 rows	YES	NO

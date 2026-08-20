@@ -1,6 +1,0 @@
-limitation_id	scope	status	detail
-L01	MCMC_CONVERGENCE	NOT_INDEPENDENTLY_AUDITABLE_FROM_EXPORT	HDF5 exports contain flattened samples and parameter names but no walker/time dimensions, burn-in, thinning, seed, weights, or log probability.
-L02	LIKELIHOOD_REEXECUTION	HOLD_PORTABILITY_AND_ENVIRONMENT_CONTRACT	The public script contains site-specific absolute paths, the README names an absent example config, and no pinned runtime dependency manifest is supplied.
-L03	MODEL_IDENTIFIER	RESOLVED_BY_DATASET_ATTRIBUTE_CROSSWALK	Paper ΛCDM2b corresponds to release LambdaCDM2d; release LambdaCDM2b is the SLACS-only intermediate posterior.
-L04	CAUSAL_ATTRIBUTION	PROHIBITED	Nested posterior shifts share time-delay data and hierarchical assumptions; they are dependency diagnostics, not independent significances or causal likelihood contributions.
-L05	HUBBLE_TENSION	UNRESOLVED	The public TDCOSMO posteriors remain broad and do not establish a resolution, correction, or new-physics explanation.

@@ -1,6 +1,0 @@
-check	absolute_difference	tolerance	status
-primary_vs_reference:chi2_total	8.526512829121202e-14	2e-08	PASS
-primary_vs_reference:chi2_duplicate_name_contrasts	2.842170943040401e-14	2e-08	PASS
-primary_vs_reference:chi2_between_name_modes	2.1884716261411086e-11	2e-08	PASS
-primary_partition_closure	2.177102942368947e-11	2e-09	PASS
-degrees_of_freedom	0	0	PASS

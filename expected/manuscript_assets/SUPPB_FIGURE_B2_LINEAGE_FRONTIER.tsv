@@ -1,6 +1,0 @@
-order	stage	status	detail
-1	Public candidate photometric inputs	PARTIAL_THEN_COMPLETE_CANDIDATE_COVERAGE	38/69 direct; remaining 31 bridged under target-excluded survey mapping; combined 69/69
-2	Observation payload comparison	BOUNDED	0/48 byte-exact reuse; 4/48 single-rounding numeric compatibility
-3	Filter assets	MAPPED	434/434 row-filter records; 6744/6744 observations covered
-4	Configuration-level anchors	MAPPED	7/7 data series
-5	Executed BBC intermediates to final m_b_corr row	HOLD	unique executed manifest/ancestry not recovered

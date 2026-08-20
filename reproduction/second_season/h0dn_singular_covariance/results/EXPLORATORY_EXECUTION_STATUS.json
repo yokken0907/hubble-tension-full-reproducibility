@@ -1,6 +1,0 @@
-{
-  "profile": "results/exploratory_variance_component_profile.tsv",
-  "report": "EXPLORATORY_REPORT.md",
-  "status": "PASS_WITH_FLAGGED_PROFILE_NUMERICS",
-  "summary": "results/exploratory_variance_component_summary.json"
-}

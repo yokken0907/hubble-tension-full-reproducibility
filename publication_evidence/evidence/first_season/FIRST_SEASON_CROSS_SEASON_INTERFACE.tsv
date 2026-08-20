@@ -1,8 +1,0 @@
-anchor_id	first_season_source	first_season_state	future_comparison_axis	nonretroactivity_rule
-FS-X01-H0DN-STABILITY	HTV114_CORR1	FROZEN_REPRESENTATION_NUMERICAL_STABILITY	representation invariance; support; solver policy	retain original PASS and add later qualification separately
-FS-X02-SN-BBC	HTV19-31 / HTV29	BBC_TERM_LOCALIZATION_TRUTH_CLOSURE_HOLD	compression; residual structure; same-object lineage; generation provenance	no retroactive BBC error claim
-FS-X03-GWTC	HTV136 candidate	OFFICIAL_POSTERIOR_LOCAL_FREEZE_MISSING	posterior identity; release metric; comparison provenance	do not match by release name alone
-FS-X04-TDCOSMO	HTS68 CORR1 + alternate implementation closeout	OUTPUT_LEVEL_TRACEABILITY_COMPLETE_WITH_SCOPE	source identity; implementation diversity; pipeline generation	do not call full replication
-FS-X05-DESI	HTV71-98 / HTS26-34	RESPONSE_ATLAS_CLOSED_WITH_SCOPE	new release or robustness product	do not count basis stages independently
-FS-X06-CMB	HTV32/99-105; HTS19-25	COMMON_DESCRIPTIVE_DIRECTION_CAUSAL_ORIGIN_OPEN	joint covariance; direction uncertainty; component likelihood	do not infer common cause
-FS-X07-HOLDS	HTV136 and integrated audit	EXPLICIT_REENTRY_TRIGGERS	whether exact trigger became true	do not convert hold to negative result

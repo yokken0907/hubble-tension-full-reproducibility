@@ -1,2 +1,0 @@
-amendment_id	timestamp_utc	changed_file	reason	new_results_observed	interpretation_affected
-AMEND-001	2026-08-02T11:50:26Z	reader-facing documents; machine-readable interpretation fields; provenance/SURVEY_CROSSWALK_EVIDENCE.tsv	Post-result clarification of lineage terminology and evidence level	YES	YES

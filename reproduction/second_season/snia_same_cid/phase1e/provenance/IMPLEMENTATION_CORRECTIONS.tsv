@@ -1,5 +1,0 @@
-correction_id	observed_stage	trigger	change	scientific_result_changed	contract_changed
-CORR-001	post-result final verification	forbidden-path scanner matched its own literal test string	construct forbidden prefixes dynamically and rerun the unchanged 34-gate verifier	false	false
-CORR-002	post-result dependency synchronization	accepted corrected Phase 1D package became the valid upstream record	add a non-retroactive upstream supersession record and verify target-driving ledger identity	false	false
-CORR-003	post-result scope clarification	public-internal uniqueness could be read as uniqueness across the complete public release	state the prospectively frozen seven-directory audit universe in machine-readable results and reader documents	false	false
-CORR-004	post-result status-semantics clarification	legacy file status could be read as direct final-measurement ancestry proof	retain the frozen legacy status while adding preferred compatible-candidate semantics and explicit non-ancestry boundaries	false	false

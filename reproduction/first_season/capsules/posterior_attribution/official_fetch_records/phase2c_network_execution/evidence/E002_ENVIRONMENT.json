@@ -1,8 +1,0 @@
-{
-  "executable": "/usr/bin/python3",
-  "input_mode": "official_fetch",
-  "numpy": "1.26.4",
-  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
-  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
-  "scipy": "1.11.4"
-}

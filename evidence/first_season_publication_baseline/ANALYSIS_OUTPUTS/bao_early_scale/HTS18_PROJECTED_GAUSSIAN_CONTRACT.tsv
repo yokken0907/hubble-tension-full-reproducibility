@@ -1,6 +1,0 @@
-condition	quantity	mean	sigma	role
-Planck_TTTEEE_lowE_lensing_base_Neff	H0_km_s_Mpc	66.3	1.4	free-extension published marginal
-Planck_TTTEEE_lowE_lensing_base_Neff	N_eff	2.89	0.19	free-extension published marginal
-Planck_TTTEEE_lowE_lensing_base_LCDM	H0_km_s_Mpc	67.36	0.54	fixed N_eff=3.046 conditional audit target
-HTS18_reconstructed_projection	rho_H0_Neff	0.922389725865		rounded-summary reconstruction
-HTS18_reconstructed_projection	conditional_H0_at_Neff_3.046	67.360262716468	0.540764735806	internal reconstruction audit

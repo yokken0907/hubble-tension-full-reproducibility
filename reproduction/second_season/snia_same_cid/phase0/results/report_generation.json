@@ -1,9 +1,0 @@
-{
-  "boundary_marker": "FROZEN_MODEL_ONLY_NO_CORRECTED_H0_NO_TENSION_RESOLUTION",
-  "generator": "scripts/run_phase0.py",
-  "report_ja_path": "PHASE0_REPORT_JA.md",
-  "report_ja_sha256": "130fcc5f590c2a0348af244ccc58c3aa6fff557d6fd1a0b5c476359768d12be0",
-  "report_path": "PHASE0_REPORT.md",
-  "report_sha256": "1f4134bb86d29c961a407c153aecfbf7babb3eb002c5c2d8199108cdd27f63b4",
-  "status": "PASS"
-}

@@ -1,4 +1,0 @@
-trigger_id	trigger	affected_gate	required_action
-R01	Official publication of exact gw_dark_O4a input posterior bytes and registry/checksum.	GATE_B	Re-freeze sources, pre-register comparator, rerun metric provenance only.
-R02	Material official revision of GWTC-4 or GWTC-5 headline posterior product.	GATE_A	Create a new source freeze and rerun fixed quantile contract.
-R03	Documented defect in percentile or rounding contract.	GATE_A	Audit contract before any recomputation; preserve prior result.

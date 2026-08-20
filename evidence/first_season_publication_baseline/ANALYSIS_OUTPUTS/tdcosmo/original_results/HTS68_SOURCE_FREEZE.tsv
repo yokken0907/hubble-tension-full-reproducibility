@@ -1,3 +1,0 @@
-source	locator	frozen_identifier	sha256	validation
-TDCOSMO2025_PUBLIC_REPOSITORY	https://github.com/TDCOSMO/TDCOSMO2025_public.git	d7f38db341f68be1df0d9ac1fc528c45113f94cf		PASS
-TDCOSMO2025_ARXIV_PDF	https://arxiv.org/pdf/2506.03023	2506.03023	e94a728864f3afe9cc7672b97918ff366863a55df183ba116c3ceff526a7f5c7	PASS

@@ -1,2 +1,0 @@
-# Python standard library only.
-# Validated with CPython 3.13 in the recorded run environment.

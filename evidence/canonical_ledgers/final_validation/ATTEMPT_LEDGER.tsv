@@ -1,9 +1,0 @@
-attempt_id	target	action	outcome	scientific_effect	resolution
-AT-001	Three top-level archives	SHA256 and ZIP CRC verification	PASS	Inputs accepted	None
-AT-002	All top-level bundled verifiers	Run under documented package roots	PASS	Prior package states retained	None
-AT-003	Phase1C live verifier	Use an existing PantheonPlus frozen working copy	INPUT_PLACEMENT_FAIL missing STATONLY covariance	NONE	Locate byte-identical object without changing scientific contract
-AT-004	PantheonPlus source materialization	Create local shared Git copy from existing frozen object store	Checkout reported unrelated missing partial-clone objects; all 13 locked files materialized	NONE	Limit validation to locked files and record operational failure
-AT-005	Phase1C verifier with local shared copy	Run before restoring official origin metadata	23/24 gates PASS; source-origin gate FAIL; independent numerical verifier PASS	NONE	Set local clone origin metadata to the locked official repository URL; no data bytes changed
-AT-006	Locked source verification	Verify commits repository identities and 13 locked files	PASS	Source gate restored	None
-AT-007	Phase1C live verifier final	Run exact canonical verifier	24/24 PASS and ACCEPT_COMPLETE_WITH_SCOPE	Existing same-CID claim retained	None
-AT-008	New frozen internal validations	Run H0DN and SN contract	24/24 PASS	Supports final internal closure	None

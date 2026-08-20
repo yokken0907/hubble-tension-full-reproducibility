@@ -1,3 +1,0 @@
-SOURCE	OFFICIAL_URL	EXPECTED_BYTES	EXPECTED_SHA256	OBSERVED_BYTES	OBSERVED_SHA256	STATUS	NOTE
-ORIGINAL	https://lambda.gsfc.nasa.gov/data/suborbital/SPT/spt_3g_d1/chains_ttteee_winter1920.zip	6194573499	NOT_MATERIALIZED_RANGE_ACCESS			NOT_VERIFIED_RUNTIME_DNS_UNAVAILABLE	No archive downloaded in this runtime.
-FIXED	https://lambda.gsfc.nasa.gov/data/suborbital/SPT/spt_3g_d1/CMB_SPA_DESI_Fixed.zip	828322572	47c7e6ebe8df320cc4b9c81b180bd10025f194cab588e71ea71a515d7d2236a0			NOT_VERIFIED_RUNTIME_DNS_UNAVAILABLE	No archive downloaded in this runtime.

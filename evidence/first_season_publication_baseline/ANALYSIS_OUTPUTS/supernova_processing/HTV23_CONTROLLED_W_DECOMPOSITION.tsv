@@ -1,3 +1,0 @@
-calibration	SALT2_surface_only_delta_w	lightcurve_zeropoint_only_delta_w	both_delta_w	additive_prediction_delta_w	interaction_delta_w	interaction_status
-SuperCal	0.033	-0.009	0.007	0.024	-0.017	NONZERO_NONADDITIVE
-Fragilistic	0.035	0.025	0.064	0.060000000000000005	0.003999999999999997	NONZERO_NONADDITIVE

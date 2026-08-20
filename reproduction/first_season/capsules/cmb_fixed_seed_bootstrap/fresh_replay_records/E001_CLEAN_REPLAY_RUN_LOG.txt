@@ -1,7 +1,0 @@
-{
-  "model_rows": 5,
-  "amplitude_rows": 10,
-  "test_rows": 3,
-  "bootstrap_draws": 1000
-}
-elapsed=0:16.50 maxrss=169356KB

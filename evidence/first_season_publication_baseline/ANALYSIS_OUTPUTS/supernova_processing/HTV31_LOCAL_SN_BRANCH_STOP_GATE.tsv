@@ -1,8 +1,0 @@
-gate	result	evidence
-Specific unresolved scientific question	PASS	Does the nominal BBC correction close the HTV29 slope on known-truth simulations?
-Required product identified	PASS	Nominal large Biascor maps plus aligned truth/fitted pre/post-correction vectors
-Required product in standard public release	NO	Release states approximately 2 GB Biascor files require contact
-Further public-vector subdivision tests the question independently	NO	The downstream term is already algebraically localized
-Local branch scientifically closed	NO	Correction validity remains unadjudicated
-Local branch execution should continue now	NO	Continuation would recycle the same downstream vector without truth closure
-Formal branch state	FROZEN_OPEN_WAITING_SPECIFIC_EVIDENCE	Reopen only when the named products become available or an equivalent public closure appears

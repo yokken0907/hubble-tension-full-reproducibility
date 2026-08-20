@@ -1,8 +1,0 @@
-{
-  "commit": "c447f0fea703fcd0fff57de5000947b5ca81286b",
-  "expected_commit": "c447f0fea703fcd0fff57de5000947b5ca81286b",
-  "expected_photometry_tree_oid": "3facbb99276c7589349d8eceaac218ccd2ad0726",
-  "locked_file_count": 24,
-  "origin": "https://github.com/PantheonPlusSH0ES/DataRelease.git",
-  "photometry_tree_oid": "3facbb99276c7589349d8eceaac218ccd2ad0726"
-}

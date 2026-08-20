@@ -1,3 +1,0 @@
-release	official_record_id	filename	sample_key	sample_count	q15_865	q50	q84_135	lower_error	upper_error	average_uncertainty_68_27	primary_algorithm
-GWTC-4	16919645	H0_dark_combined.json	posterior	3500	67.109687714421568	76.637257552567235	89.67944493800124	9.5275698381456664	13.042187385434005	11.284878611789836	custom_hyndman_fan_type_7_linear
-GWTC-5	20378418	H0_dark_combined_gw170817.json	posterior	3500	63.875918946212742	71.017005223697197	80.002495921711073	7.1410862774844546	8.9854906980138765	8.0632884877491655	custom_hyndman_fan_type_7_linear

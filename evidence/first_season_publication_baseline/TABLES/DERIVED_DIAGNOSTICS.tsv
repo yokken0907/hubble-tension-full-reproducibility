@@ -1,3 +1,0 @@
-QUANTITY	VALUE	FORMULA_OR_SOURCE	STATUS
-shared-host diagonal mean-versus-zero z	1.405059	0.0416595261 / 0.0296461834	derived from frozen summary; not an additional principal stored-output row
-shared-host diagonal two-sided p	0.160004	2 * normal survival(|z|)	descriptive diagonal approximation; not final-H0 significance

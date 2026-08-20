@@ -1,9 +1,0 @@
-{
-  "contract_id": "HTS68_CORRECTED_EXECUTION_CONTRACT_FOR_FUTURE_RERUN",
-  "contract_version": "CORR2",
-  "approval_status": "HOLD_TEMPLATE_NOT_APPROVED",
-  "approved_at_utc": "UNRESOLVED_MUST_PRECEDE_EXECUTION",
-  "approver": "UNRESOLVED",
-  "paper_identifier": "arXiv:2506.03023",
-  "paper_version": "UNRESOLVED_MUST_BE_FROZEN_BEFORE_RERUN"
-}

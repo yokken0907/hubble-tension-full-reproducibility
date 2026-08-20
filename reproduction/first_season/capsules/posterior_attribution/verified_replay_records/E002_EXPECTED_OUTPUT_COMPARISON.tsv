@@ -1,8 +1,0 @@
-ITEM_ID	quantity	expected	observed	tolerance	status
-N029	maximum discrepancy in conditional distance	1.42e-13	1.4210854715202006e-13	1e-12 absolute	PASS
-N030	maximum discrepancy in fixed block totals	1.67e-15	1.6653345369377348e-15	1e-12 absolute	PASS
-N031	basis-sensitive directed edges	14/14	14/14	exact	PASS
-N032	maximum top-share range under rotation	0.4654	0.46543736233108057	1e-8 / display rounding	PASS
-N033	maximum pooling block-share difference	0.2900	0.29004352344255208	1e-8 / display rounding	PASS
-N034	maximum pooling order-sensitivity difference	0.3801	0.3801433811740309	1e-8 / display rounding	PASS
-N035	agreement under two pooling conventions	4/7	4/7	exact	PASS

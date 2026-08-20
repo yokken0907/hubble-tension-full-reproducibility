@@ -1,9 +1,0 @@
-{
-  "input_cache_state": "EMPTY_TEST_DIRECTORY_CREATED_NO_DOWNLOAD",
-  "network_dns": "UNAVAILABLE",
-  "official_host": "lambda.gsfc.nasa.gov",
-  "platform": "linux",
-  "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
-  "result": "NOT_VERIFIED_RUNTIME_DNS_UNAVAILABLE",
-  "utc": "2026-07-28T09:16:29.024754+00:00"
-}

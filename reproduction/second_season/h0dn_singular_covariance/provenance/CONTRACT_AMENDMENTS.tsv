@@ -1,3 +1,0 @@
-timestamp_utc	contract_version	affected_section	change	reason	results_seen
-2026-07-29T00:00:00Z	0.1.0-posthoc.1	post-hoc diagnostic	added POSTHOC_DIAGNOSTIC_CONTRACT.md to diagnose the internally frozen row-standardization failure	diagnose the unexpected primary-audit failure without modifying the primary contract	yes: row-standardization delta_H0 and unchanged ranks only
-2026-07-29T00:00:00Z	0.1.0-posthoc.2	interaction localization	added exhaustive 37-host by 3-anchor additive interaction decomposition	localize the previously identified covariance-nullspace support inconsistency using the complete public-metadata-selected table	yes: all-equation nullspace projection inspected; no interaction-decomposition output seen
